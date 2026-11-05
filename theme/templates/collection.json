@@ -1,0 +1,14 @@
+{
+  "layout": "zuaja-2026",
+  "sections": {
+    "main": {
+      "type": "zs-collection",
+      "settings": {
+        "chips": "zuaja-category-chips"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
