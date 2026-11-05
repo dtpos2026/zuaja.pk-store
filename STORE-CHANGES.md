@@ -96,3 +96,11 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
 - Add official policies in Settings → Policies (this connection has no permission to write them). The Terms and Refund pages can be copied there.
 - Confirm the refund window (written as 3 days after delivery) and the unopened-only return rule.
 - Decide the extra 11.11 discount (percentage, start and end dates) if one is wanted.
+
+## White storefront rebuild + AI-restored product photos
+- First image of every product (live): Real-ESRGAN restored (tools/esrgan_onnx.py, weights-only loader, onnxruntime), retouched and straightened, on a white e-commerce background with a corner watermark (`brand/hero-white/`).
+- New theme "Zuaja WHITE Store (publish)" (id 199364903095), a white light theme with Zuaja ink + gold accents:
+  - Homepage sections, in order: `zs-hero` slider (4 slides, desktop + mobile art), `zs-trust` strip, `zs-categories` round tiles, and `zs-products` rows (Best Sellers, Hair Care, Skin Care, Bath & Body, Perfumes), followed by the brand note.
+  - `zs-card`: white image, -X% badge, price with the old price struck through, full-width Add to Cart; on hover the card lifts, the image zooms and a light sweep passes.
+  - All collection templates now use `zs-collection`: banner with title, category chips (menu `zuaja-category-chips`), sort and a paginated grid.
+- Store art is in `brand/store-art/` (made by tools/make_store_art.py) and uploaded to Files.
