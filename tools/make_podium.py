@@ -12,7 +12,7 @@ from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter
 
 OUT, LOGO = Path(sys.argv[1]), Path(sys.argv[2])
 OUT.mkdir(parents=True, exist_ok=True)
-S = 1500
+S = int(__import__("os").environ.get("ZUAJA_SIZE", "1500"))
 rng = np.random.default_rng(7)
 
 
@@ -218,11 +218,11 @@ def scene(p, upright=True):
     if STYLE == "cutout":
         return p
     if STYLE == "white":
-        r = min(S * 0.80 / p.height, S * 0.62 / p.width)
+        r = min(S * 0.86 / p.height, S * 0.66 / p.width)
     else:
         r = min(S * 0.60 / p.height, S * 0.40 / p.width)
     p = p.resize((round(p.width * r), round(p.height * r)), Image.LANCZOS)
-    cx, base = S // 2, int(S * (0.90 if STYLE == "white" else 0.80))
+    cx, base = S // 2, int(S * (0.93 if STYLE == "white" else 0.80))
     x, y = cx - p.width // 2, base - p.height
     if STYLE != "white":
         refl = p.transpose(Image.FLIP_TOP_BOTTOM).crop((0, 0, p.width, int(p.height * 0.28)))
@@ -256,5 +256,5 @@ for arg in sys.argv[3:]:
     if STYLE == "cutout":
         res.save(OUT / f"{key}.png", optimize=True)
     else:
-        res.save(OUT / f"{key}.jpg", quality=90, optimize=True, progressive=True)
+        res.save(OUT / f"{key}.jpg", quality=95, optimize=True, progressive=True, subsampling=0)
     print(key)
