@@ -93,23 +93,53 @@ def podium(c):
     return cx, top_y
 
 
-def retouch(p):
+def retouch(p, gloss=True):
+    """Studio retouch from the real photo: balance, S-curve, clarity, vibrance, then a soft
+    vertical studio-light gloss on the left third (screen blend inside the product only)."""
     rgb = p.convert("RGB")
     a = np.asarray(p.getchannel("A")) > 200
     arr = np.asarray(rgb).astype(np.float32)
     if a.sum() > 500:
         px = arr[a]
-        lo, hi = np.percentile(px, 0.6, axis=0), np.percentile(px, 99.4, axis=0)
+        lo, hi = np.percentile(px, 0.5, axis=0), np.percentile(px, 99.5, axis=0)
         arr = np.clip((arr - lo) / np.maximum(hi - lo, 1) * 255, 0, 255)
         m = arr[a].mean(0)
         arr = np.clip(arr * (m.mean() / m) ** 0.6, 0, 255)
+    x = arr / 255.0
+    x = x + 0.3 * (x - x ** 2) * (2 * x - 1)  # gentle S-curve
+    x = np.clip(0.5 + (x - 0.5) * 1.08, 0, 1)
+    arr = x * 255
     rgb = Image.fromarray(arr.astype(np.uint8))
-    rgb = ImageEnhance.Color(rgb).enhance(1.1)
-    rgb = ImageEnhance.Contrast(rgb).enhance(1.06)
-    rgb = rgb.filter(ImageFilter.UnsharpMask(radius=2.4, percent=90, threshold=2))
+    clar = rgb.filter(ImageFilter.UnsharpMask(radius=24, percent=35, threshold=0))
+    rgb = clar.filter(ImageFilter.UnsharpMask(radius=1.6, percent=110, threshold=2))
+    rgb = ImageEnhance.Color(rgb).enhance(1.16)
     out = rgb.convert("RGBA")
+    if gloss:
+        w, h = out.size
+        g = Image.new("L", (w, h), 0)
+        gd = ImageDraw.Draw(g)
+        gd.rectangle((int(w * 0.22), int(h * 0.04), int(w * 0.30), int(h * 0.96)), fill=95)
+        gd.rectangle((int(w * 0.72), int(h * 0.08), int(w * 0.75), int(h * 0.92)), fill=45)
+        g = g.filter(ImageFilter.GaussianBlur(max(4, w * 0.025)))
+        g = ImageChops.multiply(g, p.getchannel("A"))
+        white = Image.new("RGBA", (w, h), (255, 255, 255, 255))
+        out = Image.composite(Image.blend(out, ImageChops.screen(out, white), 1.0), out, g)
     out.putalpha(p.getchannel("A"))
     return out
+
+
+def drop_stand(p):
+    """Soap photos stand on a light block; cut where the dark bar ends and the block begins."""
+    arr = np.asarray(p.convert("RGBA")).astype(np.float32)
+    al = arr[..., 3] > 128
+    mean = arr[..., :3].mean(axis=2)
+    med = np.array([np.median(mean[y][al[y]]) if al[y].any() else 0 for y in range(p.height)])
+    bar = np.median(med[int(p.height * 0.2):int(p.height * 0.5)])
+    thr = max(90, bar * 2.2)
+    for y in range(int(p.height * 0.35), p.height):
+        if med[y] > thr:
+            return p.crop((0, 0, p.width, max(1, y - 4)))
+    return p
 
 
 def feather(p):
@@ -201,11 +231,16 @@ def scene(p, upright=True):
 
 for arg in sys.argv[3:]:
     key, src = arg.split("=", 1)
+    soap = src.endswith(":soap")
+    src = src[:-5] if soap else src
     flat = src.endswith(":flat")
     src = src[:-5] if flat else src
     raw = src.endswith(":raw")
     src = src[:-4] if raw else src
     p = Image.open(src).convert("RGBA")
-    p = feather(p if raw else retouch(p))
+    if soap:
+        p = drop_stand(p)
+        flat = True
+    p = feather(p if raw else retouch(p, gloss=not flat))
     scene(p, upright=not flat).save(OUT / f"{key}.jpg", quality=90, optimize=True, progressive=True)
     print(key)
