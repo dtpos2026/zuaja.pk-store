@@ -342,6 +342,18 @@
             "add_label": "Add to cart",
             "unavailable": "Coming soon"
           }
+        },
+        "rose_wash": {
+          "type": "group1_item3",
+          "settings": {
+            "product": "rose-body-wash-100ml",
+            "placeholder": "Rose Hand & Body Wash, 100 ml",
+            "badge": "Hand & Body Wash",
+            "tone": "rose",
+            "shape": "pump",
+            "add_label": "Add to cart",
+            "unavailable": "Coming soon"
+          }
         }
       },
       "block_order": [
@@ -353,6 +365,7 @@
         "new_zafarani",
         "product4",
         "active_lavender",
+        "rose_wash",
         "new_rose_soap",
         "new_neem_soap",
         "new_gold_perfume",
@@ -364,8 +377,8 @@
     "module5": {
       "type": "zuaja-2026-arrivals-section",
       "settings": {
-        "image_picker_1": "shopify://shop_images/amla-reetha-shampoo-studio.png",
-        "text_2": "Zuaja PK Amla Reetha Shampoo, 200 ml pump bottle with amla and reetha",
+        "image_picker_1": "shopify://shop_images/zuaja-amla-reetha-studio-real.png",
+        "text_2": "Zuaja PK Amla Reetha Shampoo 200 ml, studio photo",
         "text_3": "NOT SURE WHICH SHAMPOO?",
         "text_4": "Oily scalp: Amla Reetha.",
         "text_5": "Dry hair: Haldi + Badam.",
