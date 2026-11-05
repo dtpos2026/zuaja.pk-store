@@ -90,7 +90,7 @@ welcome popup, and a countdown strip above the footer. Renders nothing after the
     pop.querySelectorAll('[data-zuaja-1111-close]').forEach(function (b) { b.addEventListener('click', function () { pop.close(); }); });
     pop.addEventListener('click', function (e) { if (e.target === pop) pop.close(); });
     pop.addEventListener('close', function () { try { sessionStorage.setItem('zuaja1111', '1'); } catch (e) {} });
-    if (!seen) setTimeout(function () { pop.showModal(); }, 900);
+    if (!seen) setTimeout(function () { pop.showModal(); }, document.documentElement.classList.contains('zuaja-no-splash') ? 900 : 1700);
   });
 })();
 </script>

@@ -1,0 +1,108 @@
+{
+  "layout": "zuaja-2026",
+  "sections": {
+    "intro": {
+      "type": "zuaja-2026-categories-intro",
+      "settings": {}
+    },
+    "directory": {
+      "type": "zuaja-2026-category-directory",
+      "settings": {
+        "columns": 2,
+        "link_label": "Shop"
+      },
+      "blocks": {
+        "shampoos": {
+          "type": "category",
+          "settings": {
+            "collection": "shampoos",
+            "handle": "shampoos",
+            "title": "Shampoos",
+            "description": "Everyday cleansing for your hair-care routine.",
+            "image": "shopify://shop_images/zuaja-category-shampoos-wide-v3.png",
+            "image_alt": "Zuaja PK Haldi + Badam and Amla Reetha shampoos on an ivory plinth"
+          }
+        },
+        "hair_oils": {
+          "type": "category",
+          "settings": {
+            "collection": "hair-oils",
+            "handle": "hair-oils",
+            "title": "Hair Oils",
+            "description": "Herbal oils for your weekly champi.",
+            "image": "shopify://shop_images/zuaja-category-hair-oils-wide-v3.png",
+            "image_alt": "Zuaja PK 7 Herbal Oils Blend and Rosemary Oil on an ivory plinth"
+          }
+        },
+        "perfumes": {
+          "type": "category",
+          "settings": {
+            "collection": "perfumes",
+            "handle": "perfumes",
+            "title": "Perfumes",
+            "description": "Find your finishing touch.",
+            "image": "shopify://shop_images/zuaja-category-perfumes-wide-v3.png",
+            "image_alt": "Zuaja PK Unisex, White Oud and Signature perfumes on an ivory plinth"
+          }
+        },
+        "bath_body": {
+          "type": "category",
+          "settings": {
+            "collection": "bath-body",
+            "handle": "bath-body",
+            "title": "Bath & Body",
+            "description": "Washes and soaps for every day.",
+            "image": "shopify://shop_images/zuaja-category-bath-body-wide-v3.png",
+            "image_alt": "Zuaja PK soaps and hand and body washes on an ivory plinth"
+          }
+        },
+        "hair_care": {
+          "type": "category",
+          "settings": {
+            "collection": "hair-care",
+            "handle": "hair-care",
+            "title": "Hair Care",
+            "description": "Shampoos and oils, together in one place.",
+            "image": "shopify://shop_images/zuaja-category-hair-care-wide-v3.png",
+            "image_alt": "Zuaja PK shampoos and hair oils on an ivory plinth"
+          }
+        },
+        "skin_care": {
+          "type": "category",
+          "settings": {
+            "collection": "skin-care",
+            "handle": "skin-care",
+            "title": "Skin Care",
+            "description": "Haldi face wash and zafarani cream.",
+            "image": "shopify://shop_images/zuaja-category-skin-care-wide-v3.png",
+            "image_alt": "Zuaja PK Zafarani Cream and Herbal Face Wash on an ivory plinth"
+          }
+        },
+        "soaps": {
+          "type": "category",
+          "settings": {
+            "collection": "soaps",
+            "handle": "soaps",
+            "title": "Soaps",
+            "description": "Rose and neem bathing bars.",
+            "image": "shopify://shop_images/zuaja-category-soaps-wide-v3.png",
+            "image_alt": "Zuaja PK Rose and Neem soaps on an ivory plinth"
+          }
+        }
+      },
+      "block_order": [
+        "shampoos",
+        "hair_oils",
+        "perfumes",
+        "bath_body",
+        "hair_care",
+        "skin_care",
+        "soaps"
+      ]
+    }
+  },
+  "order": [
+    "intro",
+    "directory"
+  ]
+}

@@ -11,6 +11,18 @@ Rendered once from layout/zuaja-2026.liquid.
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap">
 <style>
   body.zuaja-2026{--zuaja-gold:#c4932f;--zuaja-gold-l:#e5c271;--zuaja-gold-soft:rgb(196 147 47 / .32);--zuaja-ivory:#fbf4e4;--zuaja-ink:#171717;--zuaja-serif:'Cinzel','Times New Roman',serif}
+  /* brand colours only: replace the old royal blue with ink */
+  body.zuaja-2026{--blue:#171717 !important}
+  .zuaja-2026 .primary-nav{background:#171717 !important;border-block-end:2px solid #c4932f}
+  .zuaja-2026 .primary-nav a{color:#f3e7c8 !important}
+  .zuaja-2026 .primary-nav a:hover,.zuaja-2026 .primary-nav a:focus-visible{color:#e5c271 !important}
+  .zuaja-2026 .primary-nav .nav-sale{color:#e5c271 !important;font-weight:700}
+  .zuaja-2026 .brand-note{background:#fbf4e4 !important;color:#171717 !important;border-block:2px solid #c4932f}
+  .zuaja-2026 .brand-note blockquote,.zuaja-2026 .brand-note p,.zuaja-2026 .brand-note strong{color:#171717 !important}
+  .zuaja-2026 .brand-note blockquote{font-family:var(--zuaja-serif)}
+  /* full-width 11.11 strip at the very top */
+  .zuaja-2026 .zuaja-module > .announcement{background:linear-gradient(90deg,#a87b26,#e5c271 50%,#a87b26) !important;color:#171717 !important;font-weight:700;letter-spacing:.12em}
+  .zuaja-2026 .zuaja-module > .announcement a{color:#171717;text-decoration:underline;text-underline-offset:3px}
   .zuaja-2026 h1,.zuaja-2026 h2{font-family:var(--zuaja-serif);font-weight:600;letter-spacing:.02em;text-wrap:balance}
   .zuaja-2026 main section > h2::after,.zuaja-2026 main section header h2::after{content:"";display:block;width:56px;height:2px;margin-block-start:12px;margin-inline:inherit;background:linear-gradient(90deg,var(--zuaja-gold),var(--zuaja-gold-l))}
   .zuaja-2026 [class*="eyebrow"]{color:var(--zuaja-gold);letter-spacing:.18em}
