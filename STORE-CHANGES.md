@@ -65,6 +65,21 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
   - a header shadow on scroll and a gold line on top of the footer.
 - Theme sources are in `theme/`.
 
+## FINAL v2 (splash, gold 11.11 strip, no blue, real category banners)
+- Product gallery order (live):
+  1. the earlier studio image
+  2. brand banner
+  3. original photo on white
+  4. enhanced original photo
+  5. label or another angle
+- 7 new category banners (`brand/category-banners/`, uploaded as Files `zuaja-category-*-wide-v3.png`) built from the real product cut-outs on an ivory plinth. They replace the AI images on the homepage and the All categories page.
+- Theme "Zuaja PK — FINAL v2 Splash + Gold (publish this)":
+  - `snippets/zuaja-2026-splash.liquid`: animated logo splash. It is pure CSS, lasts 1.5s and shows once per session.
+  - The 11.11 popup now waits until the splash has finished.
+  - Gold gradient 11.11 strip at the top.
+  - Menu bar changed to ink with cream text, and the brand note to ivory with gold borders. The royal blue (`--blue`) is overridden.
+- The studio images could not be re-processed onto a white background: cdn.shopify.com is blocked in this session. Transparent ones already sit on the white gallery background.
+
 ## To do by the owner
 - Publish the theme: Shopify admin → Online Store → Themes → "Zuaja PK — 11.11 Sale & Facebook" → Publish.
 - Add official policies in Settings → Policies (this connection has no permission to write them). The Terms and Refund pages can be copied there.
