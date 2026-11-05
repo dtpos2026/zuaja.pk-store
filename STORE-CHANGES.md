@@ -44,6 +44,16 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
 - The theme "Zuaja PK — 11.11 Popup, Tags & Logo" uses it in the header and the 11.11 popup: it replaces `assets/zuaja-pk-logo-complete-4k.webp`.
 - New browser-tab icon `assets/zuaja-favicon-48.png`, made from the logo's Z/J mark.
 
+## SEO and creative pack
+- SEO title and meta description written for 14 products and 8 collections. They are live and show in Google search results.
+- `marketing/11-11-pack/` holds the creative pack:
+  - store packshots: product centred on a white background, plus transparent PNGs;
+  - 4 social/ad sizes and 1 evergreen post per product;
+  - the 11.11 lineup campaign in all sizes;
+  - captions with hashtags, and `ads-copy.csv` (headline, primary text, description).
+- Not done: uploading product photos to Shopify. Sending files to Shopify's staged upload service was blocked in this session, so the owner must upload `store/white` (Content → Files) or allow the upload.
+- Not done: the "Brand Polish" theme copy. Shopify's limit of 20 themes is reached, so old theme copies must be deleted first.
+
 ## To do by the owner
 - Publish the theme: Shopify admin → Online Store → Themes → "Zuaja PK — 11.11 Sale & Facebook" → Publish.
 - Add official policies in Settings → Policies (this connection has no permission to write them). The Terms and Refund pages can be copied there.
