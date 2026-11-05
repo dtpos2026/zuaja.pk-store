@@ -31,6 +31,13 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
   - an "11.11 price" box under the price on product pages;
   - a countdown strip above the footer.
   - All of it disappears automatically after 15 Nov.
+  - Homepage copy rewritten to be customer friendly:
+    - Hero: "11.11 SALE · EXTRA 11% OFF" and "Desi care for hair, skin & body", with the main button going to the sale.
+    - Trust strip: delivery all over Pakistan, 11% off till 15 Nov, WhatsApp help 10am–10pm, damaged item support.
+    - Shampoo guide: oily scalp → Amla Reetha, dry hair → Haldi + Badam.
+    - Products are grouped by category.
+    - Brand note gives the WhatsApp number.
+    - Unused (disabled) homepage sections were removed from this copy.
 
 ## To do by the owner
 - Publish the theme: Shopify admin → Online Store → Themes → "Zuaja PK — 11.11 Sale & Facebook" → Publish.
