@@ -10,8 +10,13 @@
 - New collection **11.11 Sale** (`/collections/11-11-sale`): automatically includes every product with a sale price.
 - New pages: **Terms of service** (`/pages/terms-of-service`) and **Refund policy** (`/pages/refund-policy`).
 
+## Official price list applied (live)
+Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 · Neem wash 330 · Zafarani Cream 350 · Face Wash 320 · 7 Herbal Oils 1,200 · Rosemary 950 · Signature (Zuaja) Perfume 50 ml 2,200 · White Oud 1,999 · Unisex Perfume 30 ml (renamed from "Premium Perfume") 1,500 · White Oud Tester 250 · Rose Soap 220 · Neem Soap 180.
+- "temporary-price" tag removed from all products. Old compare-at (cut) prices kept.
+- New product **Rose Body Wash, 100 ml** (Rs. 300) created as DRAFT: needs a photo before it goes live.
+
 ## Changes in the new theme "Zuaja PK — 11.11 Sale & Facebook" (needs Publish)
-- Announcement bar: 11.11 SALE IS LIVE — UP TO 37% OFF, delivery all over Pakistan, WhatsApp order number, Shop the 11.11 Sale link.
+- Announcement bar: 11.11 SALE IS LIVE — SAVE ON EVERY CATEGORY, delivery all over Pakistan, WhatsApp order number, Shop the 11.11 Sale link.
 - Header menu: "11.11 Sale 🔥" and "Skin Care" added. Mobile menu lists the 11.11 Sale first.
 - Footer: Facebook icon (facebook.com/zuaja.pk) next to Instagram, TikTok and WhatsApp; legal links fixed; Refund policy and 11.11 Sale links added.
 - Mobile menu: Facebook link added.
