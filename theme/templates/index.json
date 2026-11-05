@@ -1,56 +1,6 @@
 {
   "layout": "zuaja-2026",
   "sections": {
-    "hero": {
-      "type": "zs-hero",
-      "settings": {
-        "label": "Zuaja PK highlights"
-      },
-      "blocks": {
-        "s1": {
-          "type": "slide",
-          "settings": {
-            "image_desktop": "shopify://shop_images/zuaja-slide-hair-care-desktop.jpg",
-            "image_mobile": "shopify://shop_images/zuaja-slide-hair-care-mobile.jpg",
-            "link": "/collections/hair-care",
-            "alt": "Desi hair care: Haldi + Badam, Amla Reetha, Rosemary, 7 Herbal Oils"
-          }
-        },
-        "s2": {
-          "type": "slide",
-          "settings": {
-            "image_desktop": "shopify://shop_images/zuaja-slide-skin-care-desktop.jpg",
-            "image_mobile": "shopify://shop_images/zuaja-slide-skin-care-mobile.jpg",
-            "link": "/collections/skin-care",
-            "alt": "Skin care: Herbal Face Wash + Haldi and Zafarani Cream"
-          }
-        },
-        "s3": {
-          "type": "slide",
-          "settings": {
-            "image_desktop": "shopify://shop_images/zuaja-slide-bath-body-desktop.jpg",
-            "image_mobile": "shopify://shop_images/zuaja-slide-bath-body-mobile.jpg",
-            "link": "/collections/bath-body",
-            "alt": "Rose, Neem and Lavender hand and body washes"
-          }
-        },
-        "s4": {
-          "type": "slide",
-          "settings": {
-            "image_desktop": "shopify://shop_images/zuaja-slide-perfumes-desktop.jpg",
-            "image_mobile": "shopify://shop_images/zuaja-slide-perfumes-mobile.jpg",
-            "link": "/collections/perfumes",
-            "alt": "Zuaja perfumes: White Oud, Signature, Unisex"
-          }
-        }
-      },
-      "block_order": [
-        "s1",
-        "s2",
-        "s3",
-        "s4"
-      ]
-    },
     "trust": {
       "type": "zs-trust",
       "settings": {}
@@ -174,10 +124,77 @@
       "settings": {
         "textarea_2": "Zuaja PK makes everyday care with ingredients Pakistani homes already trust: haldi, badam, amla, reetha, neem and rosemary. Questions before you order? Message us on WhatsApp at 0316 1121130, 10am to 10pm, every day."
       }
+    },
+    "module1": {
+      "type": "zuaja-2026-hero",
+      "settings": {
+        "url_4": "/collections/11-11-sale",
+        "text_1": "11.11 SALE · EXTRA 11% OFF",
+        "text_2": "Desi care for hair, skin & body.",
+        "textarea_3": "Haldi, badam, amla, reetha, neem and rosemary in Zuaja PK shampoos, herbal hair oils, face wash, soaps and perfumes. Extra 11% off everything until 15 November, applied at checkout.",
+        "text_5": "Shop the 11.11 Sale",
+        "text_12": "daily care",
+        "show_scenery": true,
+        "scene_accent": "#c4932f",
+        "scene_disc": "#e5c271",
+        "scene_note": "Order on WhatsApp: 0316 1121130"
+      },
+      "blocks": {
+        "product1": {
+          "type": "product_1",
+          "settings": {
+            "product": "haldi-badam-shampoo-100ml",
+            "scale": 100,
+            "offset_y": 0,
+            "rotation": -13,
+            "offset_x": 0,
+            "caption": "Cleanse"
+          }
+        },
+        "product2": {
+          "type": "product_2",
+          "settings": {
+            "product": "amla-reetha-shampoo-200ml",
+            "scale": 100,
+            "offset_y": 0,
+            "rotation": 7,
+            "offset_x": 0,
+            "caption": "Refresh"
+          }
+        },
+        "product3": {
+          "type": "product_3",
+          "settings": {
+            "product": "rosemary-hair-scalp-oil-100ml",
+            "scale": 100,
+            "offset_y": 0,
+            "rotation": 14,
+            "offset_x": 0,
+            "caption": "Nourish"
+          }
+        },
+        "mobile_product4": {
+          "type": "mobile_product_4",
+          "settings": {
+            "product": "zuaja-pk-premium-white-oud-perfume-50-ml",
+            "scale": 100,
+            "offset_y": 0,
+            "rotation": -6,
+            "offset_x": 0,
+            "caption": "Fragrance"
+          }
+        }
+      },
+      "block_order": [
+        "product1",
+        "product2",
+        "product3",
+        "mobile_product4"
+      ]
     }
   },
   "order": [
-    "hero",
+    "module1",
     "trust",
     "cats",
     "best",
