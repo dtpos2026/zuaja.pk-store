@@ -39,6 +39,11 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
     - Brand note gives the WhatsApp number.
     - Unused (disabled) homepage sections were removed from this copy.
 
+## Original logo (from owner)
+- Made from the owner's original logo: a horizontal version (icon + ZUAJA.PK / POWERED BY SK) with a transparent background. Files are in `brand/`.
+- The theme "Zuaja PK — 11.11 Popup, Tags & Logo" uses it in the header and the 11.11 popup: it replaces `assets/zuaja-pk-logo-complete-4k.webp`.
+- New browser-tab icon `assets/zuaja-favicon-48.png`, made from the logo's Z/J mark.
+
 ## To do by the owner
 - Publish the theme: Shopify admin → Online Store → Themes → "Zuaja PK — 11.11 Sale & Facebook" → Publish.
 - Add official policies in Settings → Policies (this connection has no permission to write them). The Terms and Refund pages can be copied there.
