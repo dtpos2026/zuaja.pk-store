@@ -215,6 +215,8 @@ def scene(p, upright=True):
     if upright:
         p = straighten(p)
     p = p.crop(p.getbbox())
+    if STYLE == "cutout":
+        return p
     if STYLE == "white":
         r = min(S * 0.80 / p.height, S * 0.62 / p.width)
     else:
@@ -250,5 +252,9 @@ for arg in sys.argv[3:]:
         p = drop_stand(p)
         flat = True
     p = feather(p if raw else retouch(p, gloss=not flat))
-    scene(p, upright=not flat).save(OUT / f"{key}.jpg", quality=90, optimize=True, progressive=True)
+    res = scene(p, upright=not flat)
+    if STYLE == "cutout":
+        res.save(OUT / f"{key}.png", optimize=True)
+    else:
+        res.save(OUT / f"{key}.jpg", quality=90, optimize=True, progressive=True)
     print(key)
