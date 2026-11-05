@@ -203,23 +203,31 @@ def straighten(p):
     return p
 
 
+import os
+STYLE = os.environ.get("ZUAJA_STYLE", "studio")
+
+
 def scene(p, upright=True):
     global BASE
     if BASE is None:
-        BASE = sweep()
+        BASE = Image.new("RGBA", (S, S), (255, 255, 255, 255)) if STYLE == "white" else sweep()
     c = BASE.copy()
     if upright:
         p = straighten(p)
     p = p.crop(p.getbbox())
-    r = min(S * 0.60 / p.height, S * 0.40 / p.width)
+    if STYLE == "white":
+        r = min(S * 0.80 / p.height, S * 0.62 / p.width)
+    else:
+        r = min(S * 0.60 / p.height, S * 0.40 / p.width)
     p = p.resize((round(p.width * r), round(p.height * r)), Image.LANCZOS)
-    cx, base = S // 2, int(S * 0.80)
+    cx, base = S // 2, int(S * (0.90 if STYLE == "white" else 0.80))
     x, y = cx - p.width // 2, base - p.height
-    refl = p.transpose(Image.FLIP_TOP_BOTTOM).crop((0, 0, p.width, int(p.height * 0.28)))
-    g = Image.linear_gradient("L").resize(refl.size).point(lambda v: int((255 - v) * 0.22))
-    refl.putalpha(ImageChops.multiply(refl.getchannel("A"), g))
-    c.alpha_composite(refl.filter(ImageFilter.GaussianBlur(1.2)), (x, base + 1))
-    for spread, blur, alpha in ((0.8, 30, 70), (1.0, 9, 140)):
+    if STYLE != "white":
+        refl = p.transpose(Image.FLIP_TOP_BOTTOM).crop((0, 0, p.width, int(p.height * 0.28)))
+        g = Image.linear_gradient("L").resize(refl.size).point(lambda v: int((255 - v) * 0.22))
+        refl.putalpha(ImageChops.multiply(refl.getchannel("A"), g))
+        c.alpha_composite(refl.filter(ImageFilter.GaussianBlur(1.2)), (x, base + 1))
+    for spread, blur, alpha in (((0.9, 26, 45), (1.0, 8, 90)) if STYLE == "white" else ((0.8, 30, 70), (1.0, 9, 140))):
         m = Image.new("L", (S, S), 0)
         w = p.width * spread
         ImageDraw.Draw(m).ellipse((cx - w / 2 - 10, base - 10, cx + w / 2 + 10, base + 12), fill=alpha)
