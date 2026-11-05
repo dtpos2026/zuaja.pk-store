@@ -54,6 +54,17 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
 - Not done: uploading product photos to Shopify. Sending files to Shopify's staged upload service was blocked in this session, so the owner must upload `store/white` (Content → Files) or allow the upload.
 - Not done: the "Brand Polish" theme copy. Shopify's limit of 20 themes is reached, so old theme copies must be deleted first.
 
+## Product photos and final brand design (live / ready)
+- All 14 active products now have this gallery, live: (1) white-background packshot, (2) brand banner, (3) the earlier studio image, (4) the enhanced original photo, (5) the ingredients label or another angle where a photo exists. Images were added from the public GitHub repo URLs.
+- The theme "Zuaja PK — FINAL Brand Design (publish this)" (the old "11.11 Sale & Facebook" copy) has been brought in line with the live theme and adds `snippets/zuaja-2026-brand-polish.liquid`:
+  - Cinzel serif headings with a gold rule under them;
+  - gold hairline borders and lift-on-hover on product cards;
+  - a framed product gallery;
+  - a trust row under the product buttons;
+  - scroll-reveal animation (switched off for reduced motion);
+  - a header shadow on scroll and a gold line on top of the footer.
+- Theme sources are in `theme/`.
+
 ## To do by the owner
 - Publish the theme: Shopify admin → Online Store → Themes → "Zuaja PK — 11.11 Sale & Facebook" → Publish.
 - Add official policies in Settings → Policies (this connection has no permission to write them). The Terms and Refund pages can be copied there.
