@@ -1,0 +1,88 @@
+{% doc %}
+Brand polish layer for Zuaja PK.
+- Serif headings (Cinzel) that echo the Roman capitals in the Zuaja logo, with a gold rule under section titles.
+- Gold hairline borders, soft radii and lift-on-hover for product cards and the product gallery.
+- Gentle scroll-reveal for sections and cards (disabled for reduced motion and when JavaScript is off).
+- A trust row under the product page buttons, and a header shadow once the page scrolls.
+Rendered once from layout/zuaja-2026.liquid.
+{% enddoc %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap">
+<style>
+  body.zuaja-2026{--zuaja-gold:#c4932f;--zuaja-gold-l:#e5c271;--zuaja-gold-soft:rgb(196 147 47 / .32);--zuaja-ivory:#fbf4e4;--zuaja-ink:#171717;--zuaja-serif:'Cinzel','Times New Roman',serif}
+  .zuaja-2026 h1,.zuaja-2026 h2{font-family:var(--zuaja-serif);font-weight:600;letter-spacing:.02em;text-wrap:balance}
+  .zuaja-2026 main section > h2::after,.zuaja-2026 main section header h2::after{content:"";display:block;width:56px;height:2px;margin-block-start:12px;margin-inline:inherit;background:linear-gradient(90deg,var(--zuaja-gold),var(--zuaja-gold-l))}
+  .zuaja-2026 [class*="eyebrow"]{color:var(--zuaja-gold);letter-spacing:.18em}
+
+  .zuaja-2026 .product-card{border:1px solid var(--zuaja-gold-soft);border-radius:16px;overflow:hidden;background:#fff;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease}
+  .zuaja-2026 .product-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgb(23 23 23 / .10)}
+  .zuaja-2026 .product-card .zuaja-product-image{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+  .zuaja-2026 .product-card:hover .zuaja-product-image{transform:scale(1.04)}
+  .zuaja-2026 .product-card__details{padding-inline:14px;padding-block-end:14px}
+  .zuaja-2026 .product-card__details h3{font-family:var(--zuaja-serif);font-weight:600;font-size:15px;line-height:1.3;min-height:2.6em}
+  .zuaja-2026 .price s,.zuaja-2026 .pdp-price s{opacity:.5}
+  .zuaja-2026 .price,.zuaja-2026 .pdp-price{font-weight:700}
+  .zuaja-2026 .add-button,.zuaja-2026 .primary-button,.zuaja-2026 .outline-button{border-radius:999px;transition:background-color .25s ease,color .25s ease,transform .2s ease}
+  .zuaja-2026 .add-button:hover,.zuaja-2026 .primary-button:hover{transform:translateY(-1px)}
+
+  .zuaja-2026 .product-gallery__stage{border:1px solid var(--zuaja-gold-soft);border-radius:18px;overflow:hidden;background:#fff}
+  .zuaja-2026 .product-gallery__thumbs button{border:1px solid var(--zuaja-gold-soft);border-radius:10px;overflow:hidden}
+  .zuaja-trust{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-block:18px 6px;padding:0;list-style:none}
+  .zuaja-trust li{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--zuaja-gold-soft);border-radius:12px;background:var(--zuaja-ivory);font-size:13px;line-height:1.3;color:var(--zuaja-ink)}
+  .zuaja-trust svg{flex:none;width:22px;height:22px;stroke:var(--zuaja-gold);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+  .zuaja-2026 .site-header{transition:box-shadow .3s ease}
+  .zuaja-2026.zuaja-scrolled .site-header{box-shadow:0 6px 18px rgb(23 23 23 / .08)}
+  .zuaja-2026 .site-footer{border-block-start:3px solid var(--zuaja-gold)}
+  .zuaja-2026 .footer-column__heading h2{font-family:var(--zuaja-serif);font-size:15px;letter-spacing:.08em}
+  .zuaja-2026 .footer-column__heading h2::after{display:none}
+
+  .zuaja-js .zuaja-reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+  .zuaja-js .zuaja-reveal.is-in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    .zuaja-2026 .product-card,.zuaja-2026 .product-card .zuaja-product-image,.zuaja-js .zuaja-reveal{transition:none}
+    .zuaja-2026 .product-card:hover,.zuaja-2026 .product-card:hover .zuaja-product-image{transform:none}
+    .zuaja-js .zuaja-reveal{opacity:1;transform:none}
+  }
+</style>
+{%- if template.name == 'product' -%}
+<template id="ZuajaTrust">
+  <ul class="zuaja-trust" aria-label="Why shop with Zuaja PK">
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="m9 12 2 2 4-4"/></svg>100% original Zuaja PK product</li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.5"/><circle cx="17" cy="17.5" r="1.5"/></svg>Delivery all over Pakistan</li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 10c.5 2 2 3.5 4 4"/></svg>WhatsApp help 10am&ndash;10pm</li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>Damaged or wrong item? We'll sort it</li>
+  </ul>
+</template>
+{%- endif -%}
+<script>
+(function () {
+  var root = document.documentElement;
+  root.classList.add('zuaja-js');
+  document.addEventListener('DOMContentLoaded', function () {
+    var body = document.body;
+    var onScroll = function () { body.classList.toggle('zuaja-scrolled', window.scrollY > 8); };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    var trust = document.getElementById('ZuajaTrust');
+    var anchor = document.querySelector('.pdp-actions');
+    if (trust && anchor) anchor.insertAdjacentElement('afterend', trust.content.firstElementChild.cloneNode(true));
+
+    var targets = document.querySelectorAll('main .shopify-section, main section, .product-card');
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    targets.forEach(function (el) {
+      var r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight) return; // already on screen: leave it visible
+      el.classList.add('zuaja-reveal');
+      io.observe(el);
+    });
+  });
+})();
+</script>

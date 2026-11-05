@@ -1,0 +1,84 @@
+{
+  "layout": "zuaja-2026",
+  "sections": {
+    "module1": {
+      "type": "zuaja-2026-hero",
+      "settings": {
+        "url_4": "/collections/11-11-sale",
+        "text_1": "11.11 SALE · EXTRA 11% OFF",
+        "text_2": "Desi care for hair, skin & body.",
+        "textarea_3": "Haldi, badam, amla, reetha, neem and rosemary in Zuaja PK shampoos, herbal hair oils, face wash, soaps and perfumes. Extra 11% off everything until 15 November, applied at checkout.",
+        "text_5": "Shop the 11.11 Sale",
+        "text_12": "daily care",
+        "show_scenery": true,
+        "scene_accent": "#c4932f",
+        "scene_disc": "#e5c271",
+        "scene_note": "Order on WhatsApp: 0316 1121130"
+      },
+      "blocks": {
+        "product1": {"type": "product_1", "settings": {"product": "haldi-badam-shampoo-100ml", "scale": 100, "offset_y": 0, "rotation": -13, "offset_x": 0, "caption": "Cleanse"}},
+        "product2": {"type": "product_2", "settings": {"product": "amla-reetha-shampoo-200ml", "scale": 100, "offset_y": 0, "rotation": 7, "offset_x": 0, "caption": "Refresh"}},
+        "product3": {"type": "product_3", "settings": {"product": "rosemary-hair-scalp-oil-100ml", "scale": 100, "offset_y": 0, "rotation": 14, "offset_x": 0, "caption": "Nourish"}},
+        "mobile_product4": {"type": "mobile_product_4", "settings": {"product": "zuaja-pk-premium-white-oud-perfume-50-ml", "scale": 100, "offset_y": 0, "rotation": -6, "offset_x": 0, "caption": "Fragrance"}}
+      },
+      "block_order": ["product1", "product2", "product3", "mobile_product4"]
+    },
+    "module2": {
+      "type": "zuaja-2026-trust-strip",
+      "settings": {},
+      "blocks": {
+        "item1": {"type": "group1_item1", "settings": {"text_1": "✦", "text_2": "Delivery all over Pakistan"}},
+        "item2": {"type": "group1_item2", "settings": {"text_1": "✦", "text_2": "Extra 11% off till 15 Nov"}},
+        "item3": {"type": "group1_item3", "settings": {"text_1": "✦", "text_2": "WhatsApp help 10am–10pm"}},
+        "item4": {"type": "group1_item4", "settings": {"text_1": "✦", "text_2": "Damaged item? We'll sort it"}}
+      },
+      "block_order": ["item1", "item2", "item3", "item4"]
+    },
+    "module3": {
+      "type": "zuaja-2026-category-section",
+      "settings": {"all_categories_url": "/collections", "all_categories_label": "View all categories", "banner_eyebrow": "Shop"},
+      "blocks": {
+        "item1": {"type": "group1_item1", "settings": {"url_1": "/collections/shampoos", "text_2": "Shop Shampoos", "image_picker_3": "shopify://shop_images/zuaja-category-shampoos-wide-v1.png", "text_4": "Zuaja PK shampoos category banner with the featured subject on the right"}},
+        "item2": {"type": "group1_item2", "settings": {"url_1": "/collections/hair-oils", "text_2": "Shop Hair Oils", "image_picker_3": "shopify://shop_images/zuaja-category-hair-oils-wide-v2.png", "text_4": "Zuaja PK Rosemary Oil 100 ml in an ivory and gold category banner"}},
+        "item3": {"type": "group1_item3", "settings": {"url_1": "/collections/perfumes", "text_2": "Shop Perfumes", "image_picker_3": "shopify://shop_images/zuaja-category-perfumes-wide-v2.png", "text_4": "Zuaja PK White Oud and Premium Perfume 50 ml in an ivory and gold category banner"}},
+        "item4": {"type": "group1_item4", "settings": {"url_1": "/collections/bath-body", "text_2": "Shop Bath & Body", "image_picker_3": "shopify://shop_images/zuaja-category-bath-body-wide-v1.png", "text_4": "Zuaja PK bath body category banner with the featured subject on the right"}}
+      },
+      "block_order": ["item1", "item2", "item3", "item4"]
+    },
+    "module4": {
+      "type": "zuaja-2026-products-section",
+      "settings": {"text_1": "", "text_2": "11.11 PRICES ON EVERYTHING", "text_3": "Pick your Zuaja PK favourites", "text_5": "All", "text_6": "Shampoo", "text_7": "Hair Oil", "text_8": "Perfume", "text_9": "Bath & Body", "skin_filter": "Skin Care", "soap_filter": "Soaps"},
+      "blocks": {
+        "product1": {"type": "group1_item1", "settings": {"product": "haldi-badam-shampoo-100ml", "placeholder": "Haldi + Badam Shampoo, 100 ml", "badge": "Shampoo", "tone": "mint", "shape": "pump", "add_label": "Add to cart", "unavailable": "Coming soon"}},
+        "product2": {"type": "group1_item2", "settings": {"product": "amla-reetha-shampoo-200ml", "placeholder": "Amla Reetha Shampoo, 200 ml", "badge": "Shampoo", "tone": "rose", "shape": "pump", "add_label": "Add to cart", "unavailable": "Coming soon"}},
+        "product3": {"type": "group1_item3", "settings": {"product": "rosemary-hair-scalp-oil-100ml", "placeholder": "Rosemary Oil, 100 ml", "badge": "Hair Oil", "tone": "sky", "shape": "dropper", "add_label": "Add to cart", "unavailable": "Coming soon"}},
+        "active_face_wash": {"type": "group1_item1", "settings": {"product": "zuaja-pk-herbal-face-wash-haldi-80-ml", "placeholder": "Herbal Face Wash + Haldi, 80 ml", "badge": "Face Wash", "tone": "mint", "shape": "tube", "add_label": "Add to cart", "unavailable": "Coming soon"}},
+        "new_herbal_blend": {"type": "group1_item2", "settings": {"product": "7-herbal-oils-blend-100ml", "placeholder": "7 Herbal Oils Blend, 100 ml", "badge": "Hair Oil", "tone": "rose", "shape": "dropper", "add_label": "Add to cart", "unavailable": "Coming soon"}},
+        "new_zafarani": {"type": "group1_item3", "settings": {"product": "zafarani-cream", "placeholder": "Zafarani Cream", "badge": "Skin Care", "tone": "sky", "shape": "pump", "add_label": "Add to cart", "unavailable": "Coming soon"}},
+        "product4": {"type": "group1_item4", "settings": {"product": "neem-handwash-bodywash-100ml", "placeholder": "Neem Handwash + Bodywash, 100 ml", "badge": "Hand & Body Wash", "tone": "sand", "shape": "pump", "add_label": "Add to cart", "unavailable": "Coming soon"}},
+        "active_lavender": {"type": "group1_item2", "settings": {"product": "zuaja-pk-lavender-hand-body-wash-with-lavender-extract-100-ml", "placeholder": "Lavender Hand & Body Wash, 100 ml", "badge": "Hand & Body Wash", "tone": "mint", "shape": "pump", "add_label": "Add to cart", "unavailable": "Coming soon"}},
+        "new_rose_soap": {"type": "group1_item4", "settings": {"product": "rose-soap", "placeholder": "Rose Soap", "badge": "Soap", "tone": "sand", "shape": "pump", "add_label": "Add to cart", "unavailable": "Coming soon"}},
+        "new_neem_soap": {"type": "group1_item1", "settings": {"product": "neem-soap", "placeholder": "Neem Soap", "badge": "Soap", "tone": "mint", "shape": "pump", "add_label": "Add to cart", "unavailable": "Coming soon"}},
+        "new_gold_perfume": {"type": "group1_item3", "settings": {"product": "zuaja-pk-premium-perfume-50-ml", "placeholder": "Signature Perfume, 50 ml", "badge": "Perfume", "tone": "mint", "shape": "pump", "add_label": "Add to cart", "unavailable": "Coming soon"}},
+        "new_white_oud": {"type": "group1_item2", "settings": {"product": "zuaja-pk-premium-white-oud-perfume-50-ml", "placeholder": "White Oud Perfume, 50 ml", "badge": "Perfume", "tone": "mint", "shape": "pump", "add_label": "Add to cart", "unavailable": "Coming soon"}},
+        "product5": {"type": "group1_item1", "settings": {"product": "premium-perfume", "placeholder": "Unisex Perfume, 30 ml", "badge": "Perfume", "tone": "mint", "shape": "pump", "add_label": "Add to cart", "unavailable": "Coming soon"}},
+        "active_tester": {"type": "group1_item3", "settings": {"product": "zuaja-pk-premium-white-oud-perfume-tester", "placeholder": "White Oud Tester", "badge": "Try first · Tester", "tone": "mint", "shape": "pump", "add_label": "Add to cart", "unavailable": "Coming soon"}}
+      },
+      "block_order": ["product1", "product2", "product3", "active_face_wash", "new_herbal_blend", "new_zafarani", "product4", "active_lavender", "new_rose_soap", "new_neem_soap", "new_gold_perfume", "new_white_oud", "product5", "active_tester"]
+    },
+    "module5": {
+      "type": "zuaja-2026-arrivals-section",
+      "settings": {"image_picker_1": "shopify://shop_images/amla-reetha-shampoo-studio.png", "text_2": "Zuaja PK Amla Reetha Shampoo, 200 ml pump bottle with amla and reetha", "text_3": "NOT SURE WHICH SHAMPOO?", "text_4": "Oily scalp: Amla Reetha.", "text_5": "Dry hair: Haldi + Badam.", "text_6": "Shop shampoos"},
+      "blocks": {
+        "product1": {"type": "group1_item1", "settings": {"product": "haldi-badam-shampoo-100ml", "placeholder": "Haldi + Badam Shampoo, 100 ml", "badge": "Dry hair", "tone": "mint", "shape": "pump", "add_label": "Add to cart", "unavailable": "Coming soon"}},
+        "product2": {"type": "group1_item2", "settings": {"product": "amla-reetha-shampoo-200ml", "placeholder": "Amla Reetha Shampoo, 200 ml", "badge": "Oily scalp", "tone": "rose", "shape": "pump", "add_label": "Add to cart", "unavailable": "Coming soon"}}
+      },
+      "block_order": ["product1", "product2"]
+    },
+    "module11": {
+      "type": "zuaja-2026-brand-note",
+      "settings": {"textarea_2": "Zuaja PK makes everyday care with ingredients Pakistani homes already trust: haldi, badam, amla, reetha, neem and rosemary. Questions before you order? Message us on WhatsApp at 0316 1121130, 10am to 10pm, every day."}
+    }
+  },
+  "order": ["module1", "module2", "module3", "module4", "module5", "module11"]
+}
