@@ -1,0 +1,336 @@
+{% comment %}
+  Zuaja Redesign (zr) — one homepage section: hero, trust strip, categories,
+  best sellers (live products + Add to cart), shampoo guide, perfume band, WhatsApp band.
+  Add it in Online Store → Customize → Home page → Add section → "Zuaja · Redesign homepage".
+{% endcomment %}
+{%- liquid
+  assign wa = section.settings.whatsapp | remove: ' ' | remove: '+' | remove: '-'
+  assign best = collections[section.settings.best_collection]
+  assign p_amla = all_products['amla-reetha-shampoo-200ml']
+  assign p_haldi = all_products['haldi-badam-shampoo-100ml']
+  assign p_rosemary = all_products['rosemary-hair-scalp-oil-100ml']
+  assign p_oud = all_products['zuaja-pk-premium-white-oud-perfume-50-ml']
+  assign p_sig = all_products['zuaja-pk-premium-perfume-50-ml']
+  assign p_uni = all_products['premium-perfume']
+  assign p_test = all_products['zuaja-pk-premium-white-oud-perfume-tester']
+  assign p_zaf = all_products['zafarani-cream']
+-%}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+.zr{--ink:#1A1A17;--ivory:#FAF6EE;--sand:#EFE4CF;--line:#E7DCC7;--gold:#8A6116;--gold-l:#E5C271;--muted:#5E5647;--accent:{{ section.settings.accent }};--herb:#2F4A3A;background:var(--ivory);color:var(--ink);font-family:'Manrope',system-ui,sans-serif}
+.zr *{box-sizing:border-box}
+.zr a{color:inherit}
+.zr-w{width:min(1240px,100% - 32px);margin-inline:auto}
+.zr h1,.zr h2,.zr h3{font-family:'Cinzel','Times New Roman',serif;font-weight:600;margin:0;letter-spacing:.01em}
+.zr-k{display:block;font-size:12px;font-weight:700;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}
+.zr-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+.zr-head h2{font-size:clamp(26px,3vw,36px);margin-top:6px}
+.zr-head a{font-weight:700;font-size:15px;text-underline-offset:4px}
+.zr-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-family:inherit;font-size:15px;transition:transform .2s ease,opacity .2s ease}
+.zr-btn:hover{transform:translateY(-2px)}
+.zr-btn--accent{background:var(--accent);color:#fff!important}
+.zr-btn--line{border:1.5px solid var(--ink);background:transparent}
+.zr-btn--ink{background:var(--ink);color:var(--ivory)!important}
+.zr-btn--gold{background:var(--gold-l);color:var(--ink)!important}
+.zr-btn--wa{background:#1F7A4D;color:#fff!important}
+/* hero */
+.zr-hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:48px;align-items:center;padding-block:56px 48px}
+.zr-hero__copy{display:flex;flex-direction:column;gap:22px;align-items:flex-start}
+.zr-pill{background:#F3E6C8;color:#6E4C10;font-size:12px;font-weight:800;letter-spacing:.16em;padding:8px 14px;border-radius:999px}
+.zr-hero h1{font-size:clamp(34px,5vw,66px);line-height:1.06}
+.zr-hero p{margin:0;font-size:18px;line-height:1.6;color:#4F483C;max-width:520px}
+.zr-row{display:flex;gap:12px;flex-wrap:wrap}
+.zr-stats{display:flex;gap:28px;flex-wrap:wrap;padding-top:8px}
+.zr-stats b{display:block;font-family:'Cinzel',serif;font-size:24px}
+.zr-stats span{font-size:13px;color:var(--muted)}
+.zr-stage{position:relative;height:540px;border-radius:280px 280px 28px 28px;background:var(--sand);overflow:hidden}
+.zr-stage::after{content:"";position:absolute;left:8%;right:8%;bottom:60px;height:70px;border-radius:50%;background:#E2D3B6}
+.zr-stage img{position:absolute;bottom:80px;width:auto;z-index:1;filter:drop-shadow(0 18px 18px rgba(26,26,23,.18))}
+.zr-stage .s1{left:8%;height:56%}.zr-stage .s2{left:29%;height:70%}.zr-stage .s3{left:50%;height:46%}.zr-stage .s4{right:6%;height:28%}
+.zr-badge{position:absolute;top:40px;right:40px;z-index:2;width:96px;height:96px;border-radius:50%;background:var(--ink);color:var(--gold-l);display:grid;place-content:center;text-align:center;font-family:'Cinzel',serif;font-weight:700;font-size:22px;line-height:1}
+.zr-badge small{font-family:'Manrope',sans-serif;font-size:11px;letter-spacing:.12em}
+/* trust */
+.zr-trust{background:#fff;border-block:1px solid var(--line)}
+.zr-trust ul{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;list-style:none;margin:0;padding:22px 0}
+.zr-trust li{display:flex;gap:12px;align-items:center}
+.zr-trust svg{flex:none;width:28px;height:28px;fill:none;stroke:var(--gold);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.zr-trust b{display:block;font-size:15px}.zr-trust span{font-size:13px;color:var(--muted)}
+/* categories */
+.zr-sec{padding-block:clamp(36px,6vw,64px)}
+.zr-cats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.zr-cat{display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px 12px 18px;transition:transform .3s ease,box-shadow .3s ease}
+.zr-cat:hover,.zr-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(26,26,23,.35)}
+.zr-cat__img{width:100%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;overflow:hidden}
+.zr-cat__img img{height:78%;width:auto;object-fit:contain}
+.zr-cat b{font-size:15px}
+/* products */
+.zr-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.zr-card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s ease,box-shadow .3s ease}
+.zr-card__img{position:relative;display:grid;place-items:center;aspect-ratio:1/1;background:#F6EEDC}
+.zr-card__img img{width:82%;height:82%;object-fit:contain;transition:transform .5s ease}
+.zr-card:hover .zr-card__img img{transform:scale(1.05)}
+.zr-tag{position:absolute;top:14px;left:14px;background:var(--accent);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;padding:5px 10px;border-radius:999px}
+.zr-card__body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex-grow:1}
+.zr-card__type{font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--gold);text-transform:uppercase}
+.zr-card h3{font-family:'Manrope',sans-serif;font-size:16px;font-weight:700;line-height:1.35}
+.zr-card h3 a{text-decoration:none}
+.zr-card__foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:10px}
+.zr-price{font-size:18px;font-weight:800}
+.zr-price s{font-size:13px;font-weight:500;color:var(--muted);margin-left:6px}
+.zr-card form{margin:0}
+.zr-card .zr-btn{min-height:44px;padding:0 18px;font-size:14px}
+/* guide */
+.zr-guide{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.zr-gcard{display:flex;gap:24px;align-items:center;border-radius:24px;padding:32px;overflow:hidden}
+.zr-gcard img{height:220px;width:auto;flex:none}
+.zr-gcard div{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.zr-gcard h3{font-size:26px}.zr-gcard p{margin:0;font-size:15px;line-height:1.6}
+.zr-gcard .zr-btn{min-height:44px;padding:0 20px;margin-top:6px}
+.zr-gcard--herb{background:var(--herb);color:#F4EFE3}.zr-gcard--herb .zr-k{color:#CFE0C9}.zr-gcard--herb p{color:#DCE6D8}
+.zr-gcard--herb .zr-btn{background:#F4EFE3;color:var(--herb)!important}
+.zr-gcard--sand{background:#F3E6C8}.zr-gcard--sand .zr-k{color:#6E4C10}.zr-gcard--sand p{color:#4F483C}
+/* perfume */
+.zr-perf{background:var(--ink);color:#F4EFE3}
+.zr-perf__in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:48px;align-items:center;padding-block:72px}
+.zr-perf__stage{position:relative;height:420px;border-radius:28px;background:#26241F;overflow:hidden}
+.zr-perf__stage::after{content:"";position:absolute;left:12%;right:12%;bottom:50px;height:56px;border-radius:50%;background:#34312A}
+.zr-perf__stage img{position:absolute;bottom:72px;width:auto;z-index:1;height:68%}
+.zr-perf__stage .a{left:14%}.zr-perf__stage .b{right:14%;height:72%}
+.zr-perf__copy{display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.zr-perf h2{font-size:clamp(30px,4vw,44px);line-height:1.1}
+.zr-perf p{margin:0;font-size:17px;line-height:1.6;color:#CFC6B4;max-width:480px}
+.zr-perf .zr-k{color:var(--gold-l)}
+.zr-plist{list-style:none;margin:0;padding:0;width:100%;max-width:460px}
+.zr-plist li{border-bottom:1px solid #3A372F}.zr-plist li:last-child{border:0}
+.zr-plist a{display:flex;justify-content:space-between;padding:12px 0;text-decoration:none}
+.zr-plist b{color:var(--gold-l)}
+/* whatsapp */
+.zr-wa{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:28px;padding:40px 44px}
+.zr-wa h2{font-size:32px}.zr-wa p{margin:8px 0 0;font-size:16px;line-height:1.6;color:#4F483C;max-width:620px}
+@media (max-width:900px){
+  .zr-hero,.zr-perf__in,.zr-guide{grid-template-columns:1fr}
+  .zr-hero{gap:24px;padding-block:24px 32px}
+  .zr-hero__media{order:-1}
+  .zr-stage{height:340px;border-radius:170px 170px 22px 22px}
+  .zr-stage::after{bottom:36px;height:44px}.zr-stage img{bottom:50px}
+  .zr-badge{top:24px;right:24px;width:70px;height:70px;font-size:17px}
+  .zr-hero .zr-row{width:100%;flex-direction:column}.zr-hero .zr-btn{width:100%}
+  .zr-trust ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding:18px 0}
+  .zr-trust span{display:none}.zr-trust b{font-size:13px}
+  .zr-cats{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+  .zr-cat{background:none;border:0;padding:0}.zr-cat__img{border:1px solid var(--line)}.zr-cat b{font-size:13px}
+  .zr-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .zr-card__body{padding:10px 12px 12px}.zr-card__type,.zr-card__note{display:none}.zr-card h3{font-size:13px}
+  .zr-card__foot{flex-direction:column;align-items:stretch}.zr-price{font-size:15px}
+  .zr-tag{top:8px;left:8px;font-size:10px}
+  .zr-gcard{padding:18px;gap:14px}.zr-gcard img{height:150px}.zr-gcard h3{font-size:20px}.zr-gcard p{font-size:13px}
+  .zr-perf__in{padding-block:36px;gap:20px}.zr-perf__stage{height:260px}
+  .zr-wa{padding:24px}.zr-wa h2{font-size:24px}.zr-wa .zr-btn{width:100%}
+}
+@media (prefers-reduced-motion:reduce){.zr *{transition:none!important}}
+</style>
+
+<div class="zr">
+  {%- comment -%} HERO {%- endcomment -%}
+  <section class="zr-w zr-hero">
+    <div class="zr-hero__copy">
+      {%- if section.settings.pill != blank -%}<span class="zr-pill">{{ section.settings.pill }}</span>{%- endif -%}
+      <h1>{{ section.settings.title }}</h1>
+      <p>{{ section.settings.text }}</p>
+      <div class="zr-row">
+        <a class="zr-btn zr-btn--accent" href="{{ section.settings.cta_link | default: '/collections/all' }}">{{ section.settings.cta_label }}</a>
+        <a class="zr-btn zr-btn--line" href="https://wa.me/{{ wa }}">Order on WhatsApp</a>
+      </div>
+      <div class="zr-stats">
+        <div><b>{{ collections.all.products_count }}</b><span>herbal products</span></div>
+        <div><b>10am–10pm</b><span>WhatsApp help</span></div>
+        <div><b>All Pakistan</b><span>home delivery</span></div>
+      </div>
+    </div>
+    <div class="zr-hero__media">
+      <div class="zr-stage">
+        {%- if section.settings.badge != blank -%}<div class="zr-badge">{{ section.settings.badge }}<small>OFF</small></div>{%- endif -%}
+        {%- assign s1 = section.settings.hero_1 | default: p_rosemary.featured_image -%}
+        {%- assign s2 = section.settings.hero_2 | default: p_amla.featured_image -%}
+        {%- assign s3 = section.settings.hero_3 | default: p_oud.featured_image -%}
+        {%- assign s4 = section.settings.hero_4 | default: p_zaf.featured_image -%}
+        {%- if s1 -%}{{ s1 | image_url: width: 600 | image_tag: class: 's1', alt: '', loading: 'eager' }}{%- endif -%}
+        {%- if s2 -%}{{ s2 | image_url: width: 700 | image_tag: class: 's2', alt: '', loading: 'eager', fetchpriority: 'high' }}{%- endif -%}
+        {%- if s3 -%}{{ s3 | image_url: width: 600 | image_tag: class: 's3', alt: '', loading: 'eager' }}{%- endif -%}
+        {%- if s4 -%}{{ s4 | image_url: width: 500 | image_tag: class: 's4', alt: '', loading: 'eager' }}{%- endif -%}
+      </div>
+    </div>
+  </section>
+
+  {%- comment -%} TRUST {%- endcomment -%}
+  <section class="zr-trust">
+    <ul class="zr-w">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.6"/><circle cx="17" cy="17.5" r="1.6"/></svg><div><b>All-Pakistan delivery</b><span>To every city</span></div></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12l-8 8-8-8V4h8z"/><circle cx="8" cy="8" r="1.4"/></svg><div><b>{{ section.settings.trust_offer }}</b><span>Applied at checkout</span></div></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg><div><b>WhatsApp help</b><span>10am – 10pm daily</span></div></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><div><b>Damaged item support</b><span>We make it right</span></div></li>
+    </ul>
+  </section>
+
+  {%- comment -%} CATEGORIES (blocks) {%- endcomment -%}
+  {%- if section.blocks.size > 0 -%}
+  <section class="zr-w zr-sec">
+    <div class="zr-head">
+      <div><span class="zr-k">Shop by category</span><h2>What does your routine need?</h2></div>
+      <a href="/collections/all">All products</a>
+    </div>
+    <div class="zr-cats">
+      {%- for block in section.blocks -%}
+        {%- assign c = collections[block.settings.collection] -%}
+        <a class="zr-cat" href="{{ c.url | default: '/collections/all' }}" {{ block.shopify_attributes }}>
+          <div class="zr-cat__img" style="background:{{ block.settings.bg }}">
+            {%- assign cimg = block.settings.image | default: c.products.first.featured_image -%}
+            {%- if cimg -%}{{ cimg | image_url: width: 300 | image_tag: alt: '', loading: 'lazy' }}{%- endif -%}
+          </div>
+          <b>{{ block.settings.label | default: c.title }}</b>
+        </a>
+      {%- endfor -%}
+    </div>
+  </section>
+  {%- endif -%}
+
+  {%- comment -%} BEST SELLERS {%- endcomment -%}
+  <section class="zr-w zr-sec" style="padding-top:0">
+    <div class="zr-head">
+      <div><span class="zr-k">Best sellers</span><h2>Loved across Pakistan</h2></div>
+      <a href="{{ best.url | default: '/collections/all' }}">View all</a>
+    </div>
+    <div class="zr-grid">
+      {%- assign list = best.products | default: collections.all.products -%}
+      {%- for product in list limit: section.settings.best_count -%}
+        <article class="zr-card">
+          <a class="zr-card__img" href="{{ product.url }}" aria-label="{{ product.title | escape }}">
+            {%- if section.settings.tag != blank -%}<span class="zr-tag">{{ section.settings.tag }}</span>{%- endif -%}
+            {%- if product.featured_image -%}{{ product.featured_image | image_url: width: 600 | image_tag: alt: product.title, loading: 'lazy', widths: '300,450,600', sizes: '(max-width: 900px) 50vw, 25vw' }}{%- endif -%}
+          </a>
+          <div class="zr-card__body">
+            <span class="zr-card__type">{{ product.type }}</span>
+            <h3><a href="{{ product.url }}">{{ product.title }}</a></h3>
+            <div class="zr-card__foot">
+              <span class="zr-price">{{ product.price | money_without_trailing_zeros }}{%- if product.compare_at_price > product.price -%}<s>{{ product.compare_at_price | money_without_trailing_zeros }}</s>{%- endif -%}</span>
+              {%- if product.available -%}
+                {%- form 'product', product -%}
+                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                  <button type="submit" class="zr-btn zr-btn--ink">Add to cart</button>
+                {%- endform -%}
+              {%- else -%}
+                <span class="zr-btn zr-btn--line" style="min-height:44px;font-size:14px">Sold out</span>
+              {%- endif -%}
+            </div>
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+  </section>
+
+  {%- comment -%} SHAMPOO GUIDE {%- endcomment -%}
+  {%- if p_amla and p_haldi -%}
+  <section class="zr-w zr-sec" style="padding-top:0">
+    <div class="zr-head" style="justify-content:center;text-align:center">
+      <div><span class="zr-k">Shampoo guide</span><h2>Which shampoo is right for you?</h2></div>
+    </div>
+    <div class="zr-guide">
+      <div class="zr-gcard zr-gcard--herb">
+        {{ p_amla.featured_image | image_url: width: 400 | image_tag: alt: p_amla.title, loading: 'lazy' }}
+        <div><span class="zr-k">Oily scalp · you oil your hair</span><h3>Amla Reetha</h3><p>Reetha is the soapnut our grandmothers soaked to wash hair. Washes oil out cleanly.</p><a class="zr-btn" href="{{ p_amla.url }}">Shop · {{ p_amla.price | money_without_trailing_zeros }}</a></div>
+      </div>
+      <div class="zr-gcard zr-gcard--sand">
+        {{ p_haldi.featured_image | image_url: width: 400 | image_tag: alt: p_haldi.title, loading: 'lazy' }}
+        <div><span class="zr-k">Dry or rough hair</span><h3>Haldi + Badam</h3><p>A daily shampoo with haldi and badam, part of desi hair care for generations.</p><a class="zr-btn zr-btn--ink" href="{{ p_haldi.url }}">Shop · {{ p_haldi.price | money_without_trailing_zeros }}</a></div>
+      </div>
+    </div>
+  </section>
+  {%- endif -%}
+
+  {%- comment -%} PERFUMES {%- endcomment -%}
+  <section class="zr-perf">
+    <div class="zr-w zr-perf__in">
+      <div class="zr-perf__stage">
+        {%- if p_sig -%}{{ p_sig.featured_image | image_url: width: 500 | image_tag: class: 'a', alt: p_sig.title, loading: 'lazy' }}{%- endif -%}
+        {%- if p_oud -%}{{ p_oud.featured_image | image_url: width: 500 | image_tag: class: 'b', alt: p_oud.title, loading: 'lazy' }}{%- endif -%}
+      </div>
+      <div class="zr-perf__copy">
+        <span class="zr-k">Zuaja perfumes</span>
+        <h2>A fragrance worth gifting</h2>
+        <p>White Oud in dark glass, our Signature in a crystal-style bottle, and a Unisex everyday spray. Not sure? Try White Oud with the tester first.</p>
+        <ul class="zr-plist">
+          {%- for pp in (1..4) -%}
+            {%- case pp -%}{%- when 1 -%}{%- assign q = p_oud -%}{%- when 2 -%}{%- assign q = p_sig -%}{%- when 3 -%}{%- assign q = p_uni -%}{%- else -%}{%- assign q = p_test -%}{%- endcase -%}
+            {%- if q -%}<li><a href="{{ q.url }}"><span>{{ q.title }}</span><b>{{ q.price | money_without_trailing_zeros }}</b></a></li>{%- endif -%}
+          {%- endfor -%}
+        </ul>
+        <a class="zr-btn zr-btn--gold" href="{{ section.settings.perfume_link | default: '/collections/perfumes' }}">Shop perfumes</a>
+      </div>
+    </div>
+  </section>
+
+  {%- comment -%} WHATSAPP {%- endcomment -%}
+  <section class="zr-w zr-sec">
+    <div class="zr-wa">
+      <div><h2>Order directly on WhatsApp</h2><p>Send us the product name and your address. We reply between 10am and 10pm, and help you choose if you are not sure.</p></div>
+      <a class="zr-btn zr-btn--wa" href="https://wa.me/{{ wa }}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>{{ section.settings.whatsapp_label }}</a>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Zuaja · Redesign homepage",
+  "tag": "section",
+  "settings": [
+    { "type": "header", "content": "Hero" },
+    { "type": "text", "id": "pill", "label": "Small label", "default": "11.11 SALE · EXTRA 11% OFF" },
+    { "type": "text", "id": "title", "label": "Heading", "default": "Desi care for hair, skin & body" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Amla, reetha, haldi, neem and rosemary — ingredients our grandmothers trusted, in bottles made for today. Made in Pakistan, delivered to your door." },
+    { "type": "text", "id": "cta_label", "label": "Button label", "default": "Shop the 11.11 Sale" },
+    { "type": "url", "id": "cta_link", "label": "Button link" },
+    { "type": "text", "id": "badge", "label": "Round badge (empty = hide)", "default": "11%" },
+    { "type": "image_picker", "id": "hero_1", "label": "Hero product 1 (transparent PNG best)" },
+    { "type": "image_picker", "id": "hero_2", "label": "Hero product 2 (tallest, centre)" },
+    { "type": "image_picker", "id": "hero_3", "label": "Hero product 3" },
+    { "type": "image_picker", "id": "hero_4", "label": "Hero product 4 (small)" },
+    { "type": "color", "id": "accent", "label": "Sale accent colour", "default": "#9B2B1F" },
+    { "type": "header", "content": "Offer & contact" },
+    { "type": "text", "id": "trust_offer", "label": "Offer in trust strip", "default": "11% off till 15 Nov" },
+    { "type": "text", "id": "tag", "label": "Tag on product photos (empty = hide)", "default": "11.11 · −11%" },
+    { "type": "text", "id": "whatsapp", "label": "WhatsApp number (with 92)", "default": "923161121130" },
+    { "type": "text", "id": "whatsapp_label", "label": "WhatsApp button text", "default": "0316 1121130" },
+    { "type": "header", "content": "Products" },
+    { "type": "collection", "id": "best_collection", "label": "Best sellers collection" },
+    { "type": "range", "id": "best_count", "label": "Products to show", "min": 4, "max": 12, "step": 2, "default": 8 },
+    { "type": "url", "id": "perfume_link", "label": "Perfumes link" }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "limit": 8,
+      "settings": [
+        { "type": "collection", "id": "collection", "label": "Collection" },
+        { "type": "text", "id": "label", "label": "Label" },
+        { "type": "image_picker", "id": "image", "label": "Image (optional — uses first product)" },
+        { "type": "color", "id": "bg", "label": "Circle colour", "default": "#F3E6C8" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Zuaja · Redesign homepage",
+      "blocks": [
+        { "type": "category", "settings": { "label": "Shampoos", "bg": "#F3E6C8" } },
+        { "type": "category", "settings": { "label": "Hair Oils", "bg": "#E4EBDD" } },
+        { "type": "category", "settings": { "label": "Skin Care", "bg": "#F6E2CF" } },
+        { "type": "category", "settings": { "label": "Bath & Body", "bg": "#EDE3F0" } },
+        { "type": "category", "settings": { "label": "Soaps", "bg": "#F5E1E1" } },
+        { "type": "category", "settings": { "label": "Perfumes", "bg": "#E8E4DC" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
