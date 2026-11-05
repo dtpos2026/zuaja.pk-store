@@ -111,7 +111,7 @@ def retouch(p, gloss=True):
     arr = x * 255
     rgb = Image.fromarray(arr.astype(np.uint8))
     clar = rgb.filter(ImageFilter.UnsharpMask(radius=24, percent=35, threshold=0))
-    rgb = clar.filter(ImageFilter.UnsharpMask(radius=1.6, percent=110, threshold=2))
+    rgb = clar.filter(ImageFilter.UnsharpMask(radius=1.6, percent=(40 if os.environ.get("ZUAJA_SR") else 110), threshold=2))
     rgb = ImageEnhance.Color(rgb).enhance(1.16)
     out = rgb.convert("RGBA")
     if gloss:

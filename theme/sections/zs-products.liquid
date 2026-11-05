@@ -1,0 +1,22 @@
+{% comment %}
+  Section contract.
+  Product grid from one collection (best sellers or a category row).
+{% endcomment %}
+{{ 'zs.css' | asset_url | stylesheet_tag }}
+{%- assign col = section.settings.collection -%}
+<section class="zs zs-section" {% if section.settings.soft %}style="background:var(--zs-soft)"{% endif %}>
+  <div class="zs-wrap">
+    <div class="zs-head">
+      <div><span class="zs-kicker">{{ section.settings.kicker | escape }}</span><h2>{{ section.settings.title | default: col.title | escape }}</h2>{% if section.settings.subtitle != blank %}<p>{{ section.settings.subtitle | escape }}</p>{% endif %}</div>
+      {%- if col != blank -%}<a href="{{ col.url }}">View all</a>{%- endif -%}
+    </div>
+    <div class="zs-grid">
+      {%- for p in col.products limit: section.settings.limit -%}
+        {% render 'zs-card', product: p, form_key: section.id %}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{"name":"ZS · Product grid","settings":[{"type":"text","id":"kicker","label":"Kicker","default":"Zuaja PK"},{"type":"text","id":"title","label":"Title"},{"type":"text","id":"subtitle","label":"Subtitle"},{"type":"collection","id":"collection","label":"Collection"},{"type":"range","id":"limit","label":"Products","min":2,"max":16,"step":1,"default":8},{"type":"checkbox","id":"soft","label":"Soft background","default":false}],"presets":[{"name":"ZS · Product grid"}]}
+{% endschema %}

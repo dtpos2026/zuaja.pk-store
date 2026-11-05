@@ -1,0 +1,43 @@
+{% comment %}
+  Section contract.
+  Collection page: banner with title, category chips, sort and a clean product grid with pagination.
+{% endcomment %}
+{{ 'zs.css' | asset_url | stylesheet_tag }}
+{%- assign banner = section.settings.banner | default: collection.image -%}
+<section class="zs zs-section">
+  <div class="zs-wrap">
+    <div class="zs-col-hero">
+      {%- if banner != blank -%}{{ banner | image_url: width: 1800 | image_tag: widths: '750, 1200, 1800', sizes: '(max-width: 1240px) 100vw, 1240px', loading: 'eager', alt: '' }}{%- endif -%}
+      <div class="zs-col-hero__copy">
+        <span class="zs-kicker">Zuaja PK</span>
+        <h1>{{ collection.title | escape }}</h1>
+        {%- if collection.description != blank -%}<p>{{ collection.description | strip_html | truncate: 120 }}</p>{%- endif -%}
+      </div>
+    </div>
+    <nav class="zs-chips" aria-label="Categories" style="margin-top:18px">
+      {%- for link in section.settings.chips.links -%}<a href="{{ link.url }}" {% if link.url == collection.url %}aria-current="page"{% endif %}>{{ link.title | escape }}</a>{%- endfor -%}
+    </nav>
+    {%- paginate collection.products by 24 -%}
+      <div class="zs-toolbar">
+        <span>{{ collection.products_count }} products</span>
+        <label>Sort
+          <select onchange="var u=new URL(location.href);u.searchParams.set('sort_by',this.value);location.href=u.toString()">
+            {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
+            {%- for option in collection.sort_options -%}<option value="{{ option.value }}" {% if option.value == sort_by %}selected{% endif %}>{{ option.name }}</option>{%- endfor -%}
+          </select>
+        </label>
+      </div>
+      <div class="zs-grid">
+        {%- for p in collection.products -%}{% render 'zs-card', product: p, form_key: section.id %}{%- else -%}<p>No products yet.</p>{%- endfor -%}
+      </div>
+      {%- if paginate.pages > 1 -%}
+        <nav class="zs-pagination" aria-label="Pages">
+          {%- for part in paginate.parts -%}{%- if part.is_link -%}<a href="{{ part.url }}">{{ part.title }}</a>{%- elsif part.title == paginate.current_page -%}<span class="current" aria-current="page">{{ part.title }}</span>{%- else -%}<span>{{ part.title }}</span>{%- endif -%}{%- endfor -%}
+        </nav>
+      {%- endif -%}
+    {%- endpaginate -%}
+  </div>
+</section>
+{% schema %}
+{"name":"ZS · Collection page","settings":[{"type":"image_picker","id":"banner","label":"Banner (3:1)"},{"type":"link_list","id":"chips","label":"Category chips menu"}]}
+{% endschema %}

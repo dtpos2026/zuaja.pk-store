@@ -1,0 +1,24 @@
+{% comment %}
+  Section contract.
+  "Shop by category" round tiles; each block links to a collection.
+{% endcomment %}
+{{ 'zs.css' | asset_url | stylesheet_tag }}
+<section class="zs zs-section">
+  <div class="zs-wrap">
+    <div class="zs-head"><div><span class="zs-kicker">{{ section.settings.kicker | escape }}</span><h2>{{ section.settings.title | escape }}</h2></div><a href="/collections">View all</a></div>
+    <div class="zs-cats">
+      {%- for block in section.blocks -%}
+        {%- assign col = block.settings.collection -%}
+        <a class="zs-cat" href="{{ col.url | default: '/collections' }}" {{ block.shopify_attributes }}>
+          {%- if block.settings.image != blank -%}{{ block.settings.image | image_url: width: 400 | image_tag: widths: '200, 300, 400', sizes: '(max-width: 900px) 30vw, 170px', loading: 'lazy', alt: '' }}{%- endif -%}
+          <span>{{ block.settings.label | default: col.title | escape }}</span>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{"name":"ZS · Shop by category","settings":[{"type":"text","id":"kicker","label":"Kicker","default":"Zuaja PK"},{"type":"text","id":"title","label":"Title","default":"Shop by Category"}],
+"blocks":[{"type":"category","name":"Category","settings":[{"type":"collection","id":"collection","label":"Collection"},{"type":"image_picker","id":"image","label":"Round image"},{"type":"text","id":"label","label":"Label"}]}],
+"presets":[{"name":"ZS · Shop by category"}]}
+{% endschema %}
