@@ -1,0 +1,104 @@
+{% doc %}
+11.11 Sale campaign layer: product-card and product-page sale tags, a once-per-session
+welcome popup, and a countdown strip above the footer. Renders nothing after the sale ends.
+@param {string} position - 'top' (styles, popup, product price note) or 'bottom' (strip above footer)
+{% enddoc %}
+{%- liquid
+  assign sale_end = 1794769199
+  assign now_ts = 'now' | date: '%s' | plus: 0
+  assign sale_url = '/collections/11-11-sale'
+-%}
+{%- if now_ts <= sale_end -%}
+{%- if position == 'top' -%}
+<style>
+  .zuaja-2026 .product-card__visual,.zuaja-2026 .mini-product-card__visual,.zuaja-2026 .product-gallery__stage{position:relative}
+  .zuaja-2026 .product-card__visual::after,.zuaja-2026 .mini-product-card__visual::after,.zuaja-2026 .product-gallery__stage::after{content:"11.11 SALE \00B7 11% OFF";position:absolute;inset-block-end:10px;inset-inline-start:10px;z-index:3;padding:5px 10px;border-radius:999px;background:linear-gradient(135deg,#171717,#3a2a0c);color:#f3d58a;font:700 11px/1.2 var(--font-body, Montserrat, sans-serif);letter-spacing:.06em;box-shadow:0 0 0 1px #c4932f inset,0 4px 12px rgb(0 0 0 / .18);pointer-events:none;animation:zuajaTagPulse 2.4s ease-in-out infinite}
+  .zuaja-2026 .mini-product-card__visual::after{content:"11.11";font-size:10px;padding:4px 8px}
+  @keyframes zuajaTagPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+  .zuaja-1111-price{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:6px 0 14px;padding:10px 14px;border-radius:12px;background:#fbf4e4;border:1px dashed #c4932f;color:#171717;font-size:14px}
+  .zuaja-1111-price b{font-size:18px}
+  .zuaja-1111-price small{flex-basis:100%;color:#5b4a21}
+  .zuaja-1111-pop{border:0;padding:0;max-width:min(440px,calc(100vw - 32px));width:100%;border-radius:20px;background:#171717;color:#fff;text-align:center;overflow:hidden;box-shadow:0 24px 60px rgb(0 0 0 / .45)}
+  .zuaja-1111-pop::backdrop{background:rgb(10 10 10 / .62);backdrop-filter:blur(3px)}
+  .zuaja-1111-pop[open]{animation:zuajaPopIn .5s cubic-bezier(.2,.9,.3,1.2)}
+  @keyframes zuajaPopIn{from{opacity:0;transform:translateY(24px) scale(.92)}to{opacity:1;transform:none}}
+  .zuaja-1111-pop__inner{position:relative;padding:28px 24px 24px;background:radial-gradient(circle at 50% -20%,#5a4313 0,#171717 62%)}
+  .zuaja-1111-pop__logo{display:block;width:150px;height:auto;margin:0 auto 10px;padding:10px 14px;border-radius:12px;background:#fbf4e4}
+  .zuaja-1111-pop__eyebrow{margin:0;color:#e5c271;font-size:12px;font-weight:600;letter-spacing:.24em}
+  .zuaja-1111-pop__title{margin:4px 0 0;font-size:64px;line-height:1;font-weight:800;letter-spacing:.02em;background:linear-gradient(90deg,#c4932f,#f6e3a8,#c4932f);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:zuajaShine 3s linear infinite}
+  @keyframes zuajaShine{to{background-position:-200% 0}}
+  .zuaja-1111-pop__sub{margin:2px 0 14px;font-size:20px;font-weight:700;letter-spacing:.12em}
+  .zuaja-1111-pop__offer{margin:0 0 6px;font-size:16px}
+  .zuaja-1111-pop__offer b{color:#f3d58a}
+  .zuaja-1111-timer{display:flex;justify-content:center;gap:8px;margin:14px 0 18px}
+  .zuaja-1111-timer span{min-width:56px;padding:8px 4px;border-radius:10px;background:rgb(255 255 255 / .08);border:1px solid rgb(229 194 113 / .4);font-size:20px;font-weight:700}
+  .zuaja-1111-timer small{display:block;font-size:10px;font-weight:500;letter-spacing:.08em;color:#e5c271}
+  .zuaja-1111-pop__cta{display:inline-block;padding:14px 28px;border-radius:999px;background:#e5c271;color:#171717;font-weight:700;text-decoration:none;letter-spacing:.04em}
+  .zuaja-1111-pop__cta:focus-visible,.zuaja-1111-pop__close:focus-visible{outline:2px solid #fff;outline-offset:3px}
+  .zuaja-1111-pop__close{position:absolute;inset-block-start:10px;inset-inline-end:10px;width:36px;height:36px;border:0;border-radius:50%;background:rgb(255 255 255 / .12);color:#fff;font-size:20px;line-height:1;cursor:pointer}
+  .zuaja-1111-pop__note{margin:12px 0 0;font-size:12px;color:rgb(255 255 255 / .7)}
+  .zuaja-1111-strip{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px 20px;padding:18px 16px;background:linear-gradient(90deg,#171717,#3a2a0c,#171717);color:#fff;text-align:center}
+  .zuaja-1111-strip strong{color:#f3d58a;font-size:20px;letter-spacing:.08em}
+  .zuaja-1111-strip .zuaja-1111-timer{margin:0}
+  .zuaja-1111-strip .zuaja-1111-timer span{min-width:48px;font-size:16px}
+  .zuaja-1111-strip a{padding:10px 20px;border-radius:999px;background:#e5c271;color:#171717;font-weight:700;text-decoration:none}
+  @media (prefers-reduced-motion:reduce){.zuaja-2026 .product-card__visual::after,.zuaja-2026 .mini-product-card__visual::after,.zuaja-1111-pop[open],.zuaja-1111-pop__title{animation:none}}
+</style>
+<dialog class="zuaja-1111-pop" id="Zuaja1111Pop" aria-labelledby="Zuaja1111PopTitle">
+  <div class="zuaja-1111-pop__inner">
+    <button type="button" class="zuaja-1111-pop__close" data-zuaja-1111-close aria-label="Close">&times;</button>
+    <img class="zuaja-1111-pop__logo" src="{{ 'zuaja-pk-logo-complete-4k.webp' | asset_url }}" width="3840" height="960" alt="{{ shop.name | escape }}" loading="lazy">
+    <p class="zuaja-1111-pop__eyebrow">MEGA SALE</p>
+    <p class="zuaja-1111-pop__title" id="Zuaja1111PopTitle">11.11</p>
+    <p class="zuaja-1111-pop__sub">SALE IS LIVE</p>
+    <p class="zuaja-1111-pop__offer">Extra <b>11% OFF</b> on every product</p>
+    <p class="zuaja-1111-pop__offer">Applied automatically at checkout</p>
+    <div class="zuaja-1111-timer" data-zuaja-1111-timer aria-label="Time left in the 11.11 sale"><span data-d>0<small>DAYS</small></span><span data-h>0<small>HRS</small></span><span data-m>0<small>MIN</small></span><span data-s>0<small>SEC</small></span></div>
+    <a class="zuaja-1111-pop__cta" href="{{ sale_url }}" data-zuaja-1111-close>SHOP THE SALE</a>
+    <p class="zuaja-1111-pop__note">Offer ends 15 November, 11:59 pm</p>
+  </div>
+</dialog>
+{%- if template.name == 'product' and product -%}
+  {%- assign v = product.selected_or_first_available_variant -%}
+  {%- assign sale_cents = v.price | times: 89 | divided_by: 100 -%}
+  <template id="Zuaja1111Price"><div class="zuaja-1111-price"><span>11.11 price:</span> <b>{{ sale_cents | money }}</b> <s>{{ v.price | money }}</s><small>Extra 11% off is applied automatically at checkout.</small></div></template>
+{%- endif -%}
+<script>
+(function () {
+  var END = {{ sale_end }} * 1000;
+  function pad(n) { return n < 10 ? '0' + n : String(n); }
+  function tick() {
+    var left = Math.max(0, END - Date.now());
+    var d = Math.floor(left / 864e5), h = Math.floor(left / 36e5) % 24, m = Math.floor(left / 6e4) % 60, s = Math.floor(left / 1e3) % 60;
+    document.querySelectorAll('[data-zuaja-1111-timer]').forEach(function (t) {
+      [['d', d], ['h', h], ['m', m], ['s', s]].forEach(function (p) {
+        var el = t.querySelector('[data-' + p[0] + ']');
+        if (el && el.firstChild) el.firstChild.nodeValue = pad(p[1]);
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function () {
+    tick(); setInterval(tick, 1000);
+    var tpl = document.getElementById('Zuaja1111Price');
+    var price = document.querySelector('.pdp-price');
+    if (tpl && price) price.insertAdjacentElement('afterend', tpl.content.firstElementChild.cloneNode(true));
+    var pop = document.getElementById('Zuaja1111Pop');
+    if (!pop || typeof pop.showModal !== 'function') return;
+    var seen = false;
+    try { seen = sessionStorage.getItem('zuaja1111') === '1'; } catch (e) {}
+    if (location.pathname.indexOf('/cart') === 0 || location.pathname.indexOf('/checkout') === 0) seen = true;
+    pop.querySelectorAll('[data-zuaja-1111-close]').forEach(function (b) { b.addEventListener('click', function () { pop.close(); }); });
+    pop.addEventListener('click', function (e) { if (e.target === pop) pop.close(); });
+    pop.addEventListener('close', function () { try { sessionStorage.setItem('zuaja1111', '1'); } catch (e) {} });
+    if (!seen) setTimeout(function () { pop.showModal(); }, 900);
+  });
+})();
+</script>
+{%- else -%}
+<aside class="zuaja-1111-strip" aria-label="11.11 Sale">
+  <strong>11.11 SALE</strong><span>Extra 11% OFF on everything &middot; ends 15 Nov</span>
+  <div class="zuaja-1111-timer" data-zuaja-1111-timer aria-hidden="true"><span data-d>0<small>DAYS</small></span><span data-h>0<small>HRS</small></span><span data-m>0<small>MIN</small></span><span data-s>0<small>SEC</small></span></div>
+  <a href="{{ sale_url }}">Shop now</a>
+</aside>
+{%- endif -%}
+{%- endif -%}

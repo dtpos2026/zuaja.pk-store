@@ -22,6 +22,16 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
 - Mobile menu: Facebook link added.
 - Floating "Order on WhatsApp" button on every page except the cart.
 
+## 11.11 Sale — 11% off (5 Nov – 15 Nov 2026)
+- Automatic discount "11.11 Sale — 11% off everything" is ACTIVE from 5 Nov until 15 Nov 2026, 11:59 pm PKT. It applies to all products and all customers at checkout, with no code needed. It does not combine with other product or order discounts.
+- The theme "Zuaja PK — 11.11 Sale & Facebook" was published by the owner.
+- New theme "Zuaja PK — 11.11 Popup, Tags & Logo" (needs Publish) adds `snippets/zuaja-2026-sale-1111.liquid` (copy in `theme/snippets/`):
+  - an animated 11.11 popup with a countdown, shown once per visit;
+  - a "11.11 SALE · 11% OFF" tag on every product card and product photo;
+  - an "11.11 price" box under the price on product pages;
+  - a countdown strip above the footer.
+  - All of it disappears automatically after 15 Nov.
+
 ## To do by the owner
 - Publish the theme: Shopify admin → Online Store → Themes → "Zuaja PK — 11.11 Sale & Facebook" → Publish.
 - Add official policies in Settings → Policies (this connection has no permission to write them). The Terms and Refund pages can be copied there.
