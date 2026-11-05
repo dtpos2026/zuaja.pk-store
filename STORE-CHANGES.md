@@ -80,6 +80,17 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
   - Menu bar changed to ink with cream text, and the brand note to ivory with gold borders. The royal blue (`--blue`) is overridden.
 - The studio images could not be re-processed onto a white background: cdn.shopify.com is blocked in this session. Transparent ones already sit on the white gallery background.
 
+## Real studio photos + watermark (live)
+- Front image of every product is now a studio-style packshot of the REAL product (label pixels untouched), retouched on white with a soft shadow and reflection (`tools/make_studio.py`, `brand/studio/`).
+  - Neem, Lavender and Rose use the client's renders with the black background removed.
+- Every packshot and original photo has a Zuaja logo watermark in the bottom-right corner (`tools/watermark.py`, `brand/studio-wm/`, `brand/product-images-wm/`). Banners and social posts already carry the logo.
+- The GPT-made images, whose labels showed a wrong logo, were detached from all products. They are still in Files.
+- Gallery order is now: studio packshot → brand banner → original photo → label or other angle → the owner's earlier photo (where one existed).
+- Rose Hand & Body Wash, 100 ml (Rs. 300) is now ACTIVE and published, with SEO.
+- Theme "FINAL v3 Rose + Real Photos (publish this)" = FINAL v2 plus:
+  - the real Amla Reetha photo in the homepage shampoo section;
+  - Rose Hand & Body Wash in the homepage product grid.
+
 ## To do by the owner
 - Publish the theme: Shopify admin → Online Store → Themes → "Zuaja PK — 11.11 Sale & Facebook" → Publish.
 - Add official policies in Settings → Policies (this connection has no permission to write them). The Terms and Refund pages can be copied there.
