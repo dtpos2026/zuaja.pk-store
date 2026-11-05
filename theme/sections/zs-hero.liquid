@@ -12,7 +12,16 @@
             <source media="(max-width: 749px)" srcset="{{ block.settings.image_mobile | image_url: width: 750 }} 750w, {{ block.settings.image_mobile | image_url: width: 1080 }} 1080w" sizes="100vw">
           {%- endif -%}
           {%- if block.settings.image_desktop != blank -%}
-            {{ block.settings.image_desktop | image_url: width: 1920 | image_tag: widths: '960, 1440, 1920', sizes: '100vw', alt: block.settings.alt, loading: forloop.first | json | replace: 'true', 'eager' | replace: 'false', 'lazy', fetchpriority: forloop.first | json | replace: 'true', 'high' | replace: 'false', 'auto' }}
+            {%- liquid
+              if forloop.first
+                assign img_loading = 'eager'
+                assign img_priority = 'high'
+              else
+                assign img_loading = 'lazy'
+                assign img_priority = 'auto'
+              endif
+            -%}
+            {{ block.settings.image_desktop | image_url: width: 1920 | image_tag: widths: '960, 1440, 1920', sizes: '100vw', alt: block.settings.alt, loading: img_loading, fetchpriority: img_priority }}
           {%- endif -%}
         </picture>
       </a>
