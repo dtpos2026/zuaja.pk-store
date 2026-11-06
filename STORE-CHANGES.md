@@ -108,3 +108,7 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
 ## Owner's studio renders as first image (live)
 - Rosemary Oil, Haldi + Badam Shampoo and Amla Reetha Shampoo now use the owner's studio renders as their first image. Each is centred on pure white (1600×1600) with a soft shadow and the corner logo watermark (`brand/hero-studio-white/`, about 110–185 KB).
 - The earlier HD first images were detached from these products but are still in Files.
+- The other 12 products now use the same style (live): the real product cut-out with a gentle retouch, on pure white at 1600×1600, with a soft shadow and the corner watermark (`tools/make_studio_white.py`, `brand/hero-studio-white/`, contact sheet `brand/hero-studio-white-sheet.jpg`).
+  - The labels are the real product pixels, not AI-generated.
+  - Fixes: the stand strip under the Rose Soap and the shadow remnant next to the Signature Perfume were removed, and the haze on the Zafarani edge was cleaned.
+- Still needed from the owner: a Neem Soap photo without the plastic wrap. A cleaner Rose Soap photo and a single-bottle White Oud Tester photo would also help.
