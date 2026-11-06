@@ -104,3 +104,7 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
   - `zs-card`: white image, -X% badge, price with the old price struck through, full-width Add to Cart; on hover the card lifts, the image zooms and a light sweep passes.
   - All collection templates now use `zs-collection`: banner with title, category chips (menu `zuaja-category-chips`), sort and a paginated grid.
 - Store art is in `brand/store-art/` (made by tools/make_store_art.py) and uploaded to Files.
+
+## Owner's studio renders as first image (live)
+- Rosemary Oil, Haldi + Badam Shampoo and Amla Reetha Shampoo now use the owner's studio renders as their first image. Each is centred on pure white (1600×1600) with a soft shadow and the corner logo watermark (`brand/hero-studio-white/`, about 110–185 KB).
+- The earlier HD first images were detached from these products but are still in Files.
