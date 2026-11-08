@@ -138,3 +138,7 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
 - Zafarani Cream, Herbal Face Wash + Haldi 80 ml and Unisex Perfume 30 ml now use the owner's new renders as their first images. The previous first images were detached.
 - Products still on photo-based images: the Neem, Rose and Lavender washes, Rose Soap, Neem Soap (box render) and the White Oud Tester.
 - Herbal Face Wash: the owner's standing-tube render (cap down) is now the first image. The cap-up render is second.
+
+## Shop by Category tiles (live)
+- Six new round tiles were made from the studio renders (`tools/make_category_tiles.py`, `brand/category-tiles-v2/`): an ivory disc, a gold ring, and the category's products with a soft shadow.
+- They replaced the existing Shopify Files `zuaja-cat-*.png` in place with `fileUpdate originalSource`. The filenames are unchanged, so the live homepage shows them without any theme change.
