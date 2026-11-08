@@ -137,3 +137,4 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
 - White Oud Perfume 50 ml and Signature Perfume 50 ml now use the owner's new renders as their first images (the label interior was filled so it does not wash out). The previous first images were detached.
 - Zafarani Cream, Herbal Face Wash + Haldi 80 ml and Unisex Perfume 30 ml now use the owner's new renders as their first images. The previous first images were detached.
 - Products still on photo-based images: the Neem, Rose and Lavender washes, Rose Soap, Neem Soap (box render) and the White Oud Tester.
+- Herbal Face Wash: the owner's standing-tube render (cap down) is now the first image. The cap-up render is second.
