@@ -34,21 +34,28 @@ def soap(p):
     p.putalpha(Image.fromarray(al).filter(ImageFilter.GaussianBlur(0.7))); return p
 FIX={"rose-soap":soap,"neem-soap":lambda p:p,
      "zafarani-cream":lambda p:edge_bright(p,14,215),"zuaja-pk-premium-perfume-50-ml":right_blob}
+import os
+VIVID=os.environ.get("VIVID","0")=="1"; FILL=float(os.environ.get("FILL","0.84"))
 def retouch(p):
     a=p.getchannel("A"); rgb=p.convert("RGB")
     x=np.asarray(rgb,np.float32)/255; m=np.asarray(a)>128
     lo,hi=np.percentile(x[m],0.3)*0.7,max(np.percentile(x[m],99.7),0.9)
     x=np.clip((x-lo)/max(hi-lo,1e-3),0,1)
     x=np.clip(x,0,1)
+    if VIVID:  # bright catalogue look: S-curve contrast, lifted highlights, richer colour, crisp detail
+        x=x+0.35*x*(1-x)*(2*x-1)
+        x=x+0.18*np.clip((x-0.55)/0.45,0,1)*(1-x)
+        x=np.clip(x,0,1)
     rgb=Image.fromarray((x*255).astype(np.uint8))
-    rgb=ImageEnhance.Color(rgb).enhance(1.06)
+    rgb=ImageEnhance.Color(rgb).enhance(1.22 if VIVID else 1.06)
     rgb=rgb.filter(ImageFilter.UnsharpMask(radius=1.4,percent=35,threshold=3))
+    if VIVID: rgb=rgb.filter(ImageFilter.UnsharpMask(radius=6,percent=22,threshold=2))
     r=rgb.convert("RGBA"); r.putalpha(a.filter(ImageFilter.MinFilter(3)).filter(ImageFilter.GaussianBlur(0.8)))
     return r
 for arg in sys.argv[3:]:
     key,src=arg.split("=",1)
     p=Image.open(src).convert("RGBA"); p=FIX.get(key,lambda q:q)(p); p=clean(p); p=p.crop(p.getbbox()); p=retouch(p)
-    r=min(S*0.84/p.height, S*0.78/p.width); p=p.resize((round(p.width*r),round(p.height*r)),Image.LANCZOS)
+    r=min(S*FILL/p.height, S*(FILL-0.04)/p.width); p=p.resize((round(p.width*r),round(p.height*r)),Image.LANCZOS)
     c=Image.new("RGBA",(S,S),(255,255,255,255))
     x=(S-p.width)//2; y=(S-p.height)//2-20
     sh=Image.new("L",(S,S),0); d=ImageDraw.Draw(sh); cx=S//2; by=y+p.height
