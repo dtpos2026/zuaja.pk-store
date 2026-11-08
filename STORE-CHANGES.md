@@ -112,3 +112,19 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
   - The labels are the real product pixels, not AI-generated.
   - Fixes: the stand strip under the Rose Soap and the shadow remnant next to the Signature Perfume were removed, and the haze on the Zafarani edge was cleaned.
 - Still needed from the owner: a Neem Soap photo without the plastic wrap. A cleaner Rose Soap photo and a single-bottle White Oud Tester photo would also help.
+
+## New owner photos (8 Nov, live)
+- Backgrounds were removed with isnet (`tools/cut_isnet.py`). `tools/fix_cuts.py` then:
+  - removes the blue-wall colour cast from the real photos and brightens the white Haldi bottle;
+  - fills the soap box and un-premultiplies the black-background renders.
+- Each image was placed on white with the watermark using `tools/make_studio_white.py`. Files are in `brand/hero-studio-white/` and `gallery/`.
+- First images changed:
+  - **Haldi + Badam**: the real bottle photo. Its label correctly says POWERED BY SK; the old render said "PRODUCTS".
+  - **7 Herbal Oils**: the client's front render.
+  - **Neem Soap**: green soap with the Zuaja box, replacing the photo in plastic.
+- Gallery additions:
+  - Haldi: ingredients/cautions and about/how-to-use as images 2 and 3, plus the Amla + Haldi pair.
+  - Amla: the real bottle and about/how-to-use as images 2 and 3, plus the pair.
+  - Rosemary: ingredients, how to use and caution as image 2.
+  - 7 Herbal: ingredients as image 2.
+- Owner to check: the soap box is misspelled "POWERD BY SK" (it should be "POWERED"). The Haldi label also says "CLEANYSES" instead of "CLEANSES".
