@@ -135,3 +135,5 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
 - The previous first images were detached from the products (they are still in Files).
 - Rose Soap (dark bar) was moved to the end of the Bath & Body collection, so it no longer shows near the top of the homepage "Washes & Soaps" row. It needs a better photo or render.
 - White Oud Perfume 50 ml and Signature Perfume 50 ml now use the owner's new renders as their first images (the label interior was filled so it does not wash out). The previous first images were detached.
+- Zafarani Cream, Herbal Face Wash + Haldi 80 ml and Unisex Perfume 30 ml now use the owner's new renders as their first images. The previous first images were detached.
+- Products still on photo-based images: the Neem, Rose and Lavender washes, Rose Soap, Neem Soap (box render) and the White Oud Tester.
