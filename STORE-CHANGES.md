@@ -128,3 +128,9 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
   - Rosemary: ingredients, how to use and caution as image 2.
   - 7 Herbal: ingredients as image 2.
 - Owner to check: the soap box is misspelled "POWERD BY SK" (it should be "POWERED"). The Haldi label also says "CLEANYSES" instead of "CLEANSES".
+
+## Vivid catalogue first images (8 Nov, live)
+- All 15 first images now follow the owner's bright Amla render. The product fills about 92% of the height on white, with an S-curve, lifted highlights, +22% colour and a crisp unsharp mask (`VIVID=1 FILL=0.92 tools/make_studio_white.py`). Files are in `brand/hero-vivid/`, contact sheet `brand/hero-vivid-sheet.jpg`.
+  - Amla Reetha and Haldi + Badam use the owner's new renders. The Haldi render's label is correct ("POWERED BY SK", "CLEANSES").
+- The previous first images were detached from the products (they are still in Files).
+- Rose Soap (dark bar) was moved to the end of the Bath & Body collection, so it no longer shows near the top of the homepage "Washes & Soaps" row. It needs a better photo or render.
