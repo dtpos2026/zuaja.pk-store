@@ -142,3 +142,11 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
 ## Shop by Category tiles (live)
 - Six new round tiles were made from the studio renders (`tools/make_category_tiles.py`, `brand/category-tiles-v2/`): an ivory disc, a gold ring, and the category's products with a soft shadow.
 - They replaced the existing Shopify Files `zuaja-cat-*.png` in place with `fileUpdate originalSource`. The filenames are unchanged, so the live homepage shows them without any theme change.
+
+## Meta Ads launch pack (9 Nov) — `marketing/meta-ads-nov/`
+- `CAMPAIGN-PLAN.md`: 1 Sales campaign with 4 ABO ad sets (Hair Care, Skin & Bath, Fragrance, Broad Advantage+) and 20 ads at Rs 5,000/day. It also covers the day-by-day optimisation rules and the switch from sale to evergreen on 16 Nov.
+- `ads-copy.csv`: primary text, headline, description, CTA and UTM URL for every ad, in sale and evergreen versions.
+- `statics/`: 68 creatives covering 13 products and 4 line-ups, in 4:5 feed and 9:16 story, sale and evergreen (`make_statics.py`).
+- `reels/`: 26 reels of 12 s (9:16, 1080×1920, H.264 with an original music bed), sale and evergreen for 13 products (`make_reels.py`).
+- `VOICEOVER-SCRIPTS.md`: a Roman Urdu voice-over for each reel. Online Urdu TTS hosts were blocked in this session, so the owner adds the voice in CapCut or records it.
+- Rose Soap and the White Oud Tester were left out of the ads because their photos are weak. The tester is mentioned in the White Oud copy.
