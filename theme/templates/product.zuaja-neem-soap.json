@@ -1,0 +1,172 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "zuaja-2026",
+  "sections": {
+    "module1": {
+      "type": "zuaja-2026-product-detail",
+      "settings": {
+        "eyebrow": "SOAP",
+        "delivery": "Delivery options and charges are shown at checkout."
+      },
+      "blocks": {
+        "benefit0": {
+          "type": "benefit",
+          "settings": {
+            "text": "Regular hand and body washing"
+          }
+        },
+        "benefit1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Translucent green soap bar"
+          }
+        },
+        "benefit2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Leaves skin feeling clean and refreshed"
+          }
+        },
+        "detail0": {
+          "type": "detail",
+          "settings": {
+            "title": "Product at a glance",
+            "text": "<p>Hand & body cleansing · Green soap bar</p>"
+          }
+        },
+        "detail1": {
+          "type": "detail",
+          "settings": {
+            "title": "How to use",
+            "text": "<p>Follow the directions on your product label.</p>"
+          }
+        },
+        "detail2": {
+          "type": "detail",
+          "settings": {
+            "title": "Care notes",
+            "text": "<p>For external use only. Avoid contact with eyes. Check the product label for ingredient and usage information.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "benefit0",
+        "benefit1",
+        "benefit2",
+        "detail0",
+        "detail1",
+        "detail2"
+      ]
+    },
+    "module2": {
+      "type": "zuaja-2026-trust-strip",
+      "settings": {},
+      "blocks": {
+        "item1": {
+          "type": "group1_item1",
+          "settings": {
+            "text_1": "✓",
+            "text_2": "Clear product details"
+          }
+        },
+        "item2": {
+          "type": "group1_item2",
+          "settings": {
+            "text_1": "✓",
+            "text_2": "Everyday routines"
+          }
+        },
+        "item3": {
+          "type": "group1_item3",
+          "settings": {
+            "text_1": "✓",
+            "text_2": "Easy to use"
+          }
+        },
+        "item4": {
+          "type": "group1_item4",
+          "settings": {
+            "text_1": "✓",
+            "text_2": "Secure checkout"
+          }
+        }
+      },
+      "block_order": [
+        "item1",
+        "item2",
+        "item3",
+        "item4"
+      ]
+    },
+    "description": {
+      "type": "zuaja-2026-product-description",
+      "settings": {
+        "heading": "About this product"
+      }
+    },
+    "module5": {
+      "type": "zuaja-2026-product-recommendations",
+      "settings": {
+        "text_1": "EXPLORE MORE",
+        "text_2": "More from Zuaja PK"
+      },
+      "blocks": {
+        "product1": {
+          "type": "group1_item1",
+          "settings": {
+            "product": "rose-body-wash-100ml",
+            "placeholder": "Zuaja PK Rose Hand & Body Wash, 100 ml",
+            "badge": "Hand & Body Wash",
+            "tone": "mint",
+            "shape": "pump",
+            "add_label": "Add to cart",
+            "unavailable": "Coming soon"
+          }
+        },
+        "product2": {
+          "type": "group1_item2",
+          "settings": {
+            "product": "neem-handwash-bodywash-100ml",
+            "placeholder": "Zuaja PK essential",
+            "badge": "",
+            "tone": "rose",
+            "shape": "pump",
+            "add_label": "Add to cart",
+            "unavailable": "Coming soon"
+          }
+        },
+        "product3": {
+          "type": "group1_item3",
+          "settings": {
+            "product": "zafarani-cream",
+            "placeholder": "Zuaja PK Zafarani Cream – Luxury Daily Skincare",
+            "badge": "Skin Care",
+            "tone": "sky",
+            "shape": "pump",
+            "add_label": "Add to cart",
+            "unavailable": "Coming soon"
+          }
+        }
+      },
+      "block_order": [
+        "product1",
+        "product2",
+        "product3"
+      ]
+    }
+  },
+  "order": [
+    "module1",
+    "module2",
+    "description",
+    "module5"
+  ]
+}

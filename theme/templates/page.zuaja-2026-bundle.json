@@ -1,0 +1,177 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "zuaja-2026",
+  "sections": {
+    "module1": {
+      "type": "zuaja-2026-bundle-hero",
+      "settings": {
+        "url_4": "#zuaja-2026-builder",
+        "text_1": "BUILD YOUR ROUTINE",
+        "text_2": "Your routine. Your picks.",
+        "textarea_3": "Choose your favourite Zuaja PK hair, body and fragrance essentials, then add your selection to the cart together.",
+        "text_12": "care",
+        "text_11": "daily",
+        "show_scenery": true,
+        "scene_accent": "#c4932f",
+        "scene_disc": "#e5c271",
+        "scene_note": "Little rituals. Big energy."
+      },
+      "blocks": {
+        "product1": {
+          "type": "product_1",
+          "settings": {
+            "product": "haldi-badam-shampoo-100ml",
+            "scale": 100,
+            "offset_y": 0,
+            "rotation": -13,
+            "offset_x": 0,
+            "caption": "Cleanse"
+          }
+        },
+        "product2": {
+          "type": "product_2",
+          "settings": {
+            "product": "rosemary-hair-scalp-oil-100ml",
+            "scale": 100,
+            "offset_y": 0,
+            "rotation": 7,
+            "offset_x": 0,
+            "caption": "Nourish"
+          }
+        },
+        "product3": {
+          "type": "product_3",
+          "settings": {
+            "product": "neem-handwash-bodywash-100ml",
+            "scale": 100,
+            "offset_y": 0,
+            "rotation": 14,
+            "offset_x": 0,
+            "caption": "Refresh"
+          }
+        }
+      },
+      "block_order": [
+        "product1",
+        "product2",
+        "product3"
+      ]
+    },
+    "module2": {
+      "type": "zuaja-2026-bundle-benefits",
+      "settings": {},
+      "blocks": {
+        "item1": {
+          "type": "group1_item1",
+          "settings": {}
+        },
+        "item2": {
+          "type": "group1_item2",
+          "settings": {}
+        },
+        "item3": {
+          "type": "group1_item3",
+          "settings": {}
+        },
+        "item4": {
+          "type": "group1_item4",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "item1",
+        "item2",
+        "item3",
+        "item4"
+      ],
+      "disabled": true
+    },
+    "module3": {
+      "type": "zuaja-2026-bundle-builder",
+      "settings": {
+        "discount_note": "Products are added at their listed prices. Eligible discounts, if any, are applied at checkout."
+      },
+      "blocks": {
+        "step0": {
+          "type": "step",
+          "settings": {
+            "title": "Choose your shampoo",
+            "subtitle": "Find your everyday cleanse",
+            "products": [
+              "haldi-badam-shampoo-100ml",
+              "amla-reetha-shampoo-200ml"
+            ],
+            "tone": "mint"
+          }
+        },
+        "step1": {
+          "type": "step",
+          "settings": {
+            "title": "Add a hair or body oil",
+            "subtitle": "Explore scalp care and multi-purpose oil rituals",
+            "products": [
+              "rosemary-hair-scalp-oil-100ml",
+              "7-herbal-oils-blend-100ml"
+            ],
+            "tone": "rose"
+          }
+        },
+        "step2": {
+          "type": "step",
+          "settings": {
+            "title": "Refresh your daily cleanse",
+            "subtitle": "Simple hand and body care",
+            "products": [
+              "neem-handwash-bodywash-100ml",
+              "rose-body-wash-100ml",
+              "neem-soap"
+            ],
+            "tone": "sky"
+          }
+        },
+        "step3": {
+          "type": "step",
+          "settings": {
+            "title": "Add your finishing touch",
+            "subtitle": "Explore personal fragrance",
+            "products": [
+              "premium-perfume"
+            ],
+            "tone": "sand"
+          }
+        },
+        "step_skincare": {
+          "type": "step",
+          "settings": {
+            "title": "Add daily skincare",
+            "subtitle": "Explore rich cream care",
+            "products": [
+              "zafarani-cream"
+            ],
+            "tone": "sand"
+          }
+        }
+      },
+      "block_order": [
+        "step0",
+        "step1",
+        "step2",
+        "step_skincare",
+        "step3"
+      ]
+    }
+  },
+  "order": [
+    "module1",
+    "module2",
+    "module3"
+  ]
+}
