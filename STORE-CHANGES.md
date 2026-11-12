@@ -150,3 +150,20 @@ Amla Reetha 750 · Haldi + Badam (Almond + Turmeric) 450 · Lavender wash 350 ·
 - `reels/`: 26 reels of 12 s (9:16, 1080×1920, H.264 with an original music bed), sale and evergreen for 13 products (`make_reels.py`).
 - `VOICEOVER-SCRIPTS.md`: a Roman Urdu voice-over for each reel. Online Urdu TTS hosts were blocked in this session, so the owner adds the voice in CapCut or records it.
 - Rose Soap and the White Oud Tester were left out of the ads because their photos are weak. The tester is mentioned in the White Oud copy.
+
+## CLEAN FINAL (12 Nov)
+Approved by the owner in a single go.
+
+**Live now**
+- Every product gallery is now: the studio render first, then a new **info card** second (`brand/info-cards/`, made by `make_info_cards.py`), plus the new ingredient and real photos for Haldi, Amla, Rosemary, 7 Herbal and Face Wash.
+- 44 old images were detached from the products: old brand banners, original/another-view photos, old label photos and the old untitled owner photos. They remain in Files.
+- The 7 category banners (`zuaja-category-*-wide-v3.png`, used on collection pages and All Categories) were replaced in place with new studio-render versions (`tools/make_category_banners_v4.py`, `brand/category-banners-v4/`).
+
+**Theme "Zuaja PK — CLEAN FINAL (publish this)"** (`199617806519`), which the owner must publish:
+- The 11.11 popup, product tags, price box and countdown strip are gone: the `zuaja-2026-sale-1111` render was removed from the layout.
+- The splash is shortened to about 1 s (logo plus gold line).
+- Header: the announcement bar has no 11.11 and links to Shop All. The "11.11 Sale" item is removed from the desktop and mobile menus, and the mobile menu no longer auto-adds other collections.
+- Footer: "11.11 Sale" is replaced by "All Products".
+- Homepage: the hero reads "ZUAJA PK · NATURAL DESI CARE" with a Shop Now button to /collections/all. Best Sellers kicker: "Customer favourites".
+
+**Kept on purpose:** the automatic 11% discount at checkout runs until 15 Nov (owner's choice).
