@@ -73,7 +73,7 @@
     "best": {
       "type": "zs-products",
       "settings": {
-        "kicker": "11.11 Sale · extra 11% off",
+        "kicker": "Customer favourites",
         "title": "Best Sellers",
         "subtitle": "Our most-loved desi care essentials",
         "collection": "11-11-sale",
@@ -128,11 +128,11 @@
     "module1": {
       "type": "zuaja-2026-hero",
       "settings": {
-        "url_4": "/collections/11-11-sale",
-        "text_1": "11.11 SALE · EXTRA 11% OFF",
+        "url_4": "/collections/all",
+        "text_1": "ZUAJA PK · NATURAL DESI CARE",
         "text_2": "Desi care for hair, skin & body.",
-        "textarea_3": "Haldi, badam, amla, reetha, neem and rosemary in Zuaja PK shampoos, herbal hair oils, face wash, soaps and perfumes. Extra 11% off everything until 15 November, applied at checkout.",
-        "text_5": "Shop the 11.11 Sale",
+        "textarea_3": "Haldi, badam, amla, reetha, neem and rosemary in Zuaja PK shampoos, herbal hair oils, face wash, soaps and perfumes. Delivery all over Pakistan, order on WhatsApp 0316 1121130.",
+        "text_5": "Shop Now",
         "text_12": "daily care",
         "show_scenery": true,
         "scene_accent": "#c4932f",

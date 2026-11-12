@@ -1,0 +1,69 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Zuaja header",
+  "sections": {
+    "section0": {
+      "type": "zuaja-2026-announcement",
+      "blocks": {
+        "item1": {"type": "group1_item1", "settings": {"text_1": "NATURAL DESI CARE FOR HAIR, SKIN & BODY"}},
+        "item2": {"type": "group1_item2", "settings": {"text_1": "DELIVERY ALL OVER PAKISTAN"}},
+        "item3": {"type": "group1_item3", "settings": {"text_1": "ORDER ON WHATSAPP: 0316 1121130"}},
+        "item4": {"type": "group1_item4", "settings": {"url_1": "/collections/all", "text_2": "SHOP ALL PRODUCTS"}}
+      },
+      "block_order": ["item1", "item2", "item3", "item4"],
+      "settings": {}
+    },
+    "section1": {
+      "type": "zuaja-2026-site-header",
+      "blocks": {
+        "item1": {"type": "group1_item1", "settings": {"url_1": "/collections/all", "text_2": "Shop All"}},
+        "item2": {"type": "group1_item2", "settings": {"url_1": "/collections/hair-care", "text_2": "Hair Care", "text_3": ""}},
+        "item3": {"type": "group1_item3", "settings": {"url_1": "/collections/shampoos", "text_2": "Shampoos"}},
+        "item4": {"type": "group1_item4", "settings": {"url_1": "/collections/hair-oils", "text_2": "Hair Oils"}},
+        "skin_care": {"type": "group1_item9", "settings": {"url_1": "/collections/skin-care", "text_2": "Skin Care"}},
+        "item5": {"type": "group1_item5", "settings": {"url_1": "/collections/bath-body", "text_2": "Bath & Body"}},
+        "item6": {"type": "group1_item6", "settings": {"url_1": "/collections/perfumes", "text_2": "Perfumes"}},
+        "item7": {"type": "group1_item7", "settings": {"url_1": "/pages/zuaja-bundle", "text_2": "Build Your Routine"}},
+        "all_categories": {"type": "group1_item1", "settings": {"url_1": "/collections", "text_2": "All Categories"}},
+        "mobile_shampoos": {"type": "mobile_category", "settings": {"collection": "shampoos", "handle": "shampoos", "title": "Shampoos"}},
+        "mobile_hair_oils": {"type": "mobile_category", "settings": {"collection": "hair-oils", "handle": "hair-oils", "title": "Hair Oils"}},
+        "mobile_perfumes": {"type": "mobile_category", "settings": {"collection": "perfumes", "handle": "perfumes", "title": "Perfumes"}},
+        "mobile_bath_body": {"type": "mobile_category", "settings": {"collection": "bath-body", "handle": "bath-body", "title": "Bath & Body"}},
+        "mobile_hair_care": {"type": "mobile_category", "settings": {"collection": "hair-care", "handle": "hair-care", "title": "Hair Care"}},
+        "mobile_skin_care": {"type": "mobile_category", "settings": {"collection": "skin-care", "handle": "skin-care", "title": "Skin Care"}},
+        "mobile_soaps": {"type": "mobile_category", "settings": {"collection": "soaps", "handle": "soaps", "title": "Soaps"}}
+      },
+      "block_order": ["item1", "all_categories", "item2", "item3", "item4", "skin_care", "item5", "item6", "item7", "mobile_shampoos", "mobile_hair_oils", "mobile_perfumes", "mobile_bath_body", "mobile_hair_care", "mobile_skin_care", "mobile_soaps"],
+      "settings": {
+        "url_6": "/pages/zuaja-bundle",
+        "url_8": "/cart",
+        "logo_version": "ultra",
+        "logo_width": 200,
+        "logo_mobile_width": 144,
+        "mobile_menu_title": "Menu",
+        "mobile_categories_title": "Categories",
+        "mobile_all_categories_label": "All categories",
+        "mobile_shop_all_label": "Shop all products",
+        "mobile_pending_label": "Coming soon",
+        "mobile_information_menu": "zuaja-mobile-information",
+        "mobile_include_others": false,
+        "mobile_whatsapp_url": "https://wa.me/923161121130",
+        "mobile_phone": "+923161121130",
+        "mobile_phone_label": "0316 1121130",
+        "mobile_email": "zuaja.official@gmail.com",
+        "mobile_instagram_url": "https://www.instagram.com/zuaja.pk1/",
+        "mobile_tiktok_url": "https://www.tiktok.com/@zuaja.pk"
+      }
+    }
+  },
+  "order": ["section0", "section1"]
+}

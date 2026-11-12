@@ -1,0 +1,48 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Zuaja footer",
+  "sections": {
+    "section0": {
+      "type": "zuaja-2026-site-footer",
+      "settings": {
+        "url_2": "#",
+        "url_5": "https://www.instagram.com/zuaja.pk1/",
+        "url_8": "#",
+        "url_11": "#",
+        "url_14": "https://www.facebook.com/zuaja.pk",
+        "url_17": "https://www.tiktok.com/@zuaja.pk",
+        "url_22": "/pages/shipping-information",
+        "url_24": "/pages/terms-of-service",
+        "url_26": "/policies/privacy-policy",
+        "url_28": "/pages/faqs",
+        "url_30": "/pages/order-tracking",
+        "text_6": "Instagram",
+        "text_7": "Instagram",
+        "text_15": "Facebook",
+        "text_16": "Facebook",
+        "text_18": "TikTok",
+        "text_19": "TikTok",
+        "whatsapp_url": "https://wa.me/923161121130",
+        "whatsapp_label": "WhatsApp"
+      },
+      "blocks": {
+        "item1": {"type": "group1_item1", "settings": {"url_2": "/pages/about-zuaja-pk", "url_4": "/pages/shipping-information", "url_6": "/pages/refund-policy", "url_8": "/pages/contact", "text_1": "Company", "text_3": "About Zuaja PK", "text_5": "Shipping information", "text_7": "Refund policy", "text_9": "Contact"}},
+        "item2": {"type": "group1_item2", "settings": {"url_2": "/collections/shampoos", "url_4": "/collections/hair-oils", "url_6": "/collections/perfumes", "url_8": "/collections/bath-body", "text_1": "Shop By", "text_3": "Shampoos", "text_5": "Hair Oils", "text_7": "Perfumes", "text_9": "Bath & Body"}},
+        "item3": {"type": "group1_item3", "settings": {"url_2": "/products/haldi-badam-shampoo-100ml", "url_4": "/products/amla-reetha-shampoo-200ml", "url_6": "/products/rosemary-hair-scalp-oil-100ml", "url_8": "/products/zuaja-pk-herbal-face-wash-haldi-80-ml", "text_1": "Best sellers", "text_3": "Haldi + Badam Shampoo", "text_5": "Amla Reetha Shampoo", "text_7": "Rosemary Oil", "text_9": "Herbal Face Wash + Haldi"}},
+        "item4": {"type": "group1_item4", "settings": {"url_2": "/collections/all", "url_4": "/collections/hair-care", "url_6": "/collections/skin-care", "url_8": "/pages/zuaja-bundle", "text_1": "Explore", "text_3": "All Products", "text_5": "Hair Care", "text_7": "Skin Care", "text_9": "Build Your Routine"}},
+        "item5": {"type": "group1_item5", "settings": {"url_2": "tel:+923161121130", "url_4": "mailto:zuaja.official@gmail.com", "url_7": "https://wa.me/923161121130", "text_1": "Support", "text_3": "0316 1121130", "text_5": "zuaja.official@gmail.com", "text_6": "10am – 10pm, every day", "text_8": "Chat on WhatsApp"}}
+      },
+      "block_order": ["item1", "item2", "item3", "item4", "item5"]
+    }
+  },
+  "order": ["section0"]
+}

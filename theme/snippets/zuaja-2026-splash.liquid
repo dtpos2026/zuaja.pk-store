@@ -1,18 +1,18 @@
 {% doc %}
 First-visit splash: the Zuaja logo eases in on ivory with a gold line drawn underneath, then the
-whole layer fades away by 1.5s. Pure CSS, so it can never block the page; shown once per
+whole layer fades away by about 1s. Pure CSS, so it can never block the page; shown once per
 browser session (the head script in the layout sets `zuaja-no-splash` on later page views).
 {% enddoc %}
 <style>
-  .zuaja-splash{position:fixed;inset:0;z-index:2147483000;display:grid;place-items:center;background:radial-gradient(circle at 50% 45%,#fffaf0 0,#fbf4e4 55%,#f1e3c2 100%);animation:zuajaSplashOut .45s ease 1.05s forwards;pointer-events:none}
+  .zuaja-splash{position:fixed;inset:0;z-index:2147483000;display:grid;place-items:center;background:radial-gradient(circle at 50% 45%,#fffaf0 0,#fbf4e4 55%,#f1e3c2 100%);animation:zuajaSplashOut .3s ease .7s forwards;pointer-events:none}
   .zuaja-no-splash .zuaja-splash{display:none}
   .zuaja-splash__inner{display:grid;justify-items:center;gap:14px}
-  .zuaja-splash__logo{width:min(320px,68vw);height:auto;opacity:0;transform:scale(.94);animation:zuajaSplashLogo .6s cubic-bezier(.2,.7,.2,1) .05s forwards}
-  .zuaja-splash__line{display:block;width:0;height:2px;background:linear-gradient(90deg,transparent,#c4932f,#e5c271,#c4932f,transparent);animation:zuajaSplashLine .7s ease .35s forwards}
+  .zuaja-splash__logo{width:min(320px,68vw);height:auto;opacity:0;transform:scale(.94);animation:zuajaSplashLogo .45s cubic-bezier(.2,.7,.2,1) .02s forwards}
+  .zuaja-splash__line{display:block;width:0;height:2px;background:linear-gradient(90deg,transparent,#c4932f,#e5c271,#c4932f,transparent);animation:zuajaSplashLine .45s ease .2s forwards}
   @keyframes zuajaSplashLogo{to{opacity:1;transform:none}}
   @keyframes zuajaSplashLine{to{width:min(220px,50vw)}}
   @keyframes zuajaSplashOut{to{opacity:0;visibility:hidden}}
-  @media (prefers-reduced-motion:reduce){.zuaja-splash{animation-duration:.2s;animation-delay:.4s}.zuaja-splash__logo{animation:none;opacity:1;transform:none}.zuaja-splash__line{animation:none;width:min(220px,50vw)}}
+  @media (prefers-reduced-motion:reduce){.zuaja-splash{animation-duration:.2s;animation-delay:.3s}.zuaja-splash__logo{animation:none;opacity:1;transform:none}.zuaja-splash__line{animation:none;width:min(220px,50vw)}}
 </style>
 <div class="zuaja-splash" aria-hidden="true">
   <div class="zuaja-splash__inner">
