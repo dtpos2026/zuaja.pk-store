@@ -168,3 +168,7 @@ Approved by the owner in a single go.
 
 **Kept on purpose:** the automatic 11% discount at checkout runs until 15 Nov (owner's choice).
 - **Rose Soap set to DRAFT** (owner's request; the only photo is a dark bar), so it is hidden from the store, collections and search. Its data is kept, and it can be set back to Active once a good render arrives. In the CLEAN FINAL theme, the bundle page and the "More from Zuaja" blocks on Neem Soap and Zafarani now show Rose Hand & Body Wash instead.
+
+## 11.11 Sale ended (14 Nov)
+- The automatic discount "11.11 Sale — 11% off everything" was deactivated at the owner's request. Its status is now EXPIRED, so checkout no longer takes 11% off.
+- The theme could not be published from here, because the Shopify connector needs extra permissions for publishing. The live theme "Zuaja WHITE + Old Hero" still shows the 11.11 popup and tags until the owner publishes "Zuaja PK — CLEAN FINAL (publish this)".
