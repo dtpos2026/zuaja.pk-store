@@ -1,4 +1,4 @@
-"""Zuaja PK original music (fully synthesised here, so it is 100% ours and copyright-free).
+"""v1 (kept for reference in music/v1-synth). Zuaja PK original music (fully synthesised here, so it is 100% ours and copyright-free).
 
 Sound: desi-modern. Tanpura drone (Sa-Pa), sitar-like Karplus-Strong plucks, synthesised tabla
 (keherwa groove: dha-ge-na-ti / na-ka-dhi-na), soft shaker, warm bass and pad, bell on the logo.
@@ -19,7 +19,7 @@ from scipy.signal import fftconvolve, butter, sosfilt
 SR = 44100
 BPM = 96
 BEAT = 60 / BPM
-OUT = Path(__file__).resolve().parent / "music"
+OUT = Path(__file__).resolve().parent / "music/v1-synth"
 rng = np.random.default_rng(11)
 
 

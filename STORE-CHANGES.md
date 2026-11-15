@@ -180,3 +180,4 @@ Approved by the owner in a single go.
 - **Engagement and stories:** 6 engagement posts (this-or-that, tag-a-friend, comment prompts, brand intro) and 4 poll story templates.
 - **Reels** (`make_social_reels.py`): 5 reels of 15 s (brand, hair ritual, fragrance, glow, bath), cut on the beat of the jingle, with the end card on the motif.
 - `CAPTIONS-AND-CALENDAR.md` has the captions, hashtags, a 14-day calendar and posting tips. There is no sale wording anywhere and Rose Soap is excluded.
+- **Music v2** (`make_music_v2.py`), replacing the synth version after owner feedback. It is desi-pop played with real sampled instruments (FluidSynth and the FluidR3 GM soundfont): a sitar hook, electric piano, strings, bass, drums with congas, flute, glockenspiel and a bell. Same 96 BPM, with the motif from beat 20, so the reels stay in sync. The audio of all 5 reels was replaced. v1 is kept in `music/v1-synth/`.

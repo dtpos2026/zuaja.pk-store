@@ -3,11 +3,12 @@
 Everything is evergreen (no sale wording) and in English, with one Roman Urdu line for warmth. Prices are current store prices.
 Post the same images and reels on Instagram and Facebook. Reels: in Instagram choose **Original audio**, because Zuaja's own music is already inside the video.
 
-## Zuaja music (`music/`)
-- `zuaja-jingle-15s.mp3`: the reel track. It mixes tabla (keherwa), tanpura, sitar-style plucks and a bell, and ends with the 5-note **Zu-a-ja P-K** motif.
+## Zuaja music (`music/`), v2 with real instruments
+- `zuaja-jingle-15s.mp3`: the reel track. It is desi-pop with a sitar hook over D–Bm–G–A, electric piano, strings, bass and pop drums with congas, and it ends with the 5-note **Zu-a-ja P-K** motif on sitar, glockenspiel and a bell.
 - `zuaja-sonic-logo-4s.mp3`: just the motif and bell. Use it at the end of any video or as a notification sound.
-- `zuaja-bed-30s.mp3`: a longer background track for stories and longer videos.
-- All of it was made from scratch for Zuaja, so there is no copyright claim risk. Upload it once as a reel to make it Zuaja's own 'original audio' that others can reuse.
+- `zuaja-bed-30s.mp3`: a longer version with a bansuri-style flute answer line, for stories and longer videos.
+- It was composed for Zuaja and played with the free FluidR3 instrument library, so there is no copyright claim risk. Loudness is -14 LUFS, Instagram's standard. The `.mid` files can be opened in any music app (GarageBand, FL Studio) to change instruments.
+- Upload the brand reel first so the track becomes Zuaja's own "original audio" that others can reuse.
 
 ## 2-week calendar (1 post a day + 3 reels a week + daily stories)
 
