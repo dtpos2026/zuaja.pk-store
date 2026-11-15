@@ -20,7 +20,7 @@ GOLD_L = (229, 194, 113)
 # relative real-world heights so bottles, jars and bars sit in believable proportion
 REL = {"amla": 1.0, "haldi": 0.95, "rosemary": 0.9, "herbal7": 0.9, "neemwash": 0.86, "lavender": 0.86,
        "facewash": 0.72, "zafarani": 0.6, "whiteoud": 0.62, "signature": 0.7, "unisex": 0.66,
-       "rosesoap": 0.42, "neemsoap": 0.5, "rosewash": 0.86}
+       "rosesoap": 0.5, "neemsoap": 0.5, "rosewash": 0.86}
 
 SETS = {
     "shampoos": ["haldi", "amla"],
@@ -29,7 +29,7 @@ SETS = {
     "bath-body": ["neemwash", "rosewash", "lavender", "neemsoap"],
     "hair-care": ["haldi", "rosemary", "amla", "herbal7"],
     "skin-care": ["facewash", "zafarani"],
-    "soaps": ["neemsoap"],
+    "soaps": ["neemsoap", "rosesoap"],
 }
 
 

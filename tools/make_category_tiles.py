@@ -40,7 +40,8 @@ for arg in sys.argv[2:]:
         ps = [p.resize((round(p.width * k), round(p.height * k)), Image.LANCZOS) for p in ps]
         total = sum(p.width for p in ps) + gap * (n - 1)
     c, mask = disc()
-    base = int(S * 0.84)
+    # centre short/wide items (soap boxes, jars) in the disc instead of leaving the top empty
+    base = int(min(S * 0.84, S / 2 + max(p.height for p in ps) / 2 + S * 0.03))
     # soft floor shadow
     sh = Image.new("L", (S, S), 0)
     ImageDraw.Draw(sh).ellipse((S / 2 - total * 0.52, base - 14, S / 2 + total * 0.52, base + 16), fill=90)

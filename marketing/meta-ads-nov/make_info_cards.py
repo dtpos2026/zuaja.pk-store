@@ -15,7 +15,7 @@ HERE = Path(__file__).resolve().parent
 OUT = Path(__file__).resolve().parents[2] / "brand/info-cards"
 EXTRA = [
     {"key": "rose-soap", "handle": "rose-soap", "name": "Rose Soap", "size": "", "cat": "Bath & Body",
-     "cutout": "brand/cutouts-sr/rose-soap.png",
+     "cutout": "brand/cutouts/rosesoap-box.png",
      "benefits": ["Soft floral rose scent", "Daily bathing bar", "Leaves skin fresh"],
      "ingredients": "Rose fragrance · Soap base", "use": "Lather on wet skin, rinse."},
     {"key": "white-oud-tester", "handle": "zuaja-pk-premium-white-oud-perfume-tester", "name": "White Oud Tester", "size": "", "cat": "Fragrance",
@@ -30,9 +30,10 @@ def card(p):
     c = bg(S, S); d = ImageDraw.Draw(c)
     # left: product
     glow_disc(c, 470, 820, 430)
-    prod = fit(load_cutout(p["cutout"]), 640, 1060)
-    shadow(c, 470, 1330, prod.width)
-    c.alpha_composite(prod, (470 - prod.width // 2, 1330 - prod.height))
+    prod = fit(load_cutout(p["cutout"]), 700, 1060)
+    base = int(min(1330, 820 + prod.height / 2 + 30))  # wide items sit in the middle of the disc
+    shadow(c, 470, base, prod.width)
+    c.alpha_composite(prod, (470 - prod.width // 2, base - prod.height))
     # right column
     x = 900; y = 170; maxw = S - x - 90
     logo_h = logo(c, x + 170, y, 340); y += logo_h + 50
