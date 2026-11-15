@@ -187,3 +187,8 @@ Approved by the owner in a single go.
 - The owner sent the real render (pink soap with the Zuaja box). It is the new first image (`brand/hero-vivid/rose-soap-box.jpg`), and the info card was redone. The dark-bar images were detached, and the product is ACTIVE again.
 - The Soaps category tile and the Soaps banner now show both soaps. Wide items in the info cards and tiles are centred, and the Neem Soap and Zafarani info cards were refreshed in place.
 - The owner said the first music is OK, so the reels are also exported with the v1 music in `marketing/social-pack/reels/with-music-v1/`. The v3 music remains the default.
+
+## FINAL (15 Nov)
+- "Zuaja PK — CLEAN FINAL" was published by the owner and is the MAIN theme.
+- Rose Soap was added to the ads (statics and reels) and to the social pack (hero post).
+- `FINAL-HANDOVER.md` sums up what is live, where each file is, what to do next and what only the owner can do. The final zips are Zuaja-Store-Images, Zuaja-Meta-Ads-Nov and Zuaja-Social-Pack.
