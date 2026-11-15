@@ -192,3 +192,4 @@ Approved by the owner in a single go.
 - "Zuaja PK — CLEAN FINAL" was published by the owner and is the MAIN theme.
 - Rose Soap was added to the ads (statics and reels) and to the social pack (hero post).
 - `FINAL-HANDOVER.md` sums up what is live, where each file is, what to do next and what only the owner can do. The final zips are Zuaja-Store-Images, Zuaja-Meta-Ads-Nov and Zuaja-Social-Pack.
+- **28-day posting plan PDF** (`marketing/social-pack/Zuaja-PK-Posting-Plan.pdf`, 29 pages, made by `make_plan_pdf.py`). It runs 16 Nov – 13 Dec and has a daily feed post, 12 reels (Mon/Wed/Fri) and daily stories with poll, link and question stickers. Each day lists thumbnails, file paths, times (1:30 pm / 9:00 pm), SEO-first captions, 5 hashtags (Instagram's limit) and alt text. The PDF also covers strategy, how to post, Instagram SEO tips, reply templates and a weekly KPI tracker.
