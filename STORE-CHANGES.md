@@ -182,3 +182,8 @@ Approved by the owner in a single go.
 - `CAPTIONS-AND-CALENDAR.md` has the captions, hashtags, a 14-day calendar and posting tips. There is no sale wording anywhere and Rose Soap is excluded.
 - **Music v2** (`make_music_v2.py`), replacing the synth version after owner feedback. It is desi-pop played with real sampled instruments (FluidSynth and the FluidR3 GM soundfont): a sitar hook, electric piano, strings, bass, drums with congas, flute, glockenspiel and a bell. Same 96 BPM, with the motif from beat 20, so the reels stay in sync. The audio of all 5 reels was replaced. v1 is kept in `music/v1-synth/`.
 - **Music v3** (`make_music_v3.py`): the owner wanted an international cosmetics-brand identity, not a desi/village feel. The new track is luxury R&B-pop in F major with grand piano maj7 voicings, a celesta/music-box hook, vocal "oohs", pads, strings, synth bass, snaps and claps, glossy hats and reverse-cymbal swells. The sonic logo C-D-F-D-F sits on the same beats, so the 5 reels were re-muxed with it. v2 is kept in `music/v2-desi/`.
+
+## Rose Soap back (15 Nov)
+- The owner sent the real render (pink soap with the Zuaja box). It is the new first image (`brand/hero-vivid/rose-soap-box.jpg`), and the info card was redone. The dark-bar images were detached, and the product is ACTIVE again.
+- The Soaps category tile and the Soaps banner now show both soaps. Wide items in the info cards and tiles are centred, and the Neem Soap and Zafarani info cards were refreshed in place.
+- The owner said the first music is OK, so the reels are also exported with the v1 music in `marketing/social-pack/reels/with-music-v1/`. The v3 music remains the default.
