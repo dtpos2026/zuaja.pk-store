@@ -3,12 +3,12 @@
 Everything is evergreen (no sale wording) and in English, with one Roman Urdu line for warmth. Prices are current store prices.
 Post the same images and reels on Instagram and Facebook. Reels: in Instagram choose **Original audio**, because Zuaja's own music is already inside the video.
 
-## Zuaja music (`music/`), v2 with real instruments
-- `zuaja-jingle-15s.mp3`: the reel track. It is desi-pop with a sitar hook over D–Bm–G–A, electric piano, strings, bass and pop drums with congas, and it ends with the 5-note **Zu-a-ja P-K** motif on sitar, glockenspiel and a bell.
-- `zuaja-sonic-logo-4s.mp3`: just the motif and bell. Use it at the end of any video or as a notification sound.
-- `zuaja-bed-30s.mp3`: a longer version with a bansuri-style flute answer line, for stories and longer videos.
-- It was composed for Zuaja and played with the free FluidR3 instrument library, so there is no copyright claim risk. Loudness is -14 LUFS, Instagram's standard. The `.mid` files can be opened in any music app (GarageBand, FL Studio) to change instruments.
-- Upload the brand reel first so the track becomes Zuaja's own "original audio" that others can reuse.
+## Zuaja music (`music/`), v3 international beauty-brand identity
+- `zuaja-jingle-15s.mp3`: the reel track, in the style of a luxury cosmetics ad. It is a modern R&B-pop groove with grand piano chords (Fmaj7–Am7–Dm7–B♭maj7), a celesta and music-box hook, airy "ooh" vocals, a warm pad, soft strings, smooth bass, finger snaps and glossy hats, and a reverse-cymbal swell into the drop and into the logo.
+- **Sonic logo "Zu-a-ja P-K"** (C D F D F): played on piano, celesta and a crystal bell over Fmaj9. It ends every reel; `zuaja-sonic-logo-4s.mp3` has it on its own, for video endings, stories and notifications.
+- `zuaja-bed-30s.mp3`: a longer version with a vocal "ooh" line, for stories and longer videos.
+- It was composed for Zuaja and played with the free FluidR3 instrument library, so there is no copyright risk. It is mastered to Instagram loudness (-14 LUFS). The `.mid` files open in GarageBand or FL Studio.
+- Earlier versions are kept in `music/v1-synth/` and `music/v2-desi/`.
 
 ## 2-week calendar (1 post a day + 3 reels a week + daily stories)
 
