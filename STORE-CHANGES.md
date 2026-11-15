@@ -172,3 +172,11 @@ Approved by the owner in a single go.
 ## 11.11 Sale ended (14 Nov)
 - The automatic discount "11.11 Sale — 11% off everything" was deactivated at the owner's request. Its status is now EXPIRED, so checkout no longer takes 11% off.
 - The theme could not be published from here, because the Shopify connector needs extra permissions for publishing. The live theme "Zuaja WHITE + Old Hero" still shows the 11.11 popup and tags until the owner publishes "Zuaja PK — CLEAN FINAL (publish this)".
+
+## Social pack (15 Nov): `marketing/social-pack/`
+- **Zuaja's own music** (`make_music.py`, fully synthesised, copyright-free): a 15 s jingle, a 4 s sonic logo and a 30 s bed. It mixes tabla (keherwa), tanpura, sitar-style plucks and a bell. The 5-note "Zu-a-ja P-K" motif runs at 96 BPM in D.
+- **Posts** (`make_social.py`): 13 colour-block hero posts. Each has a product-tinted gradient, a giant faded word, a reflection and a gold frame.
+- **Carousels:** 4, with 23 slides in total (shampoo finder, champi ritual, desi ingredients, scent finder).
+- **Engagement and stories:** 6 engagement posts (this-or-that, tag-a-friend, comment prompts, brand intro) and 4 poll story templates.
+- **Reels** (`make_social_reels.py`): 5 reels of 15 s (brand, hair ritual, fragrance, glow, bath), cut on the beat of the jingle, with the end card on the motif.
+- `CAPTIONS-AND-CALENDAR.md` has the captions, hashtags, a 14-day calendar and posting tips. There is no sale wording anywhere and Rose Soap is excluded.
