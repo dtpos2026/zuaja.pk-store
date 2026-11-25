@@ -27,7 +27,8 @@ W, H, FPS = 1080, 1920, 30
 BEAT = 60 / 96
 RAW = ROOT / "media/raw"
 OUT = ROOT / "media/reels"
-MUSIC = ROOT / "marketing/social-pack/music/aura/zuaja-aura-15s.wav"  # v4 aura trailer: owner wants an action/trailer feel on videos
+MUSIC = ROOT / "marketing/social-pack/music/commercial/zuaja-commercial-15s.wav"  # v5 upbeat e-commerce commercial (owner choice)
+MUSIC_ALT = ROOT / "marketing/social-pack/music/aura/zuaja-aura-15s.wav"  # v4 aura trailer, exported as *_aura.mp4
 GRADE = "eq=contrast=1.06:saturation=1.14:brightness=0.012,colorbalance=rs=0.03:gs=0.0:bs=-0.03,unsharp=5:5:0.55"
 
 REELS = {
@@ -125,6 +126,8 @@ def render(name, segs):
              "-preset", "medium", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart", str(v916)])
         run(["-i", str(v916), "-vf", "crop=1080:1350:0:285", "-c:v", "libx264", "-crf", "20", "-preset", "medium", "-c:a", "copy",
              "-movflags", "+faststart", str(OUT / f"{name}_4x5.mp4")])
+        run(["-i", str(v916), "-i", str(MUSIC_ALT), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
+             "-shortest", "-movflags", "+faststart", str(OUT / f"{name}_9x16_aura.mp4")])
     print(name, "ok", flush=True)
 
 
