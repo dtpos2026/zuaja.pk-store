@@ -27,7 +27,7 @@ W, H, FPS = 1080, 1920, 30
 BEAT = 60 / 96
 RAW = ROOT / "media/raw"
 OUT = ROOT / "media/reels"
-MUSIC = ROOT / "marketing/social-pack/music/zuaja-jingle-15s.wav"
+MUSIC = ROOT / "marketing/social-pack/music/aura/zuaja-aura-15s.wav"  # v4 aura trailer: owner wants an action/trailer feel on videos
 GRADE = "eq=contrast=1.06:saturation=1.14:brightness=0.012,colorbalance=rs=0.03:gs=0.0:bs=-0.03,unsharp=5:5:0.55"
 
 REELS = {
