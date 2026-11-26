@@ -1,0 +1,55 @@
+# Zuaja PK: 2 Campaigns, Rs 1,000/day each (Store + WhatsApp)
+
+> **Roman Urdu summary:** 2 campaigns. Har ek ka budget Rs 1,000 roz. Har campaign mein 2 ad sets, dono ko barabar Rs 500 roz. Hair aur skin ke ads sirf **auraton** ko dikhenge. Perfume ke ads **mard aur aurat dono** ko dikhenge, kyun ke mard perfume khud bhi lete hain aur gift bhi karte hain. Pehle 4 din kuch change nahi karna.
+
+## 0. Why the last Rs 12,000 brought no sale (fix these first)
+1. **Ad account.** The "Zuaja.pk" ad account shows **UNSETTLED**, which means a payment is pending. Clear it in Billing, or new ads will not run. The "Zuaja Pk Ads" account has **no payment method**. Use one account only.
+2. **Pixel.** In Events Manager, open the Zuaja pixel and check that **Purchase**, **AddToCart** and **ViewContent** fire. To test, place one real test order and see whether a Purchase shows within 30 minutes. If Purchase does not fire, Meta cannot find buyers.
+3. **Creative.** Studio images alone get scrolled past. This time we lead with **your own hand-held product videos (UGC)**. They build trust in Pakistan more than designed posts.
+4. **Too little data per ad set.** Small budgets spread over many ad sets never learn. This plan uses **only 2 ad sets per campaign**.
+5. **COD trust.** Every ad says "Cash on Delivery" and "WhatsApp 0316 1121130".
+
+## 1. Campaign A: STORE (website orders)
+| Setting | Value |
+|---|---|
+| Name | `ZUAJA | Store | Sales | Dec26` |
+| Objective | **Sales**, conversion location **Website**, pixel event **Purchase**. If the pixel test above fails, use **Add to cart** for the first week. |
+| Budget | **Ad set budget (ABO)**: Rs 500/day × 2 ad sets = **Rs 1,000/day** |
+| Placements | Advantage+ placements |
+| Attribution | 7-day click, 1-day view |
+
+| Ad set | Audience | Ads (3 each) | Link |
+|---|---|---|---|
+| **A1 Hair Women** (Rs 500) | Pakistan · **Women** · 20–45 · no interests (broad) | Rosemary hand video · Amla Reetha hand video · Haldi + Badam hand video. Backup: `oily-dry-scalp` UGC reel | product page of each |
+| **A2 Perfume Gift** (Rs 500) | Pakistan · **Men + Women** · 22–45 · broad | Signature hand video · White Oud hand video · `pov-parcel` UGC reel | perfume product pages |
+
+## 2. Campaign B: WHATSAPP (orders on chat)
+| Setting | Value |
+|---|---|
+| Name | `ZUAJA | WhatsApp | Messages | Dec26` |
+| Objective | **Engagement**, conversion location **Messaging apps → WhatsApp** (number 0316 1121130), performance goal **Maximise conversations** |
+| Budget | **ABO**: Rs 500/day × 2 ad sets = **Rs 1,000/day** |
+| Placements | Advantage+ placements |
+
+| Ad set | Audience | Ads (3 each) |
+|---|---|---|
+| **B1 Hair + Body Women** (Rs 500) | Pakistan · **Women** · 20–45 · broad | Hair routine (3 hand videos cut together) · Body wash hand video · `shower-mood` UGC reel |
+| **B2 Perfume Men + Women** (Rs 500) | Pakistan · **Men + Women** · 22–45 · broad | Signature hand video · White Oud hand video · `real-not-ads` UGC reel |
+
+**WhatsApp greeting (pre-filled message):** "Assalam o Alaikum! Mujhe yeh product order karna hai 👇"
+**Quick replies:** "Price kya hai?" · "Delivery kitne din mein?" · "COD hai?"
+**Rule:** reply within **5 minutes** (from 10 am to 11 pm). A late reply loses the sale.
+
+## 3. Daily routine and rules
+- **Days 1–4:** change nothing (learning). Check only that the ads are delivering.
+- **Day 5:** in each ad set, turn **off** the ad with the highest cost per result (keep at least 2 ads).
+- **Store:** if an ad set spends Rs 2,000 with 0 add-to-carts, swap in its backup reel.
+- **WhatsApp:** a good cost is under ~Rs 60–80 per conversation. Track orders per 10 chats in a notebook.
+- **Day 8:** move Rs 300/day from the weaker campaign to the stronger one. The total stays at Rs 2,000.
+- **Total for 7 days:** about Rs 14,000.
+
+## 4. Copy (all ads)
+- **Primary text, hair:** "Haath mein pakri asli bottle, asli rosemary andar nazar aati hai 🌿 Zuaja PK Rosemary Hair Oil, Rs 950. ✅ Cash on Delivery ✅ Delivery all over Pakistan · WhatsApp 0316 1121130"
+- **Primary text, perfume:** "Tohfa jo yaad rahe 🎁 Satin gift box, crystal bottle, all-day scent. Signature Perfume Rs 2,200. ✅ Cash on Delivery · WhatsApp 0316 1121130"
+- **Headline:** product + price, e.g. "Rosemary Hair Oil · Rs 950"
+- **CTA:** Store → **Shop now**; WhatsApp → **Send message**

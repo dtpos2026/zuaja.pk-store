@@ -21,7 +21,7 @@ def build(name, items):
 ad = [(f"ugc-ads/{p.name}", p) for p in sorted((M / "ugc-ads").glob("*.jpg"))]
 ad += [(f"ugc-reels/{p.name}", p) for p in sorted((M / "ugc-reels").glob("*.mp4"))]
 ad += [(f"video-ads/{p.name}", p) for p in sorted((M / "reels").glob("*.mp4"))]
-ad += [(p.name, p) for p in (PK / "AD-PLAN.md", PK / "ads-copy-real.csv")]
+ad += [(p.name, p) for p in (PK / "CAMPAIGN-PLAN-DEC.md", PK / "AD-PLAN.md", PK / "ads-copy-real.csv")]
 ad += [(f"music/{d}/{p.name}", p) for d in ("commercial", "aura") for p in sorted((MU / d).glob("*.mp3"))]
 build("Zuaja-Ad-Package.zip", ad)
 
