@@ -9,7 +9,7 @@ A daily shampoo with turmeric (haldi) and almond (badam), the desi duo our elder
 ✨ Haldi + Badam Shampoo (100 ml): Rs. 450
 🔥 11.11 Sale: extra 11% off at checkout (about Rs. 400) till 15 November
 🚚 Delivery all over Pakistan
-📲 Order at zuaja.pk or WhatsApp 0316 1121130
+📲 Order at zuaja.store or WhatsApp 0316 1121130
 
 #haldi #badam #shampoo #dryhair #haircare #zuajapk #zuaja #pakistan #desicare #madeinpakistan #1111sale #11dot11 #onlineshoppingpakistan
 
@@ -22,7 +22,7 @@ Reetha is the soapnut our grandmothers soaked to wash hair. Paired with amla in 
 ✨ Amla Reetha Shampoo (200 ml): Rs. 750
 🔥 11.11 Sale: extra 11% off at checkout (about Rs. 668) till 15 November
 🚚 Delivery all over Pakistan
-📲 Order at zuaja.pk or WhatsApp 0316 1121130
+📲 Order at zuaja.store or WhatsApp 0316 1121130
 
 #amla #reetha #amlareetha #shampoo #oilyscalp #zuajapk #zuaja #pakistan #desicare #madeinpakistan #1111sale #11dot11 #onlineshoppingpakistan
 
@@ -35,7 +35,7 @@ Rosemary herbal hair oil in a dropper bottle, so it goes on your scalp, not all 
 ✨ Rosemary Oil (100 ml): Rs. 950
 🔥 11.11 Sale: extra 11% off at checkout (about Rs. 846) till 15 November
 🚚 Delivery all over Pakistan
-📲 Order at zuaja.pk or WhatsApp 0316 1121130
+📲 Order at zuaja.store or WhatsApp 0316 1121130
 
 #rosemaryoil #hairoil #champi #scalpcare #herbaloil #zuajapk #zuaja #pakistan #desicare #madeinpakistan #1111sale #11dot11 #onlineshoppingpakistan
 
@@ -48,7 +48,7 @@ A multi-purpose herbal oil blend for hair, scalp and body massage. Warm a little
 ✨ 7 Herbal Oils Blend (100 ml): Rs. 1,200
 🔥 11.11 Sale: extra 11% off at checkout (about Rs. 1,068) till 15 November
 🚚 Delivery all over Pakistan
-📲 Order at zuaja.pk or WhatsApp 0316 1121130
+📲 Order at zuaja.store or WhatsApp 0316 1121130
 
 #herbaloil #hairoil #bodymassage #champi #7oils #zuajapk #zuaja #pakistan #desicare #madeinpakistan #1111sale #11dot11 #onlineshoppingpakistan
 
@@ -61,7 +61,7 @@ A two-in-one neem wash for everyday hand and body washing. Fresh and clean, in a
 ✨ Neem Handwash + Bodywash (100 ml): Rs. 330
 🔥 11.11 Sale: extra 11% off at checkout (about Rs. 294) till 15 November
 🚚 Delivery all over Pakistan
-📲 Order at zuaja.pk or WhatsApp 0316 1121130
+📲 Order at zuaja.store or WhatsApp 0316 1121130
 
 #neem #handwash #bodywash #neemwash #freshskin #zuajapk #zuaja #pakistan #desicare #madeinpakistan #1111sale #11dot11 #onlineshoppingpakistan
 
@@ -74,7 +74,7 @@ Hand and body wash with lavender extract and a soft floral scent. Keep it by the
 ✨ Lavender Hand & Body Wash (100 ml): Rs. 350
 🔥 11.11 Sale: extra 11% off at checkout (about Rs. 312) till 15 November
 🚚 Delivery all over Pakistan
-📲 Order at zuaja.pk or WhatsApp 0316 1121130
+📲 Order at zuaja.store or WhatsApp 0316 1121130
 
 #lavender #bodywash #handwash #selfcare #floral #zuajapk #zuaja #pakistan #desicare #madeinpakistan #1111sale #11dot11 #onlineshoppingpakistan
 
@@ -87,7 +87,7 @@ A rich zafarani cream for your daily skincare routine. Apply a small amount to c
 ✨ Zafarani Cream: Rs. 350
 🔥 11.11 Sale: extra 11% off at checkout (about Rs. 312) till 15 November
 🚚 Delivery all over Pakistan
-📲 Order at zuaja.pk or WhatsApp 0316 1121130
+📲 Order at zuaja.store or WhatsApp 0316 1121130
 
 #zafarani #zafranicream #skincare #saffron #glow #zuajapk #zuaja #pakistan #desicare #madeinpakistan #1111sale #11dot11 #onlineshoppingpakistan
 
@@ -100,7 +100,7 @@ A herbal face wash with haldi for washing off everyday dirt and oil. Handbag-fri
 ✨ Herbal Face Wash + Haldi (80 ml): Rs. 320
 🔥 11.11 Sale: extra 11% off at checkout (about Rs. 285) till 15 November
 🚚 Delivery all over Pakistan
-📲 Order at zuaja.pk or WhatsApp 0316 1121130
+📲 Order at zuaja.store or WhatsApp 0316 1121130
 
 #facewash #haldi #turmeric #skincare #herbalfacewash #zuajapk #zuaja #pakistan #desicare #madeinpakistan #1111sale #11dot11 #onlineshoppingpakistan
 
@@ -113,7 +113,7 @@ A rose bathing bar with a soft floral scent. Comes in its own carton, so it make
 ✨ Rose Soap: Rs. 220
 🔥 11.11 Sale: extra 11% off at checkout (about Rs. 196) till 15 November
 🚚 Delivery all over Pakistan
-📲 Order at zuaja.pk or WhatsApp 0316 1121130
+📲 Order at zuaja.store or WhatsApp 0316 1121130
 
 #rosesoap #soap #handmadesoap #rose #bathtime #zuajapk #zuaja #pakistan #desicare #madeinpakistan #1111sale #11dot11 #onlineshoppingpakistan
 
@@ -126,7 +126,7 @@ A green neem bathing bar for everyday hand and body washing. Lather with water a
 ✨ Neem Soap: Rs. 180
 🔥 11.11 Sale: extra 11% off at checkout (about Rs. 160) till 15 November
 🚚 Delivery all over Pakistan
-📲 Order at zuaja.pk or WhatsApp 0316 1121130
+📲 Order at zuaja.store or WhatsApp 0316 1121130
 
 #neemsoap #neem #soap #herbalsoap #bathtime #zuajapk #zuaja #pakistan #desicare #madeinpakistan #1111sale #11dot11 #onlineshoppingpakistan
 
@@ -139,7 +139,7 @@ Premium White Oud eau de parfum in a dark glass bottle with gold detailing. Want
 ✨ White Oud Perfume (50 ml): Rs. 1,999
 🔥 11.11 Sale: extra 11% off at checkout (about Rs. 1,779) till 15 November
 🚚 Delivery all over Pakistan
-📲 Order at zuaja.pk or WhatsApp 0316 1121130
+📲 Order at zuaja.store or WhatsApp 0316 1121130
 
 #whiteoud #oud #perfume #attar #fragrance #zuajapk #zuaja #pakistan #desicare #madeinpakistan #1111sale #11dot11 #onlineshoppingpakistan
 
@@ -152,7 +152,7 @@ The Zuaja Signature perfume in a faceted glass bottle with a golden cap. A gift 
 ✨ Zuaja Signature Perfume (50 ml): Rs. 2,200
 🔥 11.11 Sale: extra 11% off at checkout (about Rs. 1,958) till 15 November
 🚚 Delivery all over Pakistan
-📲 Order at zuaja.pk or WhatsApp 0316 1121130
+📲 Order at zuaja.store or WhatsApp 0316 1121130
 
 #perfume #signaturescent #giftideas #fragrance #luxuryperfume #zuajapk #zuaja #pakistan #desicare #madeinpakistan #1111sale #11dot11 #onlineshoppingpakistan
 
@@ -165,7 +165,7 @@ A unisex everyday perfume in a compact 30 ml spray. Small enough for your bag, r
 ✨ Unisex Perfume (30 ml): Rs. 1,500
 🔥 11.11 Sale: extra 11% off at checkout (about Rs. 1,335) till 15 November
 🚚 Delivery all over Pakistan
-📲 Order at zuaja.pk or WhatsApp 0316 1121130
+📲 Order at zuaja.store or WhatsApp 0316 1121130
 
 #unisexperfume #perfume #everydayscent #fragrance #pocketperfume #zuajapk #zuaja #pakistan #desicare #madeinpakistan #1111sale #11dot11 #onlineshoppingpakistan
 
@@ -178,7 +178,7 @@ A small spray tester of White Oud, so you can try it before you buy the full bot
 ✨ White Oud Tester: Rs. 250
 🔥 11.11 Sale: extra 11% off at checkout (about Rs. 222) till 15 November
 🚚 Delivery all over Pakistan
-📲 Order at zuaja.pk or WhatsApp 0316 1121130
+📲 Order at zuaja.store or WhatsApp 0316 1121130
 
 #perfumetester #whiteoud #tryitfirst #oud #fragrance #zuajapk #zuaja #pakistan #desicare #madeinpakistan #1111sale #11dot11 #onlineshoppingpakistan
 
@@ -190,6 +190,6 @@ Desi care for hair, skin and body from Zuaja PK: Haldi + Badam and Amla Reetha s
 
 Extra 11% off on everything at checkout, till 15 November.
 🚚 Delivery all over Pakistan
-📲 zuaja.pk · WhatsApp 0316 1121130
+📲 zuaja.store · WhatsApp 0316 1121130
 
 #zuajapk #zuaja #pakistan #desicare #madeinpakistan #1111sale #11dot11 #onlineshoppingpakistan #haircare #skincare #perfume

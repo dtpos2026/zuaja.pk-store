@@ -55,7 +55,7 @@ ASK = {
     "rose-soap": "Tag someone who loves roses 🌹", "white-oud": "Oud or floral? Comment your side 👇",
     "signature-perfume": "Who would you gift this to? Tag them 🎁", "unisex-perfume": "One scent for both of you? Tag your partner 💛",
 }
-CTA = "📍 Delivery all over Pakistan · Order at zuaja.pk or WhatsApp 0316 1121130"
+CTA = "📍 Delivery all over Pakistan · Order at zuaja.store or WhatsApp 0316 1121130"
 
 
 def product_caption(k):
@@ -199,7 +199,7 @@ def main():
                 pf, opts = POLLS[di]
                 story = f"Poll story: <b>Social-Pack / stories/{pf}.jpg</b>, plus an Instagram <b>Poll sticker</b> ({opts}) in the empty space. Also share today's feed post to your story."
             elif feed[0] == "post":
-                story = f"Product story: <b>Meta-Ads / statics/{feed[1]}_story-9x16_evergreen.jpg</b>, plus a <b>Link sticker</b> to zuaja.pk/products/{P[feed[1]]['handle']}. Then share today's post to your story."
+                story = f"Product story: <b>Meta-Ads / statics/{feed[1]}_story-9x16_evergreen.jpg</b>, plus a <b>Link sticker</b> to zuaja.store/products/{P[feed[1]]['handle']}. Then share today's post to your story."
             else:
                 story = "Share today's feed post to your story and add a <b>Question sticker</b>: <i>“Ask us anything about hair & skin care”</i>."
             days_html.append(f'''<section class="day"><div class="dhead"><div class="dnum">Day {wi * 7 + di + 1}</div>
@@ -248,7 +248,7 @@ th{{background:#171717;color:#e5c271}} tr:nth-child(even) td{{background:#fbf6ec
 <p style="margin-top:12mm;font-size:10pt">All files are in <b>Zuaja-Social-Pack.zip</b> and <b>Zuaja-Meta-Ads-Nov.zip</b></p></div>
 
 <div class="sec"><h2>1 · Strategy at a glance</h2>
-<div class="box"><b>Goal:</b> grow followers and send people to <b>zuaja.pk</b>. Every caption ends with the order line (website and WhatsApp).</div>
+<div class="box"><b>Goal:</b> grow followers and send people to <b>zuaja.store</b>. Every caption ends with the order line (website and WhatsApp).</div>
 <h3>Content mix</h3><ul>
 <li><b>Product posts (14):</b> one per product, colour-block design. They sell.</li>
 <li><b>Carousels (4):</b> guides people <b>save and share</b>. Saves and shares push posts into Explore.</li>
@@ -262,7 +262,7 @@ th{{background:#171717;color:#e5c271}} tr:nth-child(even) td{{background:#fbf6ec
 <li><b>Exactly 5 hashtags</b> (Instagram's current limit): 1 brand tag (#ZuajaPK), 2 product tags and 2 niche or country tags. Put them at the end of the caption.</li>
 <li><b>Alt text:</b> while posting go to Advanced settings → Accessibility → Write alt text, and paste the alt text from this plan.</li>
 <li><b>Location:</b> add "Pakistan" or your city (Gujranwala) to every post.</li>
-<li><b>Profile:</b> Name field <i>“Zuaja PK | Herbal Hair &amp; Skin Care”</i>. Bio: <i>“Desi care, made modern 🌿 Shampoos · Hair Oils · Face Wash · Perfumes · Delivery all over Pakistan”</i> + link zuaja.pk.</li>
+<li><b>Profile:</b> Name field <i>“Zuaja PK | Herbal Hair &amp; Skin Care”</i>. Bio: <i>“Desi care, made modern 🌿 Shampoos · Hair Oils · Face Wash · Perfumes · Delivery all over Pakistan”</i> + link zuaja.store.</li>
 <li><b>Pin 3 posts</b> on your profile: Brand intro, Shampoo finder carousel, White Oud post.</li>
 <li><b>Reels:</b> keep <i>Original audio</i> and rename it <i>“Zuaja PK Signature Sound”</i>. Turn on <i>“Also share to Facebook”</i>.</li></ul>
 <div class="box"><b>Honest note:</b> no one can guarantee a post will trend. What helps most: posting <b>every day on time</b>, replying fast, saveable carousels and reels in the first hour. Check Insights every Sunday and post more of what worked.</div>
@@ -275,10 +275,10 @@ th{{background:#171717;color:#e5c271}} tr:nth-child(even) td{{background:#fbf6ec
 <h3>Story</h3><ul><li>+ → Story → choose the story image → add the sticker the plan says (Poll, Link or Question) → Share.</li>
 <li>Save the best stories into <b>Highlights</b>: “Hair”, “Skin”, “Perfume”, “Order”.</li></ul>
 <h3>Reply templates (copy-paste)</h3>
-<div class="box"><b>Price?</b> “Assalam o Alaikum! {html.escape('<product>')} is Rs ___. Order at zuaja.pk or WhatsApp 0316 1121130 💛”<br>
-<b>Delivery?</b> “We deliver all over Pakistan 🚚 Just order on zuaja.pk or WhatsApp us at 0316 1121130.”<br>
+<div class="box"><b>Price?</b> “Assalam o Alaikum! {html.escape('<product>')} is Rs ___. Order at zuaja.store or WhatsApp 0316 1121130 💛”<br>
+<b>Delivery?</b> “We deliver all over Pakistan 🚚 Just order on zuaja.store or WhatsApp us at 0316 1121130.”<br>
 <b>Which one for me?</b> “Oily scalp → Amla Reetha, dry hair → Haldi + Badam, for roots add Rosemary Oil 🌿 Need help? DM us!”<br>
-<b>Comment ZAFRAN:</b> DM “Apply a small amount on a clean face at night and massage gently ✨ Order: zuaja.pk/products/zafarani-cream”.<br>
+<b>Comment ZAFRAN:</b> DM “Apply a small amount on a clean face at night and massage gently ✨ Order: zuaja.store/products/zafarani-cream”.<br>
 <b>Compliment:</b> “Thank you so much! 💛 Tag a friend who'd love this too.”</div>
 </div>
 

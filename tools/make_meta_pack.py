@@ -18,7 +18,7 @@ CREAM = (243, 234, 215)
 MUTED = (205, 196, 178)
 INK = (14, 13, 11)
 WA = "923161121130"
-SITE = "https://zuaja.pk"
+SITE = "https://zuaja.store"
 rng = np.random.default_rng(11)
 LOGO_DARK = Path(sys.argv[5]) if len(sys.argv) > 5 else LOGO
 

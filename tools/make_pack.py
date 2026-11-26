@@ -201,7 +201,7 @@ def creative(d, W, H, offer=True):
         if offer:
             dr.rounded_rectangle((tx, 342, tx + 440, 402), 30, fill=INK)
             dr.text((tx + 24, 356), "11.11  EXTRA 11% OFF", font=font(SANS_B, 26), fill=GOLD_L)
-        dr.text((tx, 440 if offer else 360), "Order: zuaja.pk  ·  WhatsApp 0316 1121130", font=font(SANS, 22), fill=(60, 50, 35))
+        dr.text((tx, 440 if offer else 360), "Order: zuaja.store  ·  WhatsApp 0316 1121130", font=font(SANS, 22), fill=(60, 50, 35))
         dr.rectangle((0, H - 10, W, H), fill=GOLD)
         return c.convert("RGB")
 
@@ -227,7 +227,7 @@ def creative(d, W, H, offer=True):
     if offer:
         pl += "  ·  extra 11% off at checkout"
     center(dr, W / 2, band_y + band_h * 0.62, pl, fit(dr, pl, SANS_B, 30, W * 0.9), (255, 255, 255))
-    center(dr, W / 2, band_y + band_h * 0.82, "zuaja.pk  ·  WhatsApp 0316 1121130  ·  Delivery all over Pakistan",
+    center(dr, W / 2, band_y + band_h * 0.82, "zuaja.store  ·  WhatsApp 0316 1121130  ·  Delivery all over Pakistan",
            font(SANS, 22), (200, 190, 165))
     if H > 1800:  # story/reel: keep bottom 250px clear for UI, add swipe cue in gold
         center(dr, W / 2, H - 120, "TAP TO SHOP  ↑", font(SANS_B, 30), GOLD)
@@ -265,7 +265,7 @@ def lineup(W, H):
         place(c, im, x + im.width / 2, base, shadow=True)
         x += im.width + gap * k
     dr.rectangle((0, H - 10, W, H), fill=GOLD)
-    msg = "Shop now: zuaja.pk  ·  WhatsApp 0316 1121130"
+    msg = "Shop now: zuaja.store  ·  WhatsApp 0316 1121130"
     center(dr, W / 2, H - (90 if H > 1800 else 56), msg, fit(dr, msg, SANS, 26, W * 0.9), INK)
     return c.convert("RGB")
 
@@ -296,7 +296,7 @@ def main():
                    f"✨ {name}{' (' + size + ')' if size else ''}: {price_line(price)}\n"
                    f"\U0001F525 11.11 Sale: extra 11% off at checkout (about {price_line(sale_price)}) till 15 November\n"
                    f"\U0001F69A Delivery all over Pakistan\n"
-                   f"\U0001F4F2 Order at zuaja.pk or WhatsApp 0316 1121130\n\n"
+                   f"\U0001F4F2 Order at zuaja.store or WhatsApp 0316 1121130\n\n"
                    f"{tags} {COMMON_TAGS}")
         (folder / "caption.txt").write_text(caption + "\n", encoding="utf-8")
         captions.append(f"## {name}\n\n{caption}\n")
@@ -307,7 +307,7 @@ def main():
             "primary_text": f"{hook} {body} 11.11 Sale: extra 11% off everything till 15 Nov. Delivery all over Pakistan.",
             "description": f"{price_line(price)} + 11% off"[:30],
             "call_to_action": "Shop now",
-            "website_url": f"https://zuaja.pk/products/{handle}",
+            "website_url": f"https://zuaja.store/products/{handle}",
         })
     for label, (w, h) in SIZES.items():
         lineup(w, h).save(OUT / "campaign" / f"zuaja-11-11-lineup-{label}.jpg", quality=90, optimize=True)
@@ -315,10 +315,10 @@ def main():
         "product": "Whole store (11.11 lineup)",
         "image_files": "; ".join(f"zuaja-11-11-lineup-{k}.jpg" for k in SIZES),
         "headline": "11.11 Sale · Extra 11% Off",
-        "primary_text": "Desi care for hair, skin and body: haldi, badam, amla, reetha, neem and rosemary from Zuaja PK, plus our perfumes. 11.11 Sale: extra 11% off everything till 15 November. Delivery all over Pakistan. Order at zuaja.pk or WhatsApp 0316 1121130.",
+        "primary_text": "Desi care for hair, skin and body: haldi, badam, amla, reetha, neem and rosemary from Zuaja PK, plus our perfumes. 11.11 Sale: extra 11% off everything till 15 November. Delivery all over Pakistan. Order at zuaja.store or WhatsApp 0316 1121130.",
         "description": "Ends 15 November",
         "call_to_action": "Shop now",
-        "website_url": "https://zuaja.pk/collections/11-11-sale",
+        "website_url": "https://zuaja.store/collections/11-11-sale",
     })
     with open(OUT / "ads-copy.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
@@ -328,7 +328,7 @@ def main():
             "Desi care for hair, skin and body from Zuaja PK: Haldi + Badam and Amla Reetha shampoos, Rosemary and 7 Herbal oils, "
             "Herbal Face Wash, Zafarani Cream, neem and lavender washes, soaps and our perfumes.\n\n"
             "Extra 11% off on everything at checkout, till 15 November.\n"
-            "\U0001F69A Delivery all over Pakistan\n\U0001F4F2 zuaja.pk · WhatsApp 0316 1121130\n\n" + COMMON_TAGS + " #haircare #skincare #perfume\n")
+            "\U0001F69A Delivery all over Pakistan\n\U0001F4F2 zuaja.store · WhatsApp 0316 1121130\n\n" + COMMON_TAGS + " #haircare #skincare #perfume\n")
     captions.append(camp)
     (OUT / "campaign" / "caption.txt").write_text(camp, encoding="utf-8")
     (OUT / "captions.md").write_text("\n".join(captions), encoding="utf-8")

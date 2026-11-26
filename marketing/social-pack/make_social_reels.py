@@ -122,7 +122,7 @@ def end_card():
     lg = logo_img(520, False); c.alpha_composite(lg, (W // 2 - lg.width // 2, 520))
     d.text((W // 2, 760), "Desi care for hair, skin & body", font=font("CormorantGaramond", 64, "Bold"), fill=INK, anchor="ma")
     d.rounded_rectangle((W / 2 - 330, 900, W / 2 + 330, 1010), radius=55, fill=INK)
-    d.text((W // 2, 955), "SHOP AT ZUAJA.PK", font=font("Jost", 46, "Bold"), fill=GOLD_L, anchor="mm")
+    d.text((W // 2, 955), "SHOP AT ZUAJA.STORE", font=font("Jost", 46, "Bold"), fill=GOLD_L, anchor="mm")
     d.text((W // 2, 1080), "WhatsApp 0316 1121130  ·  Delivery all over Pakistan", font=font("Jost", 32, "Medium"), fill=GOLD_D, anchor="ma")
     return c
 

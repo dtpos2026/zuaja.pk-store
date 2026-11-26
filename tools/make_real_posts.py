@@ -64,7 +64,7 @@ def feed(key):
     im, m = card(key, cw, ch); place_card(c, im, m, (W - cw) // 2, 232, light)
     d = ImageDraw.Draw(c)
     d.text((W // 2, 232 + ch + 26), line.upper(), font=font("Jost", 24, "SemiBold"), fill=tc(light), anchor="ma")
-    pill(d, W // 2, 232 + ch + 66, f"{price}  ·  zuaja.pk", light, 28, 56)
+    pill(d, W // 2, 232 + ch + 66, f"{price}  ·  zuaja.store", light, 28, 56)
     frame(c, light)
     return c.convert("RGB")
 
@@ -79,7 +79,7 @@ def story(key):
     hf = font("CormorantGaramond", 80, "Bold")
     for ln in wrap(d, head, hf, W - 140):
         d.text((W // 2, y), ln, font=hf, fill=tc(light), anchor="ma"); y += 84
-    pill(d, W // 2, y + 10, f"{price}  ·  ORDER AT ZUAJA.PK", light, 30, 66)
+    pill(d, W // 2, y + 10, f"{price}  ·  ORDER AT ZUAJA.STORE", light, 30, 66)
     y += 110
     cw = 860; ch = min(1210, H - y - 60)
     im, m = card(key, cw, ch); place_card(c, im, m, (W - cw) // 2, y, light)

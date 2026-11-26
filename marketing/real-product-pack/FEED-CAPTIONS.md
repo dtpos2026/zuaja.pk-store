@@ -28,7 +28,7 @@ Stories every day: use the matching `_story-9x16` / `_clean-9x16` file and add a
 
 **Real Zuaja reel**
 > Just arrived: the real Zuaja PK 📦✨ Rosemary oil, Amla Reetha, Haldi + Badam, body washes and perfumes. Desi care, made modern.
-> 📍 Delivery all over Pakistan · Order at zuaja.pk or WhatsApp 0316 1121130
+> 📍 Delivery all over Pakistan · Order at zuaja.store or WhatsApp 0316 1121130
 > 💬 Which one should we show next? 👇
 > #ZuajaPK #MadeInPakistan #PakistaniBrand #HerbalCare #Unboxing
 > Alt text: *Zuaja PK products: shampoos, hair oil, body washes and perfume, real product video*
@@ -36,7 +36,7 @@ Stories every day: use the matching `_story-9x16` / `_clean-9x16` file and add a
 **Signature gift box**
 > Perfume gift ideas in Pakistan: Zuaja PK Signature Perfume in a satin gift box 🎁 Crystal-cut bottle, long-lasting scent. Rs 2,200.
 > _Tohfa jo yaad rahe._
-> 📍 Delivery all over Pakistan · zuaja.pk · WhatsApp 0316 1121130
+> 📍 Delivery all over Pakistan · zuaja.store · WhatsApp 0316 1121130
 > 💬 Who would you gift this to? Tag them 🎁
 > #ZuajaPK #PerfumePakistan #GiftIdeas #LuxuryPerfume #Unboxing
 > Alt text: *Zuaja PK Signature Perfume bottle in an open satin gift box*
@@ -44,7 +44,7 @@ Stories every day: use the matching `_story-9x16` / `_clean-9x16` file and add a
 **Rosemary in hand**
 > Rosemary oil for hair in Pakistan, and you can actually see the rosemary inside 🌿 Rosemary, onion, castor, amla and aloe vera for your weekly champi. Rs 950.
 > _Asli rosemary, asli asar._
-> 📍 zuaja.pk · WhatsApp 0316 1121130
+> 📍 zuaja.store · WhatsApp 0316 1121130
 > 💬 How often do you oil your hair? 👇
 > #ZuajaPK #RosemaryOil #HairOilPakistan #HairCareRoutine #DesiNuskhe
 > Alt text: *Hand holding Zuaja PK Rosemary Hair Oil bottle with rosemary sprigs inside*
@@ -57,14 +57,14 @@ Stories every day: use the matching `_story-9x16` / `_clean-9x16` file and add a
 **Washes trio**
 > Body wash scents: Neem, Lavender or Rose? 💚💜🌹 Gentle cleansing for fresh, soft skin, 100 ml from Rs 300.
 > _Aap ka shower mood kaunsa hai?_
-> 📍 zuaja.pk · WhatsApp 0316 1121130
+> 📍 zuaja.store · WhatsApp 0316 1121130
 > #ZuajaPK #BodyWash #SelfCare #Lavender #MadeInPakistan
 > Alt text: *Zuaja PK Neem, Lavender and Rose hand and body wash bottles*
 
 **Amla Reetha in hand**
 > Amla reetha shampoo for oily scalp 🍃 Deep cleansing with amla, reetha, aloe vera and bhringraj. 200 ml, Rs 750.
 > _Shaam tak fresh baal._
-> 📍 zuaja.pk · WhatsApp 0316 1121130
+> 📍 zuaja.store · WhatsApp 0316 1121130
 > 💬 Oily scalp gang, say hi 👋
 > #ZuajaPK #AmlaReetha #HerbalShampoo #OilyScalp #HairCarePakistan
 > Alt text: *Hand holding Zuaja PK Amla Reetha Shampoo 200 ml*
@@ -81,7 +81,7 @@ Stories every day: use the matching `_story-9x16` / `_clean-9x16` file and add a
 
 **Haldi + Badam in hand**
 > Haldi badam shampoo for dry, frizzy hair ✨ Haldi cleanses, badam nourishes for soft, shiny hair. Rs 450 (was Rs 880).
-> 📍 zuaja.pk · WhatsApp 0316 1121130
+> 📍 zuaja.store · WhatsApp 0316 1121130
 > #ZuajaPK #HaldiBadam #DryHair #HerbalShampoo #HairCarePakistan
 > Alt text: *Hand holding Zuaja PK Haldi + Badam Shampoo 100 ml*
 
@@ -108,5 +108,5 @@ Stories every day: use the matching `_story-9x16` / `_clean-9x16` file and add a
 
 **Real photos, not ads reel (UGC)**
 > These are real photos, not ads 📸 No studio, real bottles, real desi ingredients. Made in Pakistan 🇵🇰
-> 📍 Delivery all over Pakistan · zuaja.pk · WhatsApp 0316 1121130
+> 📍 Delivery all over Pakistan · zuaja.store · WhatsApp 0316 1121130
 > #ZuajaPK #MadeInPakistan #PakistaniBrand #RealReview #HerbalCare

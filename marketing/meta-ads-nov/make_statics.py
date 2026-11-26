@@ -147,7 +147,7 @@ def footer(c, w, h, fh=86):
     d = ImageDraw.Draw(c)
     d.rectangle((0, h - fh, w, h), fill=INK)
     d.line((0, h - fh, w, h - fh), fill=GOLD, width=4)
-    d.text((w // 2, h - fh // 2), "zuaja.pk  ·  WhatsApp 0316 1121130  ·  Delivery all over Pakistan",
+    d.text((w // 2, h - fh // 2), "zuaja.store  ·  WhatsApp 0316 1121130  ·  Delivery all over Pakistan",
            font=font("Jost", 28, "Medium"), fill=(245, 236, 217), anchor="mm")
 
 

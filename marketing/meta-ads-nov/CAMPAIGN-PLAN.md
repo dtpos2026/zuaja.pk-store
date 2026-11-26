@@ -1,6 +1,6 @@
 # Zuaja PK: Meta Ads launch plan (Nov 2026)
 
-**Goal:** sales on zuaja.pk. The 11.11 Sale (extra 11% off at checkout) runs until **15 Nov, 11:59 pm**. From **16 Nov** switch to the evergreen creatives.
+**Goal:** sales on zuaja.store. The 11.11 Sale (extra 11% off at checkout) runs until **15 Nov, 11:59 pm**. From **16 Nov** switch to the evergreen creatives.
 **Budget used below:** **Rs 5,000 / day** (scale tiers at the end).
 Short version in Roman Urdu: aik campaign, 4 ad sets, 20 ads aaj raat. Har ad set mein reels aur static dono. 15 Nov tak "sale" wale creatives, 16 Nov se "evergreen" wale.
 
@@ -10,7 +10,7 @@ Short version in Roman Urdu: aik campaign, 4 ad sets, 20 ads aaj raat. Har ad se
 1. **Pixel / Facebook channel:** Shopify admin → Sales channels → *Facebook & Instagram* must be connected with the Meta **Pixel + Conversions API** set to *Maximum*. Then check in Events Manager that **Purchase** and **AddToCart** events are arriving.
    *If the pixel is NOT connected yet:* run the same structure with objective **Traffic → Landing page views** for 2–3 days while it collects data, or use **Engagement → Messages (WhatsApp 0316 1121130)**.
 2. **Page and Instagram:** facebook.com/zuaja.pk and IG @zuaja.pk1 linked in Business Settings.
-3. **Domain:** verify zuaja.pk in Business Settings → Brand safety → Domains.
+3. **Domain:** verify zuaja.store in Business Settings → Brand safety → Domains.
 4. **Payment method** added in the ad account. Ad account currency PKR, time zone Asia/Karachi.
 
 ---
@@ -92,7 +92,7 @@ All text, headlines and links for these 20 ads (sale and evergreen) are in **`ad
 | `reels/` | 12 s reels 9:16 with original background music, sale and evergreen for 13 products | 26 videos |
 | `VOICEOVER-SCRIPTS.md` | Urdu (Roman) voice-over for every reel | 13 scripts |
 
-**Reel storyboard (all products):** 0–2.5 s question hook + product rises → 2.5–7.5 s product name + 3 benefits → 7.5–9.5 s *What's inside* → 9.5–12 s price card + 11.11 pill + *Order now · zuaja.pk*.
+**Reel storyboard (all products):** 0–2.5 s question hook + product rises → 2.5–7.5 s product name + 3 benefits → 7.5–9.5 s *What's inside* → 9.5–12 s price card + 11.11 pill + *Order now · zuaja.store*.
 **Voice-over:** online Urdu text-to-speech was blocked in this session, so the reels ship with music only. Most people watch muted, and captions carry the message. To add the Urdu voice: CapCut → open reel → *Text-to-speech → Urdu*, or record it yourself from `VOICEOVER-SCRIPTS.md`. Keep the music at about 20%.
 
 ---

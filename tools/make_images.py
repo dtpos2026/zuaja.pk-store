@@ -136,7 +136,7 @@ def banner(photo, name, tagline):
     tag = fit_font(d, tagline, SERIF_I, 40, 1080)
     text_center(d, 1020, tagline, tag, IVORY)
     small = ImageFont.truetype(SANS, 24)
-    text_center(d, 1110, "ZUAJA.PK  ·  WhatsApp 0316 1121130  ·  Delivery all over Pakistan", small, (210, 200, 180))
+    text_center(d, 1110, "zuaja.store  ·  WhatsApp 0316 1121130  ·  Delivery all over Pakistan", small, (210, 200, 180))
     return c.convert("RGB")
 
 

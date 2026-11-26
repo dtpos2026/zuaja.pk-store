@@ -63,7 +63,7 @@ def card(p):
         y += 26
     # bottom strip
     d.rectangle((0, S - 96, S, S), fill=INK); d.line((0, S - 96, S, S - 96), fill=GOLD, width=4)
-    d.text((S // 2, S - 48), "zuaja.pk  ·  WhatsApp 0316 1121130  ·  Delivery all over Pakistan",
+    d.text((S // 2, S - 48), "zuaja.store  ·  WhatsApp 0316 1121130  ·  Delivery all over Pakistan",
            font=font("Jost", 34, "Medium"), fill=(245, 236, 217), anchor="mm")
     return c.convert("RGB")
 

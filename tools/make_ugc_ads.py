@@ -79,7 +79,7 @@ def make_feed(name):
     d.text((52, H - band + 112), prod, font=font("Jost", 28, "Medium"), fill=CREAM)
     d.text((52, H - band + 150), price_text(price, old), font=font("Jost", 44, "Bold"), fill=GOLD_L)
     pill(d, W - 240, H - band + 70, "ORDER NOW", font("Jost", 34, "Bold"), CREAM, INK, 50, 90)
-    d.text((W - 240, H - band + 180), "zuaja.pk  ·  0316 1121130", font=font("Jost", 22, "Medium"), fill=(200, 190, 170), anchor="ma")
+    d.text((W - 240, H - band + 180), "zuaja.store  ·  0316 1121130", font=font("Jost", 22, "Medium"), fill=(200, 190, 170), anchor="ma")
     return c.convert("RGB")
 
 
@@ -99,7 +99,7 @@ def make_story(name):
     for ln in wrap(d, hook, hf, W - 120):
         d.text((W // 2, y), ln, font=hf, fill=(255, 250, 240), anchor="ma"); y += 84
     d.text((W // 2, y + 14), prod.upper(), font=font("Jost", 28, "SemiBold"), fill=GOLD_L, anchor="ma")
-    pill(d, W // 2, y + 64, f"{price_text(price, old)}  ·  ORDER AT ZUAJA.PK", font("Jost", 32, "Bold"), CREAM, INK, 40, 78)
+    pill(d, W // 2, y + 64, f"{price_text(price, old)}  ·  ORDER AT ZUAJA.STORE", font("Jost", 32, "Bold"), CREAM, INK, 40, 78)
     return c.convert("RGB")
 
 

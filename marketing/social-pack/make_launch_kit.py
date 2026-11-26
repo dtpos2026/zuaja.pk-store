@@ -51,7 +51,7 @@ def fb_cover():
     lg = logo_img(520, False); c.alpha_composite(lg, (250, 170))
     d.text((250, 330), "Desi care, made modern", font=font("CormorantGaramond", 58, "Bold"), fill=INK)
     d.text((252, 410), "HAIR · SKIN · BODY · FRAGRANCE", font=font("Jost", 26, "SemiBold"), fill=GOLD)
-    d.text((252, 452), "zuaja.pk  ·  WhatsApp 0316 1121130", font=font("Jost", 26, "Medium"), fill=(90, 80, 66))
+    d.text((252, 452), "zuaja.store  ·  WhatsApp 0316 1121130", font=font("Jost", 26, "Medium"), fill=(90, 80, 66))
     keys = ["amla-reetha-shampoo", "rosemary-oil", "white-oud", "zafarani-cream", "face-wash"]
     ps = [load_cutout(P[k]["cutout"]) for k in keys]
     hh = 400; ps = [q.resize((max(1, round(q.width * hh * (1 if i == 2 else .82) / q.height)), round(hh * (1 if i == 2 else .82))), Image.LANCZOS) for i, q in enumerate(ps)]
@@ -99,7 +99,7 @@ def grid_mock(profile):
         d.text((420 + i * 220, 120), n, font=font("Jost", 44, "Bold"), fill=INK, anchor="mm")
         d.text((420 + i * 220, 175), l, font=font("Jost", 28, "Regular"), fill=(90, 90, 90), anchor="mm")
     d.text((50, 290), "Zuaja PK | Herbal Hair & Skin Care", font=font("Jost", 32, "Bold"), fill=INK)
-    for i, ln in enumerate(["Desi care, made modern 🌿".replace("🌿", ""), "Shampoos · Hair Oils · Face Wash · Perfumes", "Delivery all over Pakistan · zuaja.pk"]):
+    for i, ln in enumerate(["Desi care, made modern 🌿".replace("🌿", ""), "Shampoos · Hair Oils · Face Wash · Perfumes", "Delivery all over Pakistan · zuaja.store"]):
         d.text((50, 340 + i * 40), ln, font=font("Jost", 28, "Regular"), fill=(40, 40, 40) if i < 2 else (30, 80, 160))
     hl = [("Hair", "rosemary-oil"), ("Skin", "zafarani-cream"), ("Bath", "neem-wash"), ("Scents", "white-oud"), ("Order", None)]
     hl_y = 470 - 10
@@ -128,7 +128,7 @@ def caption_for(kind, key):
     if kind == "car":
         return EXTRA["car-" + key]
     cap, tags = REEL[key]
-    return (cap + "\n📍 Delivery all over Pakistan · Order at zuaja.pk or WhatsApp 0316 1121130", tags, "")
+    return (cap + "\n📍 Delivery all over Pakistan · Order at zuaja.store or WhatsApp 0316 1121130", tags, "")
 
 
 def main():
@@ -182,7 +182,7 @@ ol li,ul li{{margin:1mm 0}}.post{{display:flex;gap:4mm;page-break-inside:avoid;b
 <li><b>Name field</b> (it is searchable): <b>Zuaja PK | Herbal Hair &amp; Skin Care</b></li>
 <li><b>Username:</b> keep @zuaja.pk1 on Instagram and /zuaja.pk on Facebook.</li>
 <li><b>Bio:</b><br>Desi care, made modern 🌿<br>Shampoos · Hair Oils · Face Wash · Perfumes<br>🚚 Delivery all over Pakistan · WhatsApp 0316 1121130</li>
-<li><b>Link:</b> https://zuaja.pk · <b>Category:</b> Health/Beauty · <b>Contact buttons:</b> WhatsApp + email zuaja.official@gmail.com</li></ol></div></div>
+<li><b>Link:</b> https://zuaja.store · <b>Category:</b> Health/Beauty · <b>Contact buttons:</b> WhatsApp + email zuaja.official@gmail.com</li></ol></div></div>
 <h3 style="font-family:Corm;font-size:15pt">Facebook cover photo</h3><img src="{b64(fc, 900)}" style="width:100%;border:1px solid #ddd;border-radius:2mm">
 <p style="font-size:9pt;color:#666">File: <i>launch-kit/facebook-cover.jpg</i> (1640×624, safe for both mobile and desktop)</p>
 <h3 style="font-family:Corm;font-size:15pt">Instagram Highlights (covers)</h3><div class="hls">{hl_html}</div>

@@ -4,7 +4,7 @@ Storyboard per product (all key content inside the Reels safe zone, y 230-1540):
   0.0-2.5s  hook question pops in, product rises into frame
   2.5-7.5s  product name + 3 benefit chips slide in one by one, slow zoom
   7.5-9.5s  "What's inside" ingredients card
-  9.5-12s   price card (old price struck, % badge), 11.11 pill (sale variant), CTA "Order now · zuaja.pk"
+  9.5-12s   price card (old price struck, % badge), 11.11 pill (sale variant), CTA "Order now · zuaja.store"
 Background music is generated here (soft original pad + pluck), so there are no copyright issues.
 Usage (repo root):  python3 -I marketing/meta-ads-nov/make_reels.py [key ...]
 """
@@ -133,7 +133,7 @@ def price_card(p, sale):
         d.text((w // 2, yy + 32), "11.11 · EXTRA 11% OFF · TILL 15 NOV", font=font("Jost", 32, "Bold"), fill=INK, anchor="mm")
         yy += 84
     d.rounded_rectangle((120, yy, w - 120, yy + 100), radius=50, fill=INK)
-    d.text((w // 2, yy + 50), "ORDER NOW  ·  zuaja.pk", font=font("Jost", 40, "Bold"), fill=GOLD_L, anchor="mm")
+    d.text((w // 2, yy + 50), "ORDER NOW  ·  zuaja.store", font=font("Jost", 40, "Bold"), fill=GOLD_L, anchor="mm")
     return im
 
 

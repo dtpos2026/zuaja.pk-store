@@ -37,7 +37,7 @@ for adset, ads in PLAN:
             rows.append({
                 "variant": tag, "ad_set": adset, "ad_name": f"{key}_{kind}_{tag}",
                 "files": files, "primary_text": prim, "headline": head, "description": DESC,
-                "cta": "Shop now", "url": f"https://zuaja.pk{path}?{UTM}",
+                "cta": "Shop now", "url": f"https://zuaja.store{path}?{UTM}",
             })
 with open(HERE / "ads-copy.csv", "w", newline="", encoding="utf-8-sig") as f:
     w = csv.DictWriter(f, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)

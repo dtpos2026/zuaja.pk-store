@@ -39,7 +39,7 @@ REELS = {  # name: (segments [(src, beats, hook, caption)], end-card price line)
         (P("signature-box-a"), 2, None, "Smells expensive. Lasts all day."),
         (C("perfume-unboxing-C080.mov", 4.0, 0.8), 4, None, "Perfect gift for Eid, weddings, birthdays"),
         (P("signature-box-wide"), 2, None, "Only Rs 2,200"),
-        (P("signature-opening"), 4, None, "Order now at zuaja.pk"),
+        (P("signature-opening"), 4, None, "Order now at zuaja.store"),
     ], ("Signature Perfume · 50 ml", "Rs 2,200")),
     "oily-dry-scalp": ([
         (P("amla-hand"), 3, "Stop scrolling if you have an oily scalp", None),
@@ -48,7 +48,7 @@ REELS = {  # name: (segments [(src, beats, hook, caption)], end-card price line)
         (P("rosemary-hand"), 3, None, "Weak-looking roots? Rosemary oil"),
         (P("rosemary-hand"), 2, None, "You can SEE the real rosemary inside"),
         (P("hair-trio-b"), 3, None, "Full routine from Rs 450"),
-        (P("hair-trio-a"), 4, None, "Order now at zuaja.pk"),
+        (P("hair-trio-a"), 4, None, "Order now at zuaja.store"),
     ], ("Amla Reetha · Haldi + Badam · Rosemary", "from Rs 450")),
     "shower-mood": ([
         (C("washes-pan-C075.mov", 0.2), 3, "Which one are you?", None),
@@ -57,7 +57,7 @@ REELS = {  # name: (segments [(src, beats, hook, caption)], end-card price line)
         (C("washes-pan-C075.mov", 4.6), 2, None, "Rose = soft skin"),
         (C("washes-trio-C076.mov", 0.5), 5, None, "Gentle cleansing, every day"),
         (P("washes-trio-2"), 2, None, "Only Rs 300 each"),
-        (P("washes-trio"), 4, None, "Order now at zuaja.pk"),
+        (P("washes-trio"), 4, None, "Order now at zuaja.store"),
     ], ("Neem · Lavender · Rose · 100 ml", "from Rs 300")),
     "real-not-ads": ([
         (P("rosemary-hand"), 2, "These are REAL photos, not ads", None),
@@ -67,7 +67,7 @@ REELS = {  # name: (segments [(src, beats, hook, caption)], end-card price line)
         (P("signature-box-hand"), 2, None, "Real gift box"),
         (C("perfume-unboxing-C080.mov", 2.0, 0.8), 3, None, "Real luxury"),
         (P("hair-trio-a"), 2, None, "Made in Pakistan"),
-        (P("washes-trio-2"), 4, None, "Order at zuaja.pk"),
+        (P("washes-trio-2"), 4, None, "Order at zuaja.store"),
     ], ("Hair · Skin · Body · Perfume", "from Rs 300")),
 }
 
@@ -123,7 +123,7 @@ def end_card(last_png, line, price, path):
     outlined(d, (W // 2, 830), price, font("Jost", 120, "ExtraBold"), YELLOW, 10)
     d.rounded_rectangle((W / 2 - 340, 1030, W / 2 + 340, 1150), radius=60, fill=(255, 255, 255))
     d.text((W // 2, 1090), "ORDER NOW", font=font("Jost", 60, "ExtraBold"), fill=INK, anchor="mm")
-    d.text((W // 2, 1200), "zuaja.pk  ·  WhatsApp 0316 1121130", font=font("Jost", 34, "Medium"), fill=(255, 255, 255), anchor="ma")
+    d.text((W // 2, 1200), "zuaja.store  ·  WhatsApp 0316 1121130", font=font("Jost", 34, "Medium"), fill=(255, 255, 255), anchor="ma")
     d.text((W // 2, 1256), "Cash on Delivery  ·  Delivery all over Pakistan", font=font("Jost", 30, "Medium"), fill=(220, 220, 220), anchor="ma")
     bgi.convert("RGB").save(path)
 

@@ -120,7 +120,7 @@ def hero_post(key):
     d.text((W // 2, 1150), name.upper(), font=font("Jost", 28, "SemiBold"), fill=tc(light), anchor="ma")
     d.text((W // 2, 1196), trio.upper(), font=font("Jost", 24, "SemiBold"), fill=GOLD_L if light else GOLD_D, anchor="ma")
     # price + site pill
-    pill = f"{money(p['price'])}   ·   zuaja.pk"
+    pill = f"{money(p['price'])}   ·   zuaja.store"
     pf = font("Jost", 30, "Bold"); pw = d.textlength(pill, font=pf) + 70
     fill = CREAM if light else INK; txt = INK if light else CREAM
     d.rounded_rectangle((W / 2 - pw / 2, 1240, W / 2 + pw / 2, 1300), radius=30, fill=fill)
@@ -167,7 +167,7 @@ def slide(n, total, title, body=None, items=(), kicker="", cover=False, cta=Fals
         d.text((W // 2, 1236), "SWIPE  →", font=font("Jost", 30, "Bold"), fill=GOLD, anchor="ma")
     elif cta:
         d.rounded_rectangle((W / 2 - 300, 1200, W / 2 + 300, 1290), radius=45, fill=INK)
-        d.text((W // 2, 1245), "SAVE THIS  ·  SHOP AT ZUAJA.PK", font=font("Jost", 30, "Bold"), fill=GOLD_L, anchor="mm")
+        d.text((W // 2, 1245), "SAVE THIS  ·  SHOP AT ZUAJA.STORE", font=font("Jost", 30, "Bold"), fill=GOLD_L, anchor="mm")
     else:
         d.line((W / 2 - 60, 1250, W / 2 + 60, 1250), fill=GOLD, width=3)
     frame(c, False)
@@ -271,7 +271,7 @@ def lineup_post(keys, title, sub):
         c.alpha_composite(ps[i], (int(xs[i]), base - ps[i].height))
     d = ImageDraw.Draw(c)
     d.text((W // 2, 1160), "Shampoos · Hair Oils · Face Wash · Cream · Body Wash · Soap · Perfume", font=font("Jost", 26, "Medium"), fill=INK, anchor="ma")
-    d.text((W // 2, 1230), "zuaja.pk  ·  WhatsApp 0316 1121130", font=font("Jost", 30, "Bold"), fill=GOLD, anchor="ma")
+    d.text((W // 2, 1230), "zuaja.store  ·  WhatsApp 0316 1121130", font=font("Jost", 30, "Bold"), fill=GOLD, anchor="ma")
     frame(c, False)
     return c.convert("RGB")
 
