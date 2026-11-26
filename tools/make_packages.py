@@ -11,6 +11,7 @@ M, PK, MU = ROOT / "media", ROOT / "marketing/real-product-pack", ROOT / "market
 
 
 def build(name, items):
+    items = [(a, s) for a, s in items if "_aura" not in a]   # aura music test files stay in the repo, keeps the zip lighter
     z = ROOT / name
     with zipfile.ZipFile(z, "w", zipfile.ZIP_STORED) as f:   # media is already compressed
         for arc, src in items:
@@ -18,7 +19,8 @@ def build(name, items):
     print(name, len(items), "files", round(z.stat().st_size / 1e6, 1), "MB")
 
 
-ad = [(f"ugc-ads/{p.name}", p) for p in sorted((M / "ugc-ads").glob("*.jpg"))]
+ad = [(f"hand-ads/{p.name}", p) for p in sorted((M / "hand-ads").glob("*.mp4"))]
+ad += [(f"ugc-ads/{p.name}", p) for p in sorted((M / "ugc-ads").glob("*.jpg"))]
 ad += [(f"ugc-reels/{p.name}", p) for p in sorted((M / "ugc-reels").glob("*.mp4"))]
 ad += [(f"video-ads/{p.name}", p) for p in sorted((M / "reels").glob("*.mp4"))]
 ad += [(p.name, p) for p in (PK / "CAMPAIGN-PLAN-DEC.md", PK / "AD-PLAN.md", PK / "ads-copy-real.csv")]
@@ -27,6 +29,7 @@ build("Zuaja-Ad-Package.zip", ad)
 
 feed = [(f"real-posts/{p.name}", p) for p in sorted((M / "real-posts").glob("*.jpg"))]
 feed += [(f"photos/{p.name}", p) for p in sorted((M / "photos").glob("*_clean-*.jpg"))]
+feed += [(f"hand-ads/{p.name}", p) for p in sorted((M / "hand-ads").glob("*_9x16.mp4"))]
 feed += [(f"ugc-reels/{p.name}", p) for p in sorted((M / "ugc-reels").glob("*_9x16.mp4"))]
 feed += [(f"video-ads/{p.name}", p) for p in sorted((M / "reels").glob("*_9x16.mp4"))]
 feed += [("FEED-CAPTIONS.md", PK / "FEED-CAPTIONS.md")]

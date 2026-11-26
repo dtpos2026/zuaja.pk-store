@@ -20,8 +20,8 @@
 
 | Ad set | Audience | Ads (3 each) | Link |
 |---|---|---|---|
-| **A1 Hair Women** (Rs 500) | Pakistan · **Women** · 20–45 · no interests (broad) | Rosemary hand video · Amla Reetha hand video · Haldi + Badam hand video. Backup: `oily-dry-scalp` UGC reel | product page of each |
-| **A2 Perfume Gift** (Rs 500) | Pakistan · **Men + Women** · 22–45 · broad | Signature hand video · White Oud hand video · `pov-parcel` UGC reel | perfume product pages |
+| **A1 Hair Women** (Rs 500) | **Punjab** · **Women** · 20–45 · no interests (broad) | `hand-ads/rosemary-oil` · `hand-ads/amla-reetha` · `hand-ads/haldi-badam`. Backup: `hand-ads/hair-routine` | product page of each |
+| **A2 Perfume Gift** (Rs 500) | **Punjab** · **Men + Women** · 22–45 · broad | `hand-ads/signature-perfume` · `hand-ads/white-oud` · `ugc-reels/pov-parcel` | perfume product pages |
 
 ## 2. Campaign B: WHATSAPP (orders on chat)
 | Setting | Value |
@@ -33,12 +33,15 @@
 
 | Ad set | Audience | Ads (3 each) |
 |---|---|---|
-| **B1 Hair + Body Women** (Rs 500) | Pakistan · **Women** · 20–45 · broad | Hair routine (3 hand videos cut together) · Body wash hand video · `shower-mood` UGC reel |
-| **B2 Perfume Men + Women** (Rs 500) | Pakistan · **Men + Women** · 22–45 · broad | Signature hand video · White Oud hand video · `real-not-ads` UGC reel |
+| **B1 Hair + Body Women** (Rs 500) | **Punjab** · **Women** · 20–45 · broad | `hand-ads/hair-routine` · `hand-ads/wash-moods` · `hand-ads/rose-wash`. Backup: `hand-ads/neem-wash`, `hand-ads/lavender-wash` |
+| **B2 Perfume Men + Women** (Rs 500) | **Punjab** · **Men + Women** · 22–45 · broad | `hand-ads/signature-perfume` · `hand-ads/white-oud` · `ugc-reels/real-not-ads` |
 
 **WhatsApp greeting (pre-filled message):** "Assalam o Alaikum! Mujhe yeh product order karna hai 👇"
 **Quick replies:** "Price kya hai?" · "Delivery kitne din mein?" · "COD hai?"
 **Rule:** reply within **5 minutes** (from 10 am to 11 pm). A late reply loses the sale.
+
+**Location:** start with **Punjab** (Lahore, Faisalabad, Rawalpindi, Multan, Gujranwala, Sialkot and the rest): COD delivery is faster there and fewer parcels come back. After 7 days, if the cost per order is good, change the location to **Pakistan**.
+**Files:** upload the `_9x16.mp4` **and** the `_4x5.mp4` of every ad (Meta picks the right one per placement). The `_aura` files are for a music test later.
 
 ## 3. Daily routine and rules
 - **Days 1–4:** change nothing (learning). Check only that the ads are delivering.

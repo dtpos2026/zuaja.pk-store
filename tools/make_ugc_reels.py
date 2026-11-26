@@ -27,6 +27,7 @@ MUSIC = ROOT / "marketing/social-pack/music/commercial/zuaja-commercial-15s.wav"
 MUSIC_ALT = ROOT / "marketing/social-pack/music/aura/zuaja-aura-15s.wav"
 GRADE = "eq=contrast=1.06:saturation=1.14:brightness=0.012,colorbalance=rs=0.03:bs=-0.03,unsharp=5:5:0.55"
 YELLOW = (255, 214, 64)
+CAP_Y = 1170   # caption centre line; hand-held ads move it up so labels stay clear
 
 C = lambda f, s, sp=1.0: ("clip", RAW / f, s, sp)  # noqa: E731
 P = lambda n: ("photo", n)  # noqa: E731
@@ -84,7 +85,7 @@ def overlay_png(hook, cap, path):
         for i, ln in enumerate(lines):
             d.text((W // 2, y0 + 22 + i * 80), ln, font=f, fill=YELLOW if i == 0 else (255, 255, 255), anchor="ma")
     if cap:
-        f = font("Jost", 74, "ExtraBold"); lines = wrap(d, cap, f, W - 140); y = 1170 - 44 * (len(lines) - 1)
+        f = font("Jost", 74, "ExtraBold"); lines = wrap(d, cap, f, W - 140); y = CAP_Y - 44 * (len(lines) - 1)
         for ln in lines:
             outlined(d, (W // 2, y), ln, f); y += 88
     c.save(path)
@@ -123,7 +124,7 @@ def end_card(last_png, line, price, path):
     d.rounded_rectangle((W / 2 - 340, 1030, W / 2 + 340, 1150), radius=60, fill=(255, 255, 255))
     d.text((W // 2, 1090), "ORDER NOW", font=font("Jost", 60, "ExtraBold"), fill=INK, anchor="mm")
     d.text((W // 2, 1200), "zuaja.pk  ·  WhatsApp 0316 1121130", font=font("Jost", 34, "Medium"), fill=(255, 255, 255), anchor="ma")
-    d.text((W // 2, 1256), "Delivery all over Pakistan", font=font("Jost", 30, "Medium"), fill=(220, 220, 220), anchor="ma")
+    d.text((W // 2, 1256), "Cash on Delivery  ·  Delivery all over Pakistan", font=font("Jost", 30, "Medium"), fill=(220, 220, 220), anchor="ma")
     bgi.convert("RGB").save(path)
 
 
