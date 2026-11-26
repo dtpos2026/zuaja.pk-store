@@ -46,7 +46,7 @@ REELS = {
         (("photo", "haldi-hand"), 2, "For dry, frizzy hair", "Haldi + Badam Shampoo · Rs 450"),
         (("photo", "hair-trio-a"), 2, "Your desi hair routine", "from Rs 450"),
         (("clip", RAW / "washes-trio-C076.mov", 1.0, 1.0), 4, "Neem · Lavender · Rose", "Hand & Body Wash · from Rs 300"),
-        (("clip", RAW / "perfume-unboxing-C080.mov", 1.0, 0.8), 4, "Gift-box luxury", "Signature Perfume · Rs 2,200"),
+        (("clip", RAW / "C078.mov", 4.2, 0.8), 4, "Gift-box luxury", "Signature Perfume · Rs 2,200"),  # only the open-box part: lid says White Oud
         (("card", "Desi care, made modern."), 2, None, None),
     ],
 }

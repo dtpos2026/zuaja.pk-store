@@ -24,6 +24,10 @@ ADS = {
     "amla-hand": ("Oily scalp by evening? Meet Amla Reetha.", "Amla Reetha Shampoo · 200 ml", "Rs 750", None),
     "haldi-hand": ("Dry, frizzy hair? Haldi + Badam it.", "Haldi + Badam Shampoo · 100 ml", "Rs 450", "Rs 880"),
     "washes-trio": ("Neem, Lavender or Rose: pick your shower mood", "Hand & Body Washes · 100 ml", "from Rs 300", None),
+    "washes-trio-2": ("Your shower, upgraded.", "Neem · Lavender · Rose · 100 ml", "from Rs 300", None),
+    "signature-box-hand": ("The gift they'll remember.", "Signature Perfume · 50 ml", "Rs 2,200", "Rs 2,800"),
+    "signature-box-a": ("Unbox pure luxury.", "Signature Perfume · satin gift box", "Rs 2,200", "Rs 2,800"),
+    "whiteoud-box": ("Royal oud, in your hands.", "Premium White Oud · 50 ml", "Rs 1,999", "Rs 3,200"),
 }
 
 
