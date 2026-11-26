@@ -56,3 +56,13 @@
 - **Primary text, perfume:** "Tohfa jo yaad rahe 🎁 Satin gift box, crystal bottle, all-day scent. Signature Perfume Rs 2,200. ✅ Cash on Delivery · WhatsApp 0316 1121130"
 - **Headline:** product + price, e.g. "Rosemary Hair Oil · Rs 950"
 - **CTA:** Store → **Shop now**; WhatsApp → **Send message**
+
+## 5. LIVE (published 27 Nov 2026)
+Ad account **Digital Target Marketing LLC** · Page **Zuaja.pk** + Instagram **@zuaja.pk1** · one campaign, Engagement → WhatsApp (conversations).
+
+| Ad set | Budget | Audience | Ads |
+|---|---|---|---|
+| Hair + Body, women-led | Rs 800/day | Punjab cities (15 circles: Lahore, Faisalabad, Rawalpindi, Multan, Gujranwala, Sialkot, Sargodha, Bahawalpur, Sahiwal, Gujrat, DG Khan, Rahim Yar Khan, Jhang, Khanewal, Okara) · women 20–45 as Advantage+ suggestion | Rosemary, Hair routine, Amla Reetha, Haldi Badam, Wash moods, Rose wash |
+| Perfume gift, women + men | Rs 400/day | same Punjab cities · 22–45 | Signature, White Oud, POV parcel |
+
+Total **Rs 1,200/day**. Each ad has 2 primary texts + 2 headlines (Meta tests them), button **WhatsApp message**.
