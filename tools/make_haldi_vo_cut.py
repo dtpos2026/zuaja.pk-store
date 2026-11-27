@@ -1,7 +1,7 @@
 """Haldi + Badam UGC ad re-cut to the owner's own voiceover (no music).
 
 The owner's caption-free 21 s reel supplies the voice; the visuals are re-cut from the
-clean raw clips so each shot matches what is being said. show-bottle is a mirrored
+clean raw clips so each shot matches what is being said. No colour filter (owner wants the original look). show-bottle is a mirrored
 selfie clip, so it is flipped to make the label read correctly.
 Inputs (gitignored): media/raw/haldi-ugc/{owner-nocap,bottle-hand,show-bottle,hair-touch}.mov
 Outputs (media/haldi-ugc/):
@@ -17,7 +17,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 import make_ugc_reels as mu  # noqa: E402
-from make_haldi_ugc import GRADE, OUT, RAW, W, H, FPS, hook_png, run  # noqa: E402
+from make_haldi_ugc import OUT, RAW, W, H, FPS, hook_png, run  # noqa: E402
 from fix_owner_haldi import CAPS  # noqa: E402
 from make_statics import font, wrap  # noqa: E402
 from PIL import Image, ImageDraw  # noqa: E402
@@ -48,7 +48,7 @@ def cap_png(text, yellow, path, y=1480):
 def shot(i, clip, ss, dur, tmp):
     k = f"if(lt(t,0.25),1.10-0.10*t/0.25,1+0.035*(t-0.25)/{dur:.2f})"
     flip = "hflip," if clip == "show-bottle" else ""
-    vf = (f"{flip}scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},{GRADE},"
+    vf = (f"{flip}scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},"
           f"scale=w='trunc({W}*{k}/2)*2':h='trunc({H}*{k}/2)*2':eval=frame,crop={W}:{H},format=yuv420p")
     out = tmp / f"s{i}.mp4"
     run(["-ss", f"{ss}", "-t", f"{dur + 0.2:.2f}", "-i", str(RAW / f"{clip}.mov"), "-vf", vf, "-t", f"{dur:.4f}",
