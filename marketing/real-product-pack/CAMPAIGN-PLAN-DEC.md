@@ -66,3 +66,17 @@ Ad account **Digital Target Marketing LLC** · Page **Zuaja.pk** + Instagram **@
 | Perfume gift, women + men | Rs 400/day | same Punjab cities · 22–45 | Signature, White Oud, POV parcel |
 
 Total **Rs 1,200/day**. Each ad has 2 primary texts + 2 headlines (Meta tests them), button **WhatsApp message**.
+
+## 6. DRAFT: Haldi + Badam UGC, Rs 450 (staged 27 Nov 2026; the owner selects the WhatsApp number and publishes)
+- **Campaign:** `ZUAJA | WA | Haldi Badam UGC Rs450 | Punjab + Big Cities`. Engagement → WhatsApp, CBO **Rs 1,200/day**, lowest cost.
+- **Ad set:** WhatsApp only (no Instagram DM, so no influencer or PR collab messages).
+  - **Placements:** mobile only: FB Feed, Story, Reels and IG Feed, Story, Reels.
+  - **Location:** all of **Punjab**, plus Karachi 40 km, Islamabad 25, Peshawar 25, Hyderabad 20, Quetta 20, Abbottabad 15, Sukkur 15 (living or recently there).
+  - **Audience:** age 20–50 suggestion (hard min 20), "Engaged Shoppers" behaviour as suggestion, Advantage+ audience on.
+- **4 ads**, each with the WhatsApp button, headline "Haldi + Badam Shampoo · Rs 450" and description "Cash on Delivery · Delivery all over Pakistan":
+  1. Owner's original reel (`owner-original-nocap.mp4`)
+  2. VO cut 9:16 with captions and end card
+  3. VO cut 4:5
+  4. VO cut, clean (no captions)
+- **Before publishing:** in Ads Manager → ad set → WhatsApp number select **+92 316 1121130**, then Publish.
+- **Rule:** after 3–4 days pause the ad with the highest cost per conversation; keep the best 2.
