@@ -84,3 +84,4 @@ Total **Rs 1,200/day**. Each ad has 2 primary texts + 2 headlines (Meta tests th
   - **Placements:** Facebook only (Feed, Story, Reels). Instagram removed.
   - **Age:** hard minimum **25**, with 28–55 as the suggested range.
   - Renamed "25+ FB only".
+- **Update 2 (owner's request):** age is now **20–45** (hard minimum 20, 45 as Advantage+ suggestion). Still **Facebook only**; Instagram is off.
