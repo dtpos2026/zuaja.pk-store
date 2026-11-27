@@ -80,3 +80,7 @@ Total **Rs 1,200/day**. Each ad has 2 primary texts + 2 headlines (Meta tests th
   4. VO cut, clean (no captions)
 - **Before publishing:** in Ads Manager → ad set → WhatsApp number select **+92 316 1121130**, then Publish.
 - **Rule:** after 3–4 days pause the ad with the highest cost per conversation; keep the best 2.
+- **Update 27 Nov (after the first Rs 42):** all 4 chats came from **women aged 18–34 on Instagram**, and they were collaboration or PR requests, not customers. The ad set was changed and the change is live:
+  - **Placements:** Facebook only (Feed, Story, Reels). Instagram removed.
+  - **Age:** hard minimum **25**, with 28–55 as the suggested range.
+  - Renamed "25+ FB only".
